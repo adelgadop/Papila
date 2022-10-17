@@ -5,6 +5,14 @@ __pycache__/
 
 # C extensions
 *.so
+# WRF data
+data/wes_coldens/
+data/WRF/
+data/wrfout/
+data/met_em/
+data/camchem/
+data/megan/
+data/emi/
 
 # Distribution / packaging
 .Python

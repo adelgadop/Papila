@@ -1,0 +1,38 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 2,
+ start_date = '2019-08-25_00:00:00', '2019-08-25_00:00:00', '2017-08-30_00:00:00',
+ end_date   = '2019-09-10_00:00:00', '2019-09-10_00:00:00', '2017-09-10_00:00:00',
+ interval_seconds = 21600
+ io_form_geogrid = 2,
+/
+
+&geogrid
+ parent_id         =     1,     1,     1,
+ parent_grid_ratio =     1,     3,     5,
+ i_parent_start    =     1,   228,    50,
+ j_parent_start    =     1,   134,    65,
+ e_we              =   402,   151,   126,
+ e_sn              =   378,   100,   126,
+ geog_data_res     = '30s',  '30s', '30s',
+ dx = 27000,
+ dy = 27000,
+ map_proj = 'lambert',
+ ref_lat   =  -15.00,
+ ref_lon   =  -60.00,
+ truelat1  =  -30.00,
+ truelat2  =  -60.00,
+ stand_lon =  -60.00,
+ geog_data_path = '/home/alejandro/data/geog_v4/'
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'FILE',
+/
+
+&metgrid
+ fg_name = 'FILE'
+ io_form_metgrid = 2,
+ opt_output_from_metgrid_path = '/home/alejandro/projects/papila/data/met_em/',
+/
