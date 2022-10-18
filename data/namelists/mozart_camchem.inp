@@ -1,0 +1,50 @@
+&control
+do_bc   = .true.
+do_ic   = .true.
+domain  = 1
+dir_wrf = '/home/alejandro/projects/papila/data/WRF/'
+dir_moz = '/home/alejandro/data/cbc/camchem/'
+fn_moz  = 'camchem-20220808151436463722.nc'
+moz_var_suffix = ''
+
+spc_map = 'o3 -> O3',
+          'n2o -> N2O',
+          'no -> NO',
+          'no2 -> NO2',
+          'nh3 -> NH3',
+          'hno3 -> HNO3',
+          'hno4 -> HO2NO2',
+          'n2o5 -> N2O5',
+          'h2o2 -> H2O2',
+          'ch4 -> CH4',
+          'co -> CO',
+          'ch3ooh -> CH3OOH',
+          'ch3oh -> CH3OH',
+          'c2h4 -> C2H4',
+          'acet -> CH3COCH3',
+          'pan -> PAN',
+          'mpan -> MPAN',
+          'macr -> MACR',
+          'mvk -> MVK',
+          'c2h6 -> C2H6',
+          'c3h6 -> C3H6',
+          'c3h8 -> C3H8',
+          'c2h5oh -> C2H5OH',
+          'onitr -> ONITR',
+          'acetol -> HYAC',
+          'mek -> MEK',
+          'bigene -> BIGENE',
+          'bigalk -> BIGALK',
+          'tol -> TOLUENE+BENZENE+XYLENES',
+          'cres -> CRESOL',
+          'so2 -> SO2',
+!         'sulf-> 0.3*so4_a1+0.3*so4_a2+0.3*so4_a3;1e6',
+          'BC1 -> 1.0*bc_a4;1.e9',
+          'BC2 -> 1.0*bc_a1;1.e9',
+          'OC1 -> 1.0*pom_a4;1.e9',
+          'OC2 -> 1.0*pom_a1;1.e9',
+          'SEAS_1 -> 1.0*ncl_a1+1.0*ncl_a2;1.e9',
+          'SEAS_2 -> 0.5*ncl_a3;1.e9',
+          'SEAS_3 -> 0.5*ncl_a3;1.e9',
+          'SEAS_4 -> 0.0*ncl_a3;1.e9'
+/

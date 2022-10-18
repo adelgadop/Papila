@@ -1,0 +1,9 @@
+&control
+
+domains = 2,
+start_lai_mnth = 7,
+end_lai_mnth   = 10,
+wrf_dir   = '/home/alejandro/projects/papila/data/WRF',
+megan_dir = '/home/alejandro/data/megan'
+
+/

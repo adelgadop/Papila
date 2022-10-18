@@ -15,4 +15,14 @@ Prediction of Air Pollution in Latin America and the Caribbean (PAPILA) is a res
   - [ ] Chemical IC/BC from CAM-Chem [output simulations](https://www.acom.ucar.edu/cam-chem/cam-chem.shtml)
  - [ ] Model evaluation
   
+## Summary run
+1. WPS: `./link_grib.csh $DATA/met/NCEP_GDAS/gdas1*`, `./geogrid.exe`, `./ungrib.exe`, `./metgrid.exe` 
+2. WRF: `./real.exe` creates wrfinput and wrfbdy
+3. Biogenic emissions (MEGAN 3): `./megan_bio_emiss < megan_bio_emiss.inp`
+4. Anthropogenic emissions (EDGARv5): `./anthro_emis < anthro_emis.inp` creates `wrfchemi_<time>_<domain> 
+5. Wes-coldens for mozart mechanism: `./wesely < wes_coldens.inp` and `./exo_coldens < wes_coldens.inp`
+6. Biomass burning emissions from FINN: `./fire_emis < finn_mozart.inp`
+7. Activate megan in `namelist.input`, locate the line with `io_form_auxinput6  = 2` and then run `./real.exe`
+8. MOZBC using CAM-Chem as chemical initial and boundary conditions for wrfbdy_d01, wrfinput_d01, wrfinput_d02. It is necessary to link "met_em" files before to run MOZBC: `./mozbc < mozart_camchem.inp` which domain 01 is `do_bc = .true.` and `do_ic = .true.`, domain 02 is `do_bc = .false.` and `do_ic = .true.`.
+9. Run WRF-Chem: `mpirun -np 64 -machinefile host_jano ./wrf.exe &`
 
