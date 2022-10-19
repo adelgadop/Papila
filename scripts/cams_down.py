@@ -24,4 +24,4 @@ c.retrieve(
         ],
         'year': '2019',
     },
-    'download.tar.gz')
+    '../data/emi/cams_global_2019.gz')
