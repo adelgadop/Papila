@@ -10,7 +10,7 @@ Prediction of Air Pollution in Latin America and the Caribbean (PAPILA) is a res
   - [ ] Biogenic emissions from MEGAN 3
   - [x] Biomass burning emissions from [FINN](https://www2.acom.ucar.edu/modeling/finn-fire-inventory-ncar)
 - [ ] Simulate with WRF-Chem v 4.2.1
-  - [ ] Meteorological IC/BC: FNL GFS 0.25 for January, July, and September 2019. September is a interesting month when the biomass burning increase.
+  - [ ] Meteorological IC/BC: [FNL GFS 0.25, ds.083.3](https://rda.ucar.edu/datasets/ds083.3/) for January, July, and September 2019. September is a interesting month when the biomass burning increase.
   - [ ] Chemical mechanism: MOZART/MOSAIC
   - [ ] Chemical IC/BC from CAM-Chem [output simulations](https://www.acom.ucar.edu/cam-chem/cam-chem.shtml)
  - [ ] Model evaluation
