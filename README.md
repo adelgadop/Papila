@@ -26,3 +26,11 @@ Prediction of Air Pollution in Latin America and the Caribbean (PAPILA) is a res
 8. MOZBC using CAM-Chem as chemical initial and boundary conditions for wrfbdy_d01, wrfinput_d01, wrfinput_d02. It is necessary to link "met_em" files before to run MOZBC: `./mozbc < mozart_camchem.inp` which domain 01 is `do_bc = .true.` and `do_ic = .true.`, domain 02 is `do_bc = .false.` and `do_ic = .true.`.
 9. Run WRF-Chem: `mpirun -np 64 -machinefile host_jano ./wrf.exe &`
 
+## Git
+- create .gitignore and exclude heavy data (input emissions, met, chemical IC/BC and WRF-Chem output)
+- `git status` to see changes
+- `git add -A` to add changes
+- `git commit -am "Name of the change"` 
+- If you save credential like user and access token, write `git config --global credential.helper store`, then write your username and access token, after they will save.
+- `git push`
+- If other person change something `git pull` to update changes.
