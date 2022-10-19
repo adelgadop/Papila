@@ -25,7 +25,7 @@ restart_interval                    = 7200,
 io_form_auxinput4                   = 2,
 io_form_auxinput2                   = 2,
 io_form_auxinput5                   = 2,                 ! Anthropogenic emissions
-io_form_auxinput6                   = 0,                 ! Biogenic emissions
+io_form_auxinput6                   = 2,                 ! Biogenic emissions
 io_form_auxinput7                   = 2,                 ! Surface biomass burning fields
 io_form_auxinput8                   = 0,                 ! GOCART background fields
 io_form_auxinput12                  = 0,                 ! Chemistry initial fields
@@ -92,7 +92,7 @@ icloud                              = 1,
 surface_input_source                = 1,
 num_soil_layers                     = 4,
 num_land_cat                        = 21,
-sf_urban_physics                    = 1,     0,     0,    0,       ! 0=UCM in Noah LSM, 1=Single-layer UCM
+sf_urban_physics                    = 1,     1,     0,    0,       ! 0=UCM in Noah LSM, 1=Single-layer UCM
 maxiens                             = 1,
 maxens                              = 3,
 maxens2                             = 3,
@@ -163,9 +163,9 @@ chem_conv_tr                        = 0,      0,     0,    0,
 biomass_burn_opt                    = 0,      0,     0,    0,       
 plumerisefire_frq                   = 30,    30,    30,  180,
 aer_ra_feedback                     = 0,     0,     0,    0,
-ne_area                             = 158,                             ! MEGAN 2 No chemical species
-scale_fire_emiss                    = .true.,                          ! true only for MOZCART
-have_bcs_chem                       = .true., .false., .false., .true.,
+ne_area                             = 209,                             ! MEGAN 2 No chemical species
+scale_fire_emiss                    = .false.,                          ! true only for MOZCART
+have_bcs_chem                       = .false., .false., .false., .true.,
 /
 
 &namelist_quilt

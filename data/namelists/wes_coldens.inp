@@ -1,0 +1,5 @@
+&control
+wrf_dir = '/home/alejandro/projects/papila/data/WRF'
+domains = 2,
+
+/

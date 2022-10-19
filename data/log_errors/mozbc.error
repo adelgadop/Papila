@@ -1,0 +1,382 @@
+ main_bc_wrfchem: will set boundary conditions in wrfbdy_d01
+ main_bc_wrfchem: will set initial condition in wrfinput_d01
+ mapper: spc_map = o3 -> O3
+ mapper: spc_map = n2o -> N2O
+ mapper: spc_map = no -> NO
+ mapper: spc_map = no2 -> NO2
+ mapper: spc_map = nh3 -> NH3
+ mapper: spc_map = hno3 -> HNO3
+ mapper: spc_map = hno4 -> HO2NO2
+ mapper: spc_map = n2o5 -> N2O5
+ mapper: spc_map = h2o2 -> H2O2
+ mapper: spc_map = ch4 -> CH4
+ mapper: spc_map = co -> CO
+ mapper: spc_map = ch3ooh -> CH3OOH
+ mapper: spc_map = ch3oh -> CH3OH
+ mapper: spc_map = c2h4 -> C2H4
+ mapper: spc_map = acet -> CH3COCH3
+ mapper: spc_map = pan -> PAN
+ mapper: spc_map = mpan -> MPAN
+ mapper: spc_map = macr -> MACR
+ mapper: spc_map = mvk -> MVK
+ mapper: spc_map = c2h6 -> C2H6
+ mapper: spc_map = c3h6 -> C3H6
+ mapper: spc_map = c3h8 -> C3H8
+ mapper: spc_map = c2h5oh -> C2H5OH
+ mapper: spc_map = onitr -> ONITR
+ mapper: spc_map = acetol -> HYAC
+ mapper: spc_map = mek -> MEK
+ mapper: spc_map = bigene -> BIGENE
+ mapper: spc_map = bigalk -> BIGALK
+ mapper: spc_map = tol -> TOLUENE+BENZENE+XYLENES
+ mapper: spc_map = cres -> CRESOL
+ mapper: spc_map = so2 -> SO2
+ mapper: spc_map = BC1 -> 1.0*bc_a4;1.e9
+ mapper: spc_map = BC2 -> 1.0*bc_a1;1.e9
+ mapper: spc_map = OC1 -> 1.0*pom_a4;1.e9
+ mapper: spc_map = OC2 -> 1.0*pom_a1;1.e9
+ mapper: spc_map = SEAS_1 -> 1.0*ncl_a1+1.0*ncl_a2;1.e9
+ mapper: spc_map = SEAS_2 -> 0.5*ncl_a3;1.e9
+ mapper: spc_map = SEAS_3 -> 0.5*ncl_a3;1.e9
+ mapper: spc_map = SEAS_4 -> 0.0*ncl_a3;1.e9
+ mapper: mstring = o3->O3
+ mapper: there are            1  mozart species for 
+ o3                              
+ mapper: send =            6
+ mapper: mstring = n2o->N2O
+ mapper: there are            1  mozart species for 
+ n2o                             
+ mapper: send =            8
+ mapper: mstring = no->NO
+ mapper: there are            1  mozart species for 
+ no                              
+ mapper: send =            6
+ mapper: mstring = no2->NO2
+ mapper: there are            1  mozart species for 
+ no2                             
+ mapper: send =            8
+ mapper: mstring = nh3->NH3
+ mapper: there are            1  mozart species for 
+ nh3                             
+ mapper: send =            8
+ mapper: mstring = hno3->HNO3
+ mapper: there are            1  mozart species for 
+ hno3                            
+ mapper: send =           10
+ mapper: mstring = hno4->HO2NO2
+ mapper: there are            1  mozart species for 
+ hno4                            
+ mapper: send =           12
+ mapper: mstring = n2o5->N2O5
+ mapper: there are            1  mozart species for 
+ n2o5                            
+ mapper: send =           10
+ mapper: mstring = h2o2->H2O2
+ mapper: there are            1  mozart species for 
+ h2o2                            
+ mapper: send =           10
+ mapper: mstring = ch4->CH4
+ mapper: there are            1  mozart species for 
+ ch4                             
+ mapper: send =            8
+ mapper: mstring = co->CO
+ mapper: there are            1  mozart species for 
+ co                              
+ mapper: send =            6
+ mapper: mstring = ch3ooh->CH3OOH
+ mapper: there are            1  mozart species for 
+ ch3ooh                          
+ mapper: send =           14
+ mapper: mstring = ch3oh->CH3OH
+ mapper: there are            1  mozart species for 
+ ch3oh                           
+ mapper: send =           12
+ mapper: mstring = c2h4->C2H4
+ mapper: there are            1  mozart species for 
+ c2h4                            
+ mapper: send =           10
+ mapper: mstring = acet->CH3COCH3
+ mapper: there are            1  mozart species for 
+ acet                            
+ mapper: send =           14
+ mapper: mstring = pan->PAN
+ mapper: there are            1  mozart species for 
+ pan                             
+ mapper: send =            8
+ mapper: mstring = mpan->MPAN
+ mapper: there are            1  mozart species for 
+ mpan                            
+ mapper: send =           10
+ mapper: mstring = macr->MACR
+ mapper: there are            1  mozart species for 
+ macr                            
+ mapper: send =           10
+ mapper: mstring = mvk->MVK
+ mapper: there are            1  mozart species for 
+ mvk                             
+ mapper: send =            8
+ mapper: mstring = c2h6->C2H6
+ mapper: there are            1  mozart species for 
+ c2h6                            
+ mapper: send =           10
+ mapper: mstring = c3h6->C3H6
+ mapper: there are            1  mozart species for 
+ c3h6                            
+ mapper: send =           10
+ mapper: mstring = c3h8->C3H8
+ mapper: there are            1  mozart species for 
+ c3h8                            
+ mapper: send =           10
+ mapper: mstring = c2h5oh->C2H5OH
+ mapper: there are            1  mozart species for 
+ c2h5oh                          
+ mapper: send =           14
+ mapper: mstring = onitr->ONITR
+ mapper: there are            1  mozart species for 
+ onitr                           
+ mapper: send =           12
+ mapper: mstring = acetol->HYAC
+ mapper: there are            1  mozart species for 
+ acetol                          
+ mapper: send =           12
+ mapper: mstring = mek->MEK
+ mapper: there are            1  mozart species for 
+ mek                             
+ mapper: send =            8
+ mapper: mstring = bigene->BIGENE
+ mapper: there are            1  mozart species for 
+ bigene                          
+ mapper: send =           14
+ mapper: mstring = bigalk->BIGALK
+ mapper: there are            1  mozart species for 
+ bigalk                          
+ mapper: send =           14
+ mapper: mstring = tol->TOLUENE+BENZENE+XYLENES
+ mapper: there are            3  mozart species for 
+ tol                             
+ mapper: send =           28
+ mapper: su,string =            8 TOLUENE
+ mapper: sl,send =           14          28
+ mapper: string  = BENZENE+XYLENES
+ mapper: su,string =            8 BENZENE
+ mapper: sl,send =           22          28
+ mapper: string  = XYLENES
+ mapper: mstring = cres->CRESOL
+ mapper: there are            1  mozart species for 
+ cres                            
+ mapper: send =           12
+ mapper: mstring = so2->SO2
+ mapper: there are            1  mozart species for 
+ so2                             
+ mapper: send =            8
+ mapper: mstring = BC1->1.0*bc_a4;1.e9
+ mapper: there are            1  mozart species for 
+ BC1                             
+ mapper: send =           14
+ mapper; coefficient 1.0 =    1.000000    
+ mapper; wrf_wght 
+ 1.e9                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                                       =   1.0000000E+09
+ mapper: mstring = BC2->1.0*bc_a1;1.e9
+ mapper: there are            1  mozart species for 
+ BC2                             
+ mapper: send =           14
+ mapper; coefficient 1.0 =    1.000000    
+ mapper; wrf_wght 
+ 1.e9                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                                       =   1.0000000E+09
+ mapper: mstring = OC1->1.0*pom_a4;1.e9
+ mapper: there are            1  mozart species for 
+ OC1                             
+ mapper: send =           15
+ mapper; coefficient 1.0 =    1.000000    
+ mapper; wrf_wght 
+ 1.e9                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                                      =   1.0000000E+09
+ mapper: mstring = OC2->1.0*pom_a1;1.e9
+ mapper: there are            1  mozart species for 
+ OC2                             
+ mapper: send =           15
+ mapper; coefficient 1.0 =    1.000000    
+ mapper; wrf_wght 
+ 1.e9                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                                      =   1.0000000E+09
+ mapper: mstring = SEAS_1->1.0*ncl_a1+1.0*ncl_a2;1.e9
+ mapper: there are            2  mozart species for 
+ SEAS_1                          
+ mapper: send =           29
+ mapper: su,string =           11 1.0*ncl_a1
+ mapper; coefficient 1.0 =    1.000000    
+ mapper: sl,send =           20          29
+ mapper: string  = 1.0*ncl_a2
+ mapper; coefficient 1.0 =    1.000000    
+ mapper; wrf_wght 
+ 1.e9                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                        =   1.0000000E+09
+ mapper: mstring = SEAS_2->0.5*ncl_a3;1.e9
+ mapper: there are            1  mozart species for 
+ SEAS_2                          
+ mapper: send =           18
+ mapper; coefficient 0.5 =   0.5000000    
+ mapper; wrf_wght 
+ 1.e9                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                                   =   1.0000000E+09
+ mapper: mstring = SEAS_3->0.5*ncl_a3;1.e9
+ mapper: there are            1  mozart species for 
+ SEAS_3                          
+ mapper: send =           18
+ mapper; coefficient 0.5 =   0.5000000    
+ mapper; wrf_wght 
+ 1.e9                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                                   =   1.0000000E+09
+ mapper: mstring = SEAS_4->0.0*ncl_a3;1.e9
+ mapper: there are            1  mozart species for 
+ SEAS_4                          
+ mapper: send =           18
+ mapper; coefficient 0.0 =   0.0000000E+00
+ mapper; wrf_wght 
+ 1.e9                                                                           
+                                                                                
+                                                                                
+                                                                                
+                                                   =   1.0000000E+09
+ mapper:            1 o3           1 O3         1.000000     T   1000000.    
+ mapper:            2 n2o           1 N2O        1.000000     T   1000000.    
+ mapper:            3 no           1 NO         1.000000     T   1000000.    
+ mapper:            4 no2           1 NO2        1.000000     T   1000000.    
+ mapper:            5 nh3           1 NH3        1.000000     T   1000000.    
+ mapper:            6 hno3           1 HNO3       1.000000     T   1000000.    
+ mapper:            7 hno4           1 HO2NO2     1.000000     T   1000000.    
+ mapper:            8 n2o5           1 N2O5       1.000000     T   1000000.    
+ mapper:            9 h2o2           1 H2O2       1.000000     T   1000000.    
+ mapper:           10 ch4           1 CH4        1.000000     T   1000000.    
+ mapper:           11 co           1 CO         1.000000     T   1000000.    
+ mapper:           12 ch3ooh           1 CH3OOH     1.000000     T
+   1000000.    
+ mapper:           13 ch3oh           1 CH3OH      1.000000     T   1000000.    
+ mapper:           14 c2h4           1 C2H4       1.000000     T   1000000.    
+ mapper:           15 acet           1 CH3COCH3   1.000000     T   1000000.    
+ mapper:           16 pan           1 PAN        1.000000     T   1000000.    
+ mapper:           17 mpan           1 MPAN       1.000000     T   1000000.    
+ mapper:           18 macr           1 MACR       1.000000     T   1000000.    
+ mapper:           19 mvk           1 MVK        1.000000     T   1000000.    
+ mapper:           20 c2h6           1 C2H6       1.000000     T   1000000.    
+ mapper:           21 c3h6           1 C3H6       1.000000     T   1000000.    
+ mapper:           22 c3h8           1 C3H8       1.000000     T   1000000.    
+ mapper:           23 c2h5oh           1 C2H5OH     1.000000     T
+   1000000.    
+ mapper:           24 onitr           1 ONITR      1.000000     T   1000000.    
+ mapper:           25 acetol           1 HYAC       1.000000     T
+   1000000.    
+ mapper:           26 mek           1 MEK        1.000000     T   1000000.    
+ mapper:           27 bigene           1 BIGENE     1.000000     T
+   1000000.    
+ mapper:           28 bigalk           1 BIGALK     1.000000     T
+   1000000.    
+ mapper:           29 tol           3 TOLUENE BENZENE XYLENES    1.000000    
+   1.000000       1.000000     T T T   1000000.    
+ mapper:           30 cres           1 CRESOL     1.000000     T   1000000.    
+ mapper:           31 so2           1 SO2        1.000000     T   1000000.    
+ mapper:           32 BC1           1 bc_a4      1.000000     T  1.0000000E+09
+ mapper:           33 BC2           1 bc_a1      1.000000     T  1.0000000E+09
+ mapper:           34 OC1           1 pom_a4     1.000000     T  1.0000000E+09
+ mapper:           35 OC2           1 pom_a1     1.000000     T  1.0000000E+09
+ mapper:           36 SEAS_1           2 ncl_a1  ncl_a2     1.000000    
+   1.000000     T T  1.0000000E+09
+ mapper:           37 SEAS_2           1 ncl_a3    0.5000000     T
+  1.0000000E+09
+ mapper:           38 SEAS_3           1 ncl_a3    0.5000000     T
+  1.0000000E+09
+ mapper:           39 SEAS_4           1 ncl_a3    0.0000000E+00 T
+  1.0000000E+09
+ main: nspec =           39
+ Opened /home/alejandro/projects/papila/data/WRF/wrfinput_d01
+  
+ wrf times in /home/alejandro/projects/papila/data/WRF/wrfinput_d01
+           1    20170830           0
+ Opened /home/alejandro/projects/papila/data/WRF/wrfbdy_d01
+ read_wrf_times: delta_secs =        21600
+  
+ wrf times in /home/alejandro/projects/papila/data/WRF/wrfbdy_d01
+           1    20170830           0
+           2    20170830       21600
+           3    20170830       43200
+           4    20170830       64800
+           5    20170831           0
+           6    20170831       21600
+           7    20170831       43200
+           8    20170831       64800
+           9    20170901           0
+          10    20170901       21600
+          11    20170901       43200
+          12    20170901       64800
+          13    20170902           0
+          14    20170902       21600
+          15    20170902       43200
+          16    20170902       64800
+          17    20170903           0
+          18    20170903       21600
+          19    20170903       43200
+          20    20170903       64800
+          21    20170904           0
+          22    20170904       21600
+          23    20170904       43200
+          24    20170904       64800
+          25    20170905           0
+          26    20170905       21600
+          27    20170905       43200
+          28    20170905       64800
+          29    20170906           0
+          30    20170906       21600
+          31    20170906       43200
+          32    20170906       64800
+          33    20170907           0
+          34    20170907       21600
+          35    20170907       43200
+          36    20170907       64800
+          37    20170908           0
+          38    20170908       21600
+          39    20170908       43200
+          40    20170908       64800
+          41    20170909           0
+          42    20170909       21600
+          43    20170909       43200
+          44    20170909       64800
+          45    20170910           0
+  
+ init_wrfchem: could not find the following variables in 
+ /home/alejandro/projects/papila/data/WRF/wrfinput_d01
+  
+ BC1
+ BC2
+ OC1
+ OC2
+ SEAS_1
+ SEAS_2
+ SEAS_3
+ SEAS_4
+  
+ NetCDF: Variable not found                                                     
+  
+ fail to process netCDF file...
