@@ -16,7 +16,7 @@ Prediction of Air Pollution in Latin America and the Caribbean (PAPILA) is a res
   - [ ] Chemical IC/BC from CAM-Chem [output simulations](https://www.acom.ucar.edu/cam-chem/cam-chem.shtml)
  - [ ] Model evaluation
  
-![Modeling domain area. The Metropolitan Area of São Paulo is in the second domain.]<img src="drawing.jpg" alt="drawing" width="200"/>
+![Modeling domain area. The Metropolitan Area of São Paulo is in the second domain.](fig/wps_show_dom.png)
 
 ## Summary run
 1. WPS: `./link_grib.csh $DATA/met/NCEP_GDAS/gdas1*`, `./geogrid.exe`, `./ungrib.exe`, `./metgrid.exe` 
