@@ -3,7 +3,8 @@ Prediction of Air Pollution in Latin America and the Caribbean (PAPILA) is a res
 
 ## Scope of work
 - [ ] Model domain configuration,
-  - [x] D01. Papila suggests `450 x 455` grid points, 10 km x 10 km. However, we have reference of the model setup from [Vara-Vela et al. (2021)](https://journals.ametsoc.org/view/journals/bams/102/9/BAMS-D-21-0018.1.xml) which the model domain consists of `402`(WE) $\times$ `378`(SN) horizontal grid points at a resolution of 20 km and with 30 vertical layers. This work considers 402 x 378 grid points with 27 km of horizontal resolution.
+  - [x] D01. 27 km x 27 km for all South American. 
+    > Previous information: Papila suggests `450 x 455` grid points, 10 km x 10 km. However, we have reference of the model setup from [Vara-Vela et al. (2021)](https://journals.ametsoc.org/view/journals/bams/102/9/BAMS-D-21-0018.1.xml) which the model domain consists of `402`(WE) $\times$ `378`(SN) horizontal grid points at a resolution of 20 km and with 30 vertical layers. This work considers 402 x 378 grid points with 27 km of horizontal resolution.
   - [x] D02. `150` x `100` grid points with 9 km x 9 km horizontal resolution centering in the MASP. We have the reference of the model domain from [Gavidia-Calderon et al. (2018)](https://www.sciencedirect.com/science/article/pii/S1352231018306216?via%3Dihub).
 - [ ] Prepare emissions inventory
   - [ ] Global anthropogenic emissions from CAMS
