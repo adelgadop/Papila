@@ -10,8 +10,8 @@ start_hour                          = 00,     00,   00,   00,
 start_minute                        = 00,     00,   00,   00,
 start_second                        = 00,     00,   00,   00,
 end_year                            = 2017, 2017, 2017, 2017,
-end_month                           = 09,     09,  09,  09,
-end_day                             = 10,     10,   10,    10,
+end_month                           = 08,     08,  09,  09,
+end_day                             = 31,     31,   10,    10,
 end_hour                            = 00,     00,   00,   00,
 end_minute                          = 00,     00,   00,    00,
 end_second                          = 00,     00,   00,  00,
@@ -19,7 +19,7 @@ interval_seconds                    = 21600
 input_from_file                     = .true.,.true.,.true., .true.,
 history_interval                    = 60,  60,   60, 60,
 history_outname                     = "/home/alejandro/projects/papila/data/wrfout/wrfout_d<domain>_<date>"
-frames_per_outfile                  = 24, 24, 1, 1,
+frames_per_outfile                  = 1, 1, 1, 1,
 restart                             = .false.,
 restart_interval                    = 7200,
 io_form_auxinput4                   = 2,
@@ -50,10 +50,10 @@ debug_level                         = 0
 /
 
 &domains
-time_step                           = 150,                 !  6*DX or 3*DX; DX in km
+time_step                           = 120,                 !  6*DX or 3*DX; DX in km
 time_step_fract_num                 = 0,
 time_step_fract_den                 = 1,
-max_dom                             = 2,
+max_dom                             = 1,
 e_we                                = 402,    151,   151,    151,
 e_sn                                = 378,    100,   211,    151,
 e_vert                              = 35,      35,    35,     35,
@@ -73,7 +73,7 @@ smooth_option                       = 0
 /
 
 &physics
-mp_physics                          = 5,    10,     10,        ! Ferrier=5; Morrison 2-mom=10  
+mp_physics                          = 10,    10,     10,        ! Ferrier=5; Morrison 2-mom=10  
 progn                               = 1,     1,     1,    
 naer                                = 1e9
 ra_lw_physics                       = 4,    4,     4,   1,
