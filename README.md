@@ -19,7 +19,7 @@ Prediction of Air Pollution in Latin America and the Caribbean (PAPILA) is a res
 1. WPS: `./link_grib.csh $DATA/met/NCEP_GDAS/gdas1*`, `./geogrid.exe`, `./ungrib.exe`, `./metgrid.exe` 
 2. WRF: `./real.exe` creates wrfinput and wrfbdy
 3. Biogenic emissions (MEGAN 3): `./megan_bio_emiss < megan_bio_emiss.inp`
-4. Anthropogenic emissions (EDGARv5): `./anthro_emis < anthro_emis.inp` creates `wrfchemi_<time>_<domain> 
+4. Anthropogenic emissions (CAMS): `./anthro_emis < anthro_emis.inp` creates `wrfchemi_<time>_<domain> 
 5. Wes-coldens for mozart mechanism: `./wesely < wes_coldens.inp` and `./exo_coldens < wes_coldens.inp`
 6. Biomass burning emissions from FINN: `./fire_emis < finn_mozart.inp`
 7. Activate megan in `namelist.input`, locate the line with `io_form_auxinput6  = 2` and then run `./real.exe`
