@@ -399,3 +399,10 @@ newnucbb hinuc  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
 newnucbb dtnuc  1.20E+02
 newnucbb ncnt      79900         0         0         0         0         0         0
 coagbb ncntaa      79900         0         0         0    175205         0         0         0         0         0
+newnucbb mins   2.33E+02  5.00E-02  1.00E-22  1.00E-22  1.00E-22  0.00E+00
+newnucbb maxs   2.97E+02  9.19E-01  1.44E-12  6.02E-20  1.56E-14  0.00E+00
+newnucbb avgs   2.59E+02  4.46E-01  2.95E-15  1.07E-22  1.37E-17  0.00E+00
+newnucbb hinuc  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
+newnucbb dtnuc  1.20E+02
+newnucbb ncnt      79900         0         0         0         0         0         0
+coagbb ncntaa      79900         0         0         0    159766         0         0         0         0         0

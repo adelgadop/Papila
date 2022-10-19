@@ -414,3 +414,11 @@ newnucbb dtnuc  1.20E+02
 newnucbb ncnt      83232         0         0         0         0         0         0
 coagbb ncntaa      83232         0         0         0    197484         0         0         0         0         0
 Timing for main: time 2017-08-30_00:12:00 on domain   1:   23.74133 elapsed seconds
+newnucbb mins   2.33E+02  5.00E-02  1.00E-22  1.00E-22  1.00E-22  0.00E+00
+newnucbb maxs   3.00E+02  9.25E-01  2.07E-12  8.00E-19  1.14E-15  0.00E+00
+newnucbb avgs   2.57E+02  4.07E-01  1.14E-15  2.29E-22  6.37E-19  0.00E+00
+newnucbb hinuc  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
+newnucbb dtnuc  1.20E+02
+newnucbb ncnt      83232         0         0         0         0         0         0
+coagbb ncntaa      83232         0         0         0    184171         0         0         0         0         0
+Timing for main: time 2017-08-30_00:14:00 on domain   1:   23.74825 elapsed seconds

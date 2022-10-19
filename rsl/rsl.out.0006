@@ -432,3 +432,11 @@ newnucbb dtnuc  1.20E+02
 newnucbb ncnt      81600         0         0         0         0         0         0
 coagbb ncntaa      81600         0         0         0    170828         0         0         0         0         0
 leaving mosaic_aerchem_driver - ktau =      6
+newnucbb mins   2.33E+02  5.00E-02  1.00E-22  1.00E-22  1.00E-22  0.00E+00
+newnucbb maxs   2.90E+02  9.15E-01  3.47E-12  1.49E-22  5.38E-15  0.00E+00
+newnucbb avgs   2.53E+02  4.34E-01  2.15E-15  1.00E-22  5.79E-18  0.00E+00
+newnucbb hinuc  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00  0.00E+00
+newnucbb dtnuc  1.20E+02
+newnucbb ncnt      81600         0         0         0         0         0         0
+coagbb ncntaa      81600         0         0         0    158597         0         0         0         0         0
+leaving mosaic_aerchem_driver - ktau =      7
