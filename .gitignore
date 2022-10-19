@@ -11,12 +11,10 @@ __pycache__/
 
 # WRF data
 data/wes_coldens/
-data/WRF/
 data/wrfout/
 data/met_em/
-data/camchem/
-data/megan/
 data/emi/
+WRF/
 
 # tar.gz
 *.tar

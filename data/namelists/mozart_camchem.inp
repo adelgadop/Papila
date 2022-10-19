@@ -6,6 +6,7 @@ dir_wrf = '/home/alejandro/projects/papila/data/WRF/'
 dir_moz = '/home/alejandro/data/cbc/camchem/'
 fn_moz  = 'camchem-20220808151436463722.nc'
 moz_var_suffix = ''
+def_missing_var = .true.
 
 spc_map = 'o3 -> O3',
           'n2o -> N2O',
