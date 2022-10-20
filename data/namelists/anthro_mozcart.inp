@@ -1,7 +1,7 @@
 &CONTROL
-domains = 2
+domains = 1
 anthro_dir = '/home/alejandro/data/emis/EDGARv5_MOZART_dataset'
- wrf_dir   = '/home/alejandro/projects/papila/data/WRF'
+ wrf_dir   = '/home/alejandro/WRF-4.2.1/test/em_real'
  src_file_prefix = 'edgar_v5_2015_'
  src_file_suffix = '_0.1x0.1.nc'
  src_names = 'CO(28)','NOx(30)','SO2(64)','NH3(17)','BC(12)','OC(12)','PM2.5(1)','PM10(1)',
@@ -11,7 +11,7 @@ anthro_dir = '/home/alejandro/data/emis/EDGARv5_MOZART_dataset'
  ! cat_var_prefix  = ''
  serial_output   = .false.
  start_output_time = '2017-08-30_00:00:00'
- stop_output_time = '2017-09-10_00:00:00'
+ stop_output_time = '2017-09-01_00:00:00'
  emissions_zdim_stag = 1,
  data_yrs_offset = +2,
  output_interval = 3600,
