@@ -1,0 +1,96 @@
+taskid: 14 hostname: noh1
+Quilting with   1 groups of   0 I/O tasks.
+ Ntasks in X            4, ntasks in Y            8
+--- WARNING: traj_opt is zero, but num_traj is not zero; setting num_traj to zero.
+--- NOTE: cu_physics is 11, setting icloud = 1 and cu_rad_feedback = T
+--- NOTE: sst_update is 0, setting io_form_auxinput4 = 0 and auxinput4_interval = 0 for all domains
+--- NOTE: grid_fdda is 0 for domain      1, setting gfdda interval and ending time to 0 for that domain.
+--- NOTE: both grid_sfdda and pxlsm_soil_nudge are 0 for domain      1, setting sgfdda interval and ending time to 0 for that domain.
+--- NOTE: obs_nudge_opt is 0 for domain      1, setting obs nudging interval and ending time to 0 for that domain.
+--- NOTE: bl_pbl_physics /= 4, implies mfshconv must be 0, resetting
+Need MYNN PBL for icloud_bl = 1, resetting to 0
+*************************************
+No physics suite selected.
+Physics options will be used directly from the namelist.
+*************************************
+--- NOTE: RRTMG radiation is in use, setting:  levsiz=59, alevsiz=12, no_src_types=6
+--- NOTE: num_soil_layers has been set to      4
+WRF V3.9.1 MODEL
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1         350           1         350
+ ims,ime,jms,jme          169         269         126         182
+ ips,ipe,jps,jpe          176         262         133         175
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+   alloc_space_field: domain            1,              980904000 bytes allocated
+  med_initialdata_input: calling input_input
+Max map factor in domain 1 =  1.81. Scale the dt in the model accordingly.
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33 CATEGORIES           2 SEASONS WATER CATEGORY =           17 SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+ USING DEFAULT URBAN MORPHOLOGY
+ WARNING, FRC_URB2D = 0 BUT IVGTYP IS URBAN
+ WARNING, THE URBAN FRACTION WILL BE READ FROM URBPARM.TBL
+ USING DEFAULT URBAN MORPHOLOGY
+ WARNING, FRC_URB2D = 0 BUT IVGTYP IS URBAN
+ WARNING, THE URBAN FRACTION WILL BE READ FROM URBPARM.TBL
+ USING DEFAULT URBAN MORPHOLOGY
+ WARNING, FRC_URB2D = 0 BUT IVGTYP IS URBAN
+ WARNING, THE URBAN FRACTION WILL BE READ FROM URBPARM.TBL
+ USING DEFAULT URBAN MORPHOLOGY
+ WARNING, FRC_URB2D = 0 BUT IVGTYP IS URBAN
+ WARNING, THE URBAN FRACTION WILL BE READ FROM URBPARM.TBL
+*********************************************************************
+*             PROGRAM:WRF-Chem V3.9.1 MODEL
+*                                                                   *
+*    PLEASE REPORT ANY BUGS TO WRF-Chem HELP at                     *
+*                                                                   *
+*              wrfchemhelp.gsd@noaa.gov                             *
+*                                                                   *
+*********************************************************************
+ chem_init: calling mozcart_lbc_init for domain            1
+ lbc_init: initializing            1 domains
+  call ftuv phot initialization
+ ftuv_init: calling photo_inti for id =            1
+ ftuv_init: intializing            1 domains
+ ftuv_init: bcast col_levs
+ ftuv_init: bcast day_of_year
+ ftuv_init: bcast o3_col_dens
+ ftuv_init: bcast o2_col_dens
+  
+ ftuv_init: coldens variables for domain            1
+ ftuv_init: days_of_year
+   16.00000       45.00000       75.00000       105.0000       136.0000    
+   166.0000       197.0000       228.0000       258.0000       289.0000    
+   319.0000       350.0000    
+ ftuv_init: coldens levels
+  5.1107500E-06  9.8269002E-06  1.6201851E-05  2.6712250E-05  4.4040997E-05
+  7.2612747E-05  1.1971901E-04  1.9738001E-04  3.2542250E-04  5.3653255E-04
+  8.8460249E-04  1.4584580E-03  2.4045750E-03  3.9782501E-03  6.5568252E-03
+  1.0813820E-02  1.7898001E-02  2.9557750E-02  4.8730753E-02  7.9910748E-02
+  0.1282733      0.1981200      0.2920250      0.4101675      0.5534700    
+  0.7304800      0.9559475       1.244795       1.612850       2.079325    
+   2.667425       3.404875       4.324575       5.465400       6.872850    
+   8.599725       10.70705       13.26475       16.35175       20.05675    
+   24.47900       29.72800       35.92325       43.19375       51.67750    
+   61.52050       72.87450       85.65715       100.5147       118.2503    
+   139.1154       163.6621       192.5399       226.5132       266.4811    
+   313.5013       368.8180       433.8952       510.4553       600.5242    
+   696.7962       787.7021       867.1607       929.6489       970.5547    
+   992.5561    
+  
+ num_land_cat:           21
+ ftuv_init: initializing aerosol routine
+ ftuv_init: finished
+ dep_init: initializing for            1 domains
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_00z_d01
+ HOURLY EMISSIONS UPDATE TIME        0.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_00:00:00
+**WARNING** Time in input file not being checked **WARNING**
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS    176 IE    262 JS    133 JE    175
+WRF NUMBER OF TILES =   1
+ calculate MEGAN emissions at ktau, gmtp, tmidh =            1  0.0000000E+00  1.6666668E-02
+ photolysis_driver: called for domain            1
+no aerosols initialization yet

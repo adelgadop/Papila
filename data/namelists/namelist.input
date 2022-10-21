@@ -33,7 +33,7 @@ io_form_history                     = 2
 io_form_restart                     = 2
 io_form_input                       = 2
 io_form_boundary                    = 2
-auxinput1_inname                    = '/home/alejandro/projects/papila/data/met_em/met_em.d<domain>.<date>',
+auxinput1_inname                    = '/scr2/alejandro/WRF/projects/papila/data/met_em/met_em.d<domain>.<date>',
 auxinput5_inname                    = 'wrfchemi_d<domain>_<date>',
 auxinput6_inname                    = 'wrfbiochemi_d<domain>',
 !auxinput7_inname                    = 'wrffirechemi_d<domain>_<date>',
@@ -45,7 +45,7 @@ auxinput5_interval_m                = 60, 60, 60, 60,
 frames_per_auxinput5                = 12,   12,  12,   12,
 !frames_per_auxinput7                = 1,     1,  12,   12,
 !frames_per_auxinput8                = 1,     1,   1,    1,
-force_use_old_data                  = .true.,
+!force_use_old_data                  = .true.,
 debug_level                         = 0
 /
 
@@ -83,7 +83,7 @@ sf_sfclay_physics                   = 1,    1,     1,   1,     ! 1=Monin-Obukhov
 sf_surface_physics                  = 2,    2,     2,   2,     ! 2=Noah
 bl_pbl_physics                      = 1,    1,     1,   1,     ! 1=YSU scheme
 bldt                                = 0,    0,     0,   0,
-cu_physics                          = 5,    5,     0,   1,     ! 5=Grell3D; 6=Tiedtke
+cu_physics                          = 11,  11,     0,   1,     ! 5=Grell3D; 6=Tiedtke; 11=M.Kain-Fritsch
 cudt                                = 0,    0,     0,   0,
 cu_diag                             = 0,    0,     0,
 isfflx                              = 1,

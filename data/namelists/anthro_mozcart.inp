@@ -1,7 +1,7 @@
 &CONTROL
 domains = 1
-anthro_dir = '/home/alejandro/data/emis/EDGARv5_MOZART_dataset'
- wrf_dir   = '/home/alejandro/WRF-4.2.1/test/em_real'
+anthro_dir = '/scr2/alejandro/WRF/DATA/util/EDGARv5_MOZART'
+ wrf_dir   = '/scr2/alejandro/WRF/projects/papila/WRF/'
  src_file_prefix = 'edgar_v5_2015_'
  src_file_suffix = '_0.1x0.1.nc'
  src_names = 'CO(28)','NOx(30)','SO2(64)','NH3(17)','BC(12)','OC(12)','PM2.5(1)','PM10(1)',

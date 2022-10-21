@@ -2,9 +2,9 @@
 do_bc   = .true.
 do_ic   = .true.
 domain  = 1
-dir_wrf = '/home/alejandro/WRF-4.2.1/test/em_real/'
-dir_moz = '/home/alejandro/data/cbc/camchem/'
-fn_moz  = 'camchem-20220808151436463722.nc'
+dir_wrf = '/scr2/alejandro/WRF/projects/papila/WRF/'
+dir_moz = '/scr2/alejandro/WRF/DATA/camchem/'
+fn_moz  = 'camchem_20170819_20170919.nc'
 moz_var_suffix = ''
 !def_missing_var = .true.
 
