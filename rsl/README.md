@@ -1,5 +1,5 @@
 ## Experimental logs
-- The first experimental run failed because dt=120 seconds. Intead, we set-up dt=90 and run 12 hours, after that the run falls the `rsl.error.0005` for the second run shows:
+- The first experiment run with MOZART-MOSAIC mechanism failed because the time step (dt=120 seconds) generates numerical instability (points with CFL>2). We changed the time step to dt=90 seconds, running only for meteorological conditions without any problem for two days of simulations. However, the model with MOZCART mechanism ran only 12 hours and failed. We saw the `rsl.error.0005`, see below:
 
 ```fortran
 forrtl: severe (174): SIGSEGV, segmentation fault occurred
@@ -21,4 +21,4 @@ libc-2.28.so       0000145A475B1813  __libc_start_main     Unknown  Unknown
 wrf.exe            00000000004056AE  Unknown               Unknown  Unknown
 ```
 
-A dt=60 seconds will use for the 3th experiment with MOZCART chemical mechanism.
+- We'll test with dt=60 and with the recently WRF-Chem version 4.4.1. At the same time, we'll test with the version 3.9.1 with dt=90 seconds. 
