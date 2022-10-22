@@ -26,7 +26,7 @@ io_form_auxinput4                   = 2,
 io_form_auxinput2                   = 2,
 io_form_auxinput5                   = 2,                 ! Anthropogenic emissions
 io_form_auxinput6                   = 2,                 ! Biogenic emissions
-!io_form_auxinput7                   = 0,                 ! Surface biomass burning fields
+io_form_auxinput7                   = 2,                 ! Surface biomass burning fields
 !io_form_auxinput8                   = 0,                 ! GOCART background fields
 io_form_auxinput12                  = 0,                 ! Chemistry initial fields
 io_form_history                     = 2
@@ -36,21 +36,21 @@ io_form_boundary                    = 2
 auxinput1_inname                    = '/home/alejandro/projects/papila/data/met_em/met_em.d<domain>.<date>',
 auxinput5_inname                    = 'wrfchemi_d<domain>_<date>',
 auxinput6_inname                    = 'wrfbiochemi_d<domain>',
-!auxinput7_inname                    = 'wrffirechemi_d<domain>_<date>',
+auxinput7_inname                    = 'wrffirechemi_d<domain>_<date>',
 !auxinput8_inname                    = 'wrfchemi_gocart_bg_d<domain>_<date>',
 auxinput12_inname	            = 'wrf_chem_input',
 auxinput5_interval_m                = 60, 60, 60, 60,
-!auxinput7_interval_m		    = 60, 60, 60, 60,
+auxinput7_interval_m		    = 60, 60, 60, 60,
 !auxinput8_interval_m 		    = 60, 60, 0,
 frames_per_auxinput5                = 12,   12,  12,   12,
-!frames_per_auxinput7                = 1,     1,  12,   12,
+frames_per_auxinput7                = 1,     1,  12,   12,
 !frames_per_auxinput8                = 1,     1,   1,    1,
 force_use_old_data                  = .true.,
 debug_level                         = 0
 /
 
 &domains
-time_step                           = 120,                 !  6*DX or 3*DX; DX in km
+time_step                           = 90,                 !  6*DX or 3*DX; DX in km
 time_step_fract_num                 = 0,
 time_step_fract_den                 = 1,
 max_dom                             = 1,
@@ -78,7 +78,7 @@ progn                               = 1,     1,     1,
 naer                                = 1e9
 ra_lw_physics                       = 4,    4,     4,   1,
 ra_sw_physics                       = 4,    4,     4,   1,
-radt                                = 27,   9,     3,   5,
+radt                                = 30,   9,     3,   5,
 sf_sfclay_physics                   = 1,    1,     1,   1,     ! 1=Monin-Obukhov
 sf_surface_physics                  = 2,    2,     2,   2,     ! 2=Noah
 bl_pbl_physics                      = 1,    1,     1,   1,     ! 1=YSU scheme
@@ -141,7 +141,7 @@ photdt                              = 30,    30,    30,    5,
 chemdt                              = 2.0,  1.5,    0.,  1.5,          ! before = 2 for CBMZ
 io_style_emissions                  = 1,                               ! 1 =  si usamos 00z y 12z wrfchemi
 emiss_inpt_opt                      = 111,  111,   111,  111,          ! MOZART=111, CBMZ=102
-emiss_opt                           =  8,    8,     8,    8,          ! CBMZ/MOSAIC=4, MOZART=7, GOCART=8, MOZART+Aerosols=10 
+emiss_opt                           = 8,    8,     8,    8,          ! CBMZ/MOSAIC=4, MOZART=7, GOCART=8, MOZART+Aerosols=10 
 chem_in_opt                         = 0,      0,     0,    0,
 phot_opt                            = 3,      3,     3,    3,      
 gas_drydep_opt                      = 1,      1,     1,    1,
@@ -164,8 +164,8 @@ biomass_burn_opt                    = 0,      0,     0,    0,
 plumerisefire_frq                   = 180,  180,    30,  180,
 aer_ra_feedback                     = 0,     0,     0,    0,
 ne_area                             = 158,                             ! MEGAN 2 No chemical species
-scale_fire_emiss                    = .false.,                          ! true only for MOZCART
-have_bcs_chem                       = .false., .false., .false., .true.,
+scale_fire_emiss                    = .true.,                          ! true only for MOZCART
+have_bcs_chem                       = .true., .false., .false., .true.,
 /
 
 &namelist_quilt
