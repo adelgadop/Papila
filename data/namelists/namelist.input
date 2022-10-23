@@ -50,7 +50,7 @@ debug_level                         = 0
 /
 
 &domains
-time_step                           = 90,                 !  6*DX or 3*DX; DX in km
+time_step                           = 80,                 !  6*DX or 3*DX; DX in km
 time_step_fract_num                 = 0,
 time_step_fract_den                 = 1,
 max_dom                             = 1,

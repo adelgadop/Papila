@@ -21,4 +21,5 @@ libc-2.28.so       0000145A475B1813  __libc_start_main     Unknown  Unknown
 wrf.exe            00000000004056AE  Unknown               Unknown  Unknown
 ```
 
+- Exp. 3 with MOZCART and namelist.input corrected only run 8 hours. The rsl files didn't register why the model stop after 8 hours of simulation.
 - We'll test with dt=60 and with the recently WRF-Chem version 4.4.1. At the same time, we'll test with the version 3.9.1 with dt=90 seconds. 
