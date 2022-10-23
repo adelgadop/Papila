@@ -336,3 +336,98 @@ d01 2017-08-30_08:00:00  Input data is acceptable to use:
 d01 2017-08-30_08:00:00  Input data is acceptable to use:
 **WARNING** Time in input file not being checked **WARNING**
  calculate MEGAN emissions at ktau, gmtp, tmidh =          368   8.000000       8.166667
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          391   8.000000       8.677778
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    32400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_09:00:00
+d01 2017-08-30_09:00:00  Error trying to read metadata
+d01 2017-08-30_09:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_09:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          414   9.000000       9.188889
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          437   9.000000       9.700000
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    36000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_10:00:00
+d01 2017-08-30_10:00:00  Error trying to read metadata
+d01 2017-08-30_10:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_10:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          460   10.00000       10.21111
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          483   10.00000       10.72222
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    39600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_11:00:00
+d01 2017-08-30_11:00:00  Error trying to read metadata
+d01 2017-08-30_11:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_11:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          506   11.00000       11.23333
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          529   11.00000       11.74444
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_12z_d01
+ HOURLY EMISSIONS UPDATE TIME    43200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_12:00:00
+d01 2017-08-30_12:00:00  Error trying to read metadata
+d01 2017-08-30_12:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_12:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_12:00:00  Input data is acceptable to use:
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          552   12.00000       12.25556
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          575   12.00000       12.76667
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    46800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_13:00:00
+d01 2017-08-30_13:00:00  Error trying to read metadata
+d01 2017-08-30_13:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_13:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          598   13.00000       13.27778
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          621   13.00000       13.78889
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    50400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_14:00:00
+d01 2017-08-30_14:00:00  Error trying to read metadata
+d01 2017-08-30_14:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_14:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          644   14.00000       14.30000
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          667   14.00000       14.81111

@@ -360,3 +360,117 @@ d01 2017-08-30_08:00:00  Input data is acceptable to use:
 d01 2017-08-30_08:00:00  Input data is acceptable to use:
 **WARNING** Time in input file not being checked **WARNING**
  calculate MEGAN emissions at ktau, gmtp, tmidh =          368   8.000000       8.166667
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          391   8.000000       8.677778
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    32400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_09:00:00
+d01 2017-08-30_09:00:00  Error trying to read metadata
+d01 2017-08-30_09:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_09:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          414   9.000000       9.188889
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          437   9.000000       9.700000
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    36000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_10:00:00
+d01 2017-08-30_10:00:00  Error trying to read metadata
+d01 2017-08-30_10:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_10:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          460   10.00000       10.21111
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          483   10.00000       10.72222
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    39600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_11:00:00
+d01 2017-08-30_11:00:00  Error trying to read metadata
+d01 2017-08-30_11:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_11:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          506   11.00000       11.23333
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          529   11.00000       11.74444
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_12z_d01
+ HOURLY EMISSIONS UPDATE TIME    43200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_12:00:00
+d01 2017-08-30_12:00:00  Error trying to read metadata
+d01 2017-08-30_12:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_12:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_12:00:00  Input data is acceptable to use:
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          552   12.00000       12.25556
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          575   12.00000       12.76667
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    46800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_13:00:00
+d01 2017-08-30_13:00:00  Error trying to read metadata
+d01 2017-08-30_13:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_13:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          598   13.00000       13.27778
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          621   13.00000       13.78889
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ mediation_integrate.G        1944 DATASET=HISTORY
+ mediation_integrate.G        1945  grid%id            1  grid%oid            3
+ HOURLY EMISSIONS UPDATE TIME    50400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_14:00:00
+d01 2017-08-30_14:00:00  Error trying to read metadata
+d01 2017-08-30_14:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_14:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          644   14.00000       14.30000
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          667   14.00000       14.81111
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+wrf.exe            0000000004A057CA  Unknown               Unknown  Unknown
+libpthread-2.28.s  000014FA011CAD80  Unknown               Unknown  Unknown
+wrf.exe            000000000355EE1B  Unknown               Unknown  Unknown
+wrf.exe            000000000355BBCE  Unknown               Unknown  Unknown
+wrf.exe            00000000026D1546  Unknown               Unknown  Unknown
+wrf.exe            00000000026C8048  Unknown               Unknown  Unknown
+wrf.exe            0000000001F6D035  Unknown               Unknown  Unknown
+wrf.exe            0000000001F4B236  Unknown               Unknown  Unknown
+wrf.exe            0000000001D98E69  Unknown               Unknown  Unknown
+wrf.exe            00000000005E364F  Unknown               Unknown  Unknown
+wrf.exe            0000000000405851  Unknown               Unknown  Unknown
+wrf.exe            000000000040580F  Unknown               Unknown  Unknown
+wrf.exe            00000000004057A2  Unknown               Unknown  Unknown
+libc-2.28.so       000014FA00A95813  __libc_start_main     Unknown  Unknown
+wrf.exe            00000000004056AE  Unknown               Unknown  Unknown
