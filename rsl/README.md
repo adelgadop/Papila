@@ -22,4 +22,5 @@ wrf.exe            00000000004056AE  Unknown               Unknown  Unknown
 ```
 
 - Exp. 3 (WRF-Chem v4.2.1 with MOZCART) only run 14 hours. The rsl.error.0011 shows Unknown or SEGSEV processing.
-- We'll test with dt=60 and with the recently WRF-Chem version 4.4.1. At the same time, we'll test with the version 3.9.1 with dt=90 seconds. 
+- Exp. 4 (WRF-Chem v.4.2.1 with MOZCART) cannot run all the period, a SEGSEV ocurred. The WRF-Chem version 3.9.1 ran succesfully all period.
+- We'll test with dt=90 and with the recently WRF-Chem version 4.4.1, and 42 vertical levels. At the same time, we'll test with the version 3.9.1 with dt=90 seconds. 
