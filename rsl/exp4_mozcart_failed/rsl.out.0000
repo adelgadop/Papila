@@ -1,0 +1,950 @@
+taskid: 0 hostname: node5
+Quilting with   1 groups of   0 I/O tasks.
+ Ntasks in X            8 , ntasks in Y           10
+  Domain # 1: dx = 27000.000 m
+WRF V4.2.1 MODEL
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1         350           1         350
+ ims,ime,jms,jme           -4          51          -4          42
+ ips,ipe,jps,jpe            1          44           1          35
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+   alloc_space_field: domain            1 ,              432755016  bytes allocated
+  med_initialdata_input: calling input_input
+   Input data is acceptable to use: wrfinput_d01
+ CURRENT DATE          = 2017-08-30_00:00:00
+ SIMULATION START DATE = 2017-08-30_00:00:00
+Timing for processing wrfinput file (stream 0) for domain        1:    7.89742 elapsed seconds
+Max map factor in domain 1 =  1.81. Scale the dt in the model accordingly.
+ D01: Time step                              =    90.00000      (s)
+ D01: Grid Distance                          =    27.00000      (km)
+ D01: Grid Distance Ratio dt/dx              =    3.333333      (s/km)
+ D01: Ratio Including Maximum Map Factor     =    6.043557      (s/km)
+ D01: NML defined reasonable_time_step_ratio =    6.000000
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+*********************************************************************
+*             PROGRAM:WRF-Chem V4.2.1 MODEL
+*                                                                   *
+*    PLEASE REPORT ANY BUGS TO WRF-Chem HELP at                     *
+*                                                                   *
+*              wrfchemhelp.gsd@noaa.gov                             *
+*                                                                   *
+*********************************************************************
+ chem_init: calling mozcart_lbc_init for domain            1
+ lbc_init: initializing            1  domains
+ chem_init: calling init_HLawConst for domain            1
+  Read  160 Henrys Law entries
+  There are    6 Henrys Law null entries
+
+  HLaw table
+  (001)          ALKNIT   133.1410          1.010000       5790.000       0.000000       0.000000       0.000000       0.000000
+  (002)          ALKOOH   104.1430          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (003)            APIN   136.2280         2.9400000E-02   1800.000       0.000000       0.000000       0.000000       0.000000
+  (004)           BCARY   204.3430         5.5700000E-03   2800.000       0.000000       0.000000       0.000000       0.000000
+  (005)         BENZENE   78.11040         0.1800000       3800.000       0.000000       0.000000       0.000000       0.000000
+  (006)         BENZOOH   160.1220          2300.000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (007)         BEPOMUC   126.1090         3.0000000E+07   0.000000       0.000000       0.000000       0.000000       0.000000
+  (008)            OPEN   98.09820          9.600000       6220.000       0.000000       0.000000       0.000000       0.000000
+  (009)         BIGALD1   84.07240          100000.0       5890.000       0.000000       0.000000       0.000000       0.000000
+  (010)         BIGALD2   98.09820          29000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (011)         BIGALD3   98.09820          22000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (012)         BIGALD4   112.1240          22000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (013)          BIGALK   72.14380         1.2400000E-03   3010.000       0.000000       0.000000       0.000000       0.000000
+  (014)          BIGENE   56.10320         5.9600002E-03   2365.000       0.000000       0.000000       0.000000       0.000000
+  (015)            BPIN   136.2280         1.5200000E-02   4500.000       0.000000       0.000000       0.000000       0.000000
+  (016)           BZALD   106.1210          32.40000       6300.000       0.000000       0.000000       0.000000       0.000000
+  (017)           BZOOH   124.1350          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (018)            C2H2   26.03680         4.1400000E-02   1890.000       0.000000       0.000000       0.000000       0.000000
+  (019)            C2H4   28.05160         5.9600002E-03   2200.000       0.000000       0.000000       0.000000       0.000000
+  (020)          C2H5OH   46.06580          190.0000       6500.000       0.000000       0.000000       0.000000       0.000000
+  (021)           ETOOH   62.06520          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (022)            C2H6   30.06640         1.8800000E-03   2750.000       0.000000       0.000000       0.000000       0.000000
+  (023)            C3H6   42.07740         5.5700000E-03   2800.000       0.000000       0.000000       0.000000       0.000000
+  (024)           PROOH   76.09100          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (025)            C3H8   44.09220         1.5100000E-03   3120.000       0.000000       0.000000       0.000000       0.000000
+  (026)         C6H5OOH   110.1090          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (027)            HCHO   30.02520          3230.000       7100.000       0.000000       0.000000       0.000000       0.000000
+  (028)             ALD   44.05100          12.90000       5890.000       0.000000       0.000000       0.000000       0.000000
+  (029)           CH3CN   41.05090          52.80000       3970.000       0.000000       0.000000       0.000000       0.000000
+  (030)            ACET   58.07680          27.80000       5530.000       0.000000       0.000000       0.000000       0.000000
+  (031)            MGLY   72.06140          3500.000       7545.000       0.000000       0.000000       0.000000       0.000000
+  (032)         CH3COOH   60.05040          4100.000       6200.000       0.000000       0.000000       0.000000       0.000000
+  (033)             PAA   76.04980          837.0000       5310.000      1.8000000E-04  -20.00000       0.000000       0.000000
+  (034)           CH3OH   32.04000          203.0000       5645.000       0.000000       0.000000       0.000000       0.000000
+  (035)          CH3OOH   48.03940          300.0000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (036)             CH4   16.04060         1.4100000E-03   1820.000       0.000000       0.000000       0.000000       0.000000
+  (037)              CO   28.01040         9.8100002E-04   1650.000       0.000000       0.000000       0.000000       0.000000
+  (038)             CO2   44.00980         3.4400001E-02   2715.000      4.3000000E-07  -1000.000      4.6800001E-11  -1760.000
+  (039)            CRES   108.1360          567.0000       5800.000       0.000000       0.000000       0.000000       0.000000
+  (040)             DMS   62.13240         0.5400000       3460.000       0.000000       0.000000       0.000000       0.000000
+  (041)            EOOH   78.06460          1900000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (042)          GLYALD   60.05040          40000.00       4630.000       0.000000       0.000000       0.000000       0.000000
+  (043)             GLY   58.03560          419000.0       7480.000       0.000000       0.000000       0.000000       0.000000
+  (044)              H2   2.014800         7.9000002E-04   530.0000       0.000000       0.000000       0.000000       0.000000
+  (045)            H2O2   34.01360          87000.00       7320.000      2.1999999E-12  -3730.000       0.000000       0.000000
+  (046)             HCN   27.02510          9.020000       8258.000       0.000000       0.000000       0.000000       0.000000
+  (047)           HCOOH   46.02460          8900.000       6100.000      1.8000000E-04  -20.00000       0.000000       0.000000
+  (048)          HMPROP   88.10200         0.6000000       4500.000       0.000000       0.000000       0.000000       0.000000
+  (049)        HMPROPO2   119.0930          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (050)            HNO3   63.01230          210000.0       8700.000       22.00000       0.000000       0.000000       0.000000
+  (051)            HNO4   79.01170          40.00000       8400.000      1.3000000E-06   0.000000       0.000000       0.000000
+  (052)          HONITR   133.1000          2640.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (053)           HPALD   116.1120          230000.0       0.000000       0.000000       0.000000       0.000000       0.000000
+  (054)          ACETOL   74.07620          1600.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (055)         HYDRALD   100.1130          110000.0       6000.000       0.000000       0.000000       0.000000       0.000000
+  (056)           IEPOX   118.1270         3.0000000E+07   0.000000       0.000000       0.000000       0.000000       0.000000
+  (057)           ISOPR   68.11420         3.4499999E-02   4400.000       0.000000       0.000000       0.000000       0.000000
+  (058)        ISOPNITA   147.1260          8340.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (059)        ISOPNITB   147.1260          48200.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (060)           ISOPN   162.1180          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (061)        ISOPNOOH   163.1250          87500.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (062)           ISOOH   118.1270          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (063)           LIMON   136.2280         4.8599999E-02   4600.000       0.000000       0.000000       0.000000       0.000000
+  (064)            MACR   70.08780          6.500000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (065)          MVKOOH   120.1010          4400000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (066)           MALO2   115.0640          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (067)             MBO   86.12840          65.00000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (068)        MBONO3O2   180.1320          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (069)           MBOO2   135.1340          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (070)          MBOOOH   136.1410         1.7000000E+09   5995.000       0.000000       0.000000       0.000000       0.000000
+  (071)             MEK   72.10260          18.00000       5740.000       0.000000       0.000000       0.000000       0.000000
+  (072)          MEKOOH   104.1010          64000.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (073)            MPAN   147.0850          1.720000       5700.000       0.000000       0.000000       0.000000       0.000000
+  (074)             MVK   70.08780          41.00000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (075)            MYRC   136.2280         7.2999999E-02   2800.000       0.000000       0.000000       0.000000       0.000000
+  (076)             N2O   44.01290         2.4200000E-02   2710.000       0.000000       0.000000       0.000000       0.000000
+  (077)            N2O5   108.0100          2.140000       3362.000       0.000000       0.000000       0.000000       0.000000
+  (078)        NC4CH2OH   147.1260          40200.00       9500.000       0.000000       0.000000       0.000000       0.000000
+  (079)          NC4CHO   145.1110          1460.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (080)             NH3   17.02890          60.20000       4160.000      1.7000000E-05  -4325.000      9.9999998E-15  -6716.000
+  (081)              NO   30.00610         1.9200000E-03   1762.000       0.000000       0.000000       0.000000       0.000000
+  (082)             NO2   46.00550         1.2000001E-03   2440.000       0.000000       0.000000       0.000000       0.000000
+  (083)             NO3   62.00490         3.7999999E-02   0.000000       0.000000       0.000000       0.000000       0.000000
+  (084)             NOA   119.0740          1000.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (085)        NTERPOOH   231.2400          66700.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (086)              O3   47.99820         1.0300000E-02   2830.000       0.000000       0.000000       0.000000       0.000000
+  (087)           ONITR   147.1260          1440.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (088)             PAN   121.0480          2.800000       5730.000       0.000000       0.000000       0.000000       0.000000
+  (089)          PBZNIT   183.1180          2.800000       5730.000       0.000000       0.000000       0.000000       0.000000
+  (090)          PHENOL   94.10980          2840.000       2700.000       0.000000       0.000000       0.000000       0.000000
+  (091)         PHENOOH   176.1220          1500000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (092)         C3H6OOH   92.09040          1500000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (093)           ACETP   90.07560          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (094)             SO2   64.06480          1.360000       3100.000      1.3000000E-02   1960.000      6.5999998E-08   1500.000
+  (095)            SULF   96.05760         9.9999998E+10   0.000000       0.000000       0.000000       0.000000       0.000000
+  (096)         TEPOMUC   140.1340          2500.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (097)        TERP2OOH   200.2260          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (098)         TERPNIT   215.2400          8410.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (099)         TERPOOH   186.2410          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (100)        TERPROD1   168.2270          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (101)        TERPROD2   154.2010          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (102)          TOLOOH   174.1480          23000.00       5995.000       0.000000       0.000000       0.000000       0.000000
+  (103)             TOL   92.13620         0.1500000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (104)            XOOH   150.1260         9.9999998E+10   5995.000       0.000000       0.000000       0.000000       0.000000
+  (105)         XYLENES   106.1620         0.2000000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (106)        XYLENOOH   188.1740          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (107)           XYLOL   122.1610          1013.000       6800.000       0.000000       0.000000       0.000000       0.000000
+  (108)        XYLOLOOH   204.1730          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (109)          ACBZO2   137.1120          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (110)           ALKO2   103.1350          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (111)          BENZO2   159.1150          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (112)            BZOO   123.1280          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (113)            ETO2   61.05780          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (114)            PRO2   75.08360          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (115)          C6H5O2   109.1020          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (116)            ACO3   75.04240         0.1000000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (117)           CH3O2   47.03200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (118)        DICARBO2   129.0900          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (119)           ENEO2   105.1090          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (120)              EO   61.05780          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (121)             EO2   77.05720          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (122)             HO2   33.00620          690.0000       5900.000       0.000000       0.000000       0.000000       0.000000
+  (123)         HOCH2OO   63.03140          80000.00       8200.000       0.000000       0.000000       0.000000       0.000000
+  (124)         ISOPAO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (125)         ISOPBO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (126)           MVKO2   119.0930          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (127)            MCO3   101.0790          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (128)         MDIALO2   117.0790          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (129)           MEKO2   103.0940          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (130)         NTERPO2   230.2320          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (131)              HO   17.00680          39.00000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (132)          PHENO2   175.1140          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (133)             PO2   91.08300          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (134)          ACETO2   89.06820          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (135)         TERP2O2   199.2190          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (136)          TERPO2   185.2340          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (137)             TO2   173.1410          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (138)             XO2   149.1190         9.9999998E+10   0.000000       0.000000       0.000000       0.000000       0.000000
+  (139)         XYLENO2   187.1660          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (140)         XYLOLO2   203.1660          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (141)            HONO   47.01300         0.4800000       4900.000      5.9000001E-04  -1760.000       0.000000       0.000000
+  (142)            ISO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (143)            ONIT   119.0740          1000.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (144)            PHEN   94.10980          2840.000       2700.000       0.000000       0.000000       0.000000       0.000000
+  (145)             XYL   106.1620         0.2000000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (146)            BALD   106.1210          32.40000       6300.000       0.000000       0.000000       0.000000       0.000000
+  (147)         cvasoa1   180.0000         1.0600000E+08   6014.000       0.000000       0.000000       0.000000       0.000000
+  (148)         cvasoa2   180.0000         1.8400000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  (149)         cvasoa3   180.0000          3180000.       6014.000       0.000000       0.000000       0.000000       0.000000
+  (150)         cvasoa4   180.0000          550000.0       6014.000       0.000000       0.000000       0.000000       0.000000
+  (151)         cvbsoa1   150.0000         5.2499999E+09   6014.000       0.000000       0.000000       0.000000       0.000000
+  (152)         cvbsoa2   150.0000         7.0000000E+08   6014.000       0.000000       0.000000       0.000000       0.000000
+  (153)         cvbsoa3   150.0000         9.3300000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  (154)         cvbsoa4   150.0000         1.2400000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  call ftuv phot initialization
+ ftuv_init: calling photo_inti for id =            1
+ ftuv_init: intializing            1  domains
+ftuv_init: intializing domain 01
+ ftuv_init: bcast col_levs
+ ftuv_init: bcast day_of_year
+ ftuv_init: bcast o3_col_dens
+ ftuv_init: bcast o2_col_dens
+  
+ ftuv_init: coldens variables for domain            1
+ ftuv_init: days_of_year
+   16.00000       45.00000       75.00000       105.0000       136.0000    
+   166.0000       197.0000       228.0000       258.0000       289.0000    
+   319.0000       350.0000    
+ ftuv_init: coldens levels
+  5.1107500E-06  9.8269002E-06  1.6201851E-05  2.6712250E-05  4.4040997E-05
+  7.2612747E-05  1.1971901E-04  1.9738001E-04  3.2542250E-04  5.3653255E-04
+  8.8460249E-04  1.4584580E-03  2.4045750E-03  3.9782501E-03  6.5568252E-03
+  1.0813820E-02  1.7898001E-02  2.9557750E-02  4.8730753E-02  7.9910748E-02
+  0.1282733      0.1981200      0.2920250      0.4101675      0.5534700    
+  0.7304800      0.9559475       1.244795       1.612850       2.079325    
+   2.667425       3.404875       4.324575       5.465400       6.872850    
+   8.599725       10.70705       13.26475       16.35175       20.05675    
+   24.47900       29.72800       35.92325       43.19375       51.67750    
+   61.52050       72.87450       85.65715       100.5147       118.2503    
+   139.1154       163.6621       192.5399       226.5132       266.4811    
+   313.5013       368.8180       433.8952       510.4553       600.5242    
+   696.7962       787.7021       867.1607       929.6489       970.5547    
+   992.5561    
+  
+ num_land_cat:           21
+ ftuv_init: initializing aerosol routine
+ ftuv_init: finished
+ dep_init: initializing for            1  domains
+dep_init: initializing domain 01
+Timing for Writing wrfout_d01_2017-08-30_00:00:00 for domain        1:   11.92331 elapsed seconds
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_00z_d01
+ HOURLY EMISSIONS UPDATE TIME        0.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_00:00:00
+d01 2017-08-30_00:00:00  Error trying to read metadata
+d01 2017-08-30_00:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_00:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_00:00:00
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_00:00:00  Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    1.48513 elapsed seconds
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     44 JS      1 JE     35
+WRF NUMBER OF TILES =   1
+ calculate MEGAN emissions at ktau, gmtp, tmidh =            1  0.0000000E+00  1.2500000E-02
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_00:01:30 on domain   1:   44.09030 elapsed seconds
+Timing for main: time 2017-08-30_00:03:00 on domain   1:    7.08706 elapsed seconds
+Timing for main: time 2017-08-30_00:04:30 on domain   1:    6.96459 elapsed seconds
+Timing for main: time 2017-08-30_00:06:00 on domain   1:    6.91704 elapsed seconds
+Timing for main: time 2017-08-30_00:07:30 on domain   1:    6.79517 elapsed seconds
+Timing for main: time 2017-08-30_00:09:00 on domain   1:    6.84075 elapsed seconds
+Timing for main: time 2017-08-30_00:10:30 on domain   1:    6.78316 elapsed seconds
+Timing for main: time 2017-08-30_00:12:00 on domain   1:    6.82944 elapsed seconds
+Timing for main: time 2017-08-30_00:13:30 on domain   1:    6.81714 elapsed seconds
+Timing for main: time 2017-08-30_00:15:00 on domain   1:    6.83243 elapsed seconds
+Timing for main: time 2017-08-30_00:16:30 on domain   1:    6.75995 elapsed seconds
+Timing for main: time 2017-08-30_00:18:00 on domain   1:    6.83374 elapsed seconds
+Timing for main: time 2017-08-30_00:19:30 on domain   1:    6.77885 elapsed seconds
+Timing for main: time 2017-08-30_00:21:00 on domain   1:    6.82790 elapsed seconds
+Timing for main: time 2017-08-30_00:22:30 on domain   1:    6.78951 elapsed seconds
+Timing for main: time 2017-08-30_00:24:00 on domain   1:    6.82787 elapsed seconds
+Timing for main: time 2017-08-30_00:25:30 on domain   1:    6.78731 elapsed seconds
+Timing for main: time 2017-08-30_00:27:00 on domain   1:    6.83627 elapsed seconds
+Timing for main: time 2017-08-30_00:28:30 on domain   1:    8.95450 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =           20  0.0000000E+00  0.4875000
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_00:30:00 on domain   1:   21.56939 elapsed seconds
+Timing for main: time 2017-08-30_00:31:30 on domain   1:    8.47907 elapsed seconds
+Timing for main: time 2017-08-30_00:33:00 on domain   1:    6.90053 elapsed seconds
+Timing for main: time 2017-08-30_00:34:30 on domain   1:    6.88686 elapsed seconds
+Timing for main: time 2017-08-30_00:36:00 on domain   1:    6.89948 elapsed seconds
+Timing for main: time 2017-08-30_00:37:30 on domain   1:    6.89809 elapsed seconds
+Timing for main: time 2017-08-30_00:39:00 on domain   1:    6.88745 elapsed seconds
+Timing for main: time 2017-08-30_00:40:30 on domain   1:    6.90226 elapsed seconds
+Timing for main: time 2017-08-30_00:42:00 on domain   1:    6.90023 elapsed seconds
+Timing for main: time 2017-08-30_00:43:30 on domain   1:    6.90892 elapsed seconds
+Timing for main: time 2017-08-30_00:45:00 on domain   1:    6.88392 elapsed seconds
+Timing for main: time 2017-08-30_00:46:30 on domain   1:    6.89724 elapsed seconds
+Timing for main: time 2017-08-30_00:48:00 on domain   1:    6.89533 elapsed seconds
+Timing for main: time 2017-08-30_00:49:30 on domain   1:    6.92097 elapsed seconds
+Timing for main: time 2017-08-30_00:51:00 on domain   1:    6.89913 elapsed seconds
+Timing for main: time 2017-08-30_00:52:30 on domain   1:    6.88322 elapsed seconds
+Timing for main: time 2017-08-30_00:54:00 on domain   1:    6.91135 elapsed seconds
+Timing for main: time 2017-08-30_00:55:30 on domain   1:    8.40044 elapsed seconds
+Timing for main: time 2017-08-30_00:57:00 on domain   1:    6.89132 elapsed seconds
+Timing for main: time 2017-08-30_00:58:30 on domain   1:    6.90801 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =           40  0.0000000E+00  0.9875000
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_01:00:00 on domain   1:   22.39076 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_01:00:00 for domain        1:   11.53803 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME     3600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_01:00:00
+d01 2017-08-30_01:00:00  Error trying to read metadata
+d01 2017-08-30_01:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_01:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_01:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_01:01:30 on domain   1:   18.88944 elapsed seconds
+Timing for main: time 2017-08-30_01:03:00 on domain   1:    7.21052 elapsed seconds
+Timing for main: time 2017-08-30_01:04:30 on domain   1:    7.17152 elapsed seconds
+Timing for main: time 2017-08-30_01:06:00 on domain   1:    7.21538 elapsed seconds
+Timing for main: time 2017-08-30_01:07:30 on domain   1:    7.15986 elapsed seconds
+Timing for main: time 2017-08-30_01:09:00 on domain   1:    7.18485 elapsed seconds
+Timing for main: time 2017-08-30_01:10:30 on domain   1:    7.17247 elapsed seconds
+Timing for main: time 2017-08-30_01:12:00 on domain   1:    7.15892 elapsed seconds
+Timing for main: time 2017-08-30_01:13:30 on domain   1:    7.18201 elapsed seconds
+Timing for main: time 2017-08-30_01:15:00 on domain   1:    7.15175 elapsed seconds
+Timing for main: time 2017-08-30_01:16:30 on domain   1:    7.16552 elapsed seconds
+Timing for main: time 2017-08-30_01:18:00 on domain   1:    7.16695 elapsed seconds
+Timing for main: time 2017-08-30_01:19:30 on domain   1:    7.18088 elapsed seconds
+Timing for main: time 2017-08-30_01:21:00 on domain   1:    7.16650 elapsed seconds
+Timing for main: time 2017-08-30_01:22:30 on domain   1:    8.10008 elapsed seconds
+Timing for main: time 2017-08-30_01:24:00 on domain   1:    7.15664 elapsed seconds
+Timing for main: time 2017-08-30_01:25:30 on domain   1:    7.14886 elapsed seconds
+Timing for main: time 2017-08-30_01:27:00 on domain   1:    7.12860 elapsed seconds
+Timing for main: time 2017-08-30_01:28:30 on domain   1:    7.11406 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =           60   1.000000       1.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_01:30:00 on domain   1:   20.03160 elapsed seconds
+Timing for main: time 2017-08-30_01:31:30 on domain   1:    6.66241 elapsed seconds
+Timing for main: time 2017-08-30_01:33:00 on domain   1:    6.62937 elapsed seconds
+Timing for main: time 2017-08-30_01:34:30 on domain   1:    6.60645 elapsed seconds
+Timing for main: time 2017-08-30_01:36:00 on domain   1:    6.60281 elapsed seconds
+Timing for main: time 2017-08-30_01:37:30 on domain   1:    6.58870 elapsed seconds
+Timing for main: time 2017-08-30_01:39:00 on domain   1:    6.57076 elapsed seconds
+Timing for main: time 2017-08-30_01:40:30 on domain   1:    6.55993 elapsed seconds
+Timing for main: time 2017-08-30_01:42:00 on domain   1:    6.55861 elapsed seconds
+Timing for main: time 2017-08-30_01:43:30 on domain   1:    6.55128 elapsed seconds
+Timing for main: time 2017-08-30_01:45:00 on domain   1:    6.54907 elapsed seconds
+Timing for main: time 2017-08-30_01:46:30 on domain   1:    6.56220 elapsed seconds
+Timing for main: time 2017-08-30_01:48:00 on domain   1:    6.56251 elapsed seconds
+Timing for main: time 2017-08-30_01:49:30 on domain   1:    7.52022 elapsed seconds
+Timing for main: time 2017-08-30_01:51:00 on domain   1:    6.54538 elapsed seconds
+Timing for main: time 2017-08-30_01:52:30 on domain   1:    6.56170 elapsed seconds
+Timing for main: time 2017-08-30_01:54:00 on domain   1:    6.55884 elapsed seconds
+Timing for main: time 2017-08-30_01:55:30 on domain   1:    6.55964 elapsed seconds
+Timing for main: time 2017-08-30_01:57:00 on domain   1:    6.55542 elapsed seconds
+Timing for main: time 2017-08-30_01:58:30 on domain   1:    6.58223 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =           80   1.000000       1.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_02:00:00 on domain   1:   13.94758 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_02:00:00 for domain        1:   11.34996 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME     7200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_02:00:00
+d01 2017-08-30_02:00:00  Error trying to read metadata
+d01 2017-08-30_02:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_02:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_02:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_02:01:30 on domain   1:   17.40204 elapsed seconds
+Timing for main: time 2017-08-30_02:03:00 on domain   1:    6.22780 elapsed seconds
+Timing for main: time 2017-08-30_02:04:30 on domain   1:    6.23891 elapsed seconds
+Timing for main: time 2017-08-30_02:06:00 on domain   1:    6.23579 elapsed seconds
+Timing for main: time 2017-08-30_02:07:30 on domain   1:    6.24016 elapsed seconds
+Timing for main: time 2017-08-30_02:09:00 on domain   1:    6.23978 elapsed seconds
+Timing for main: time 2017-08-30_02:10:30 on domain   1:    6.23968 elapsed seconds
+Timing for main: time 2017-08-30_02:12:00 on domain   1:    6.24278 elapsed seconds
+Timing for main: time 2017-08-30_02:13:30 on domain   1:    6.26103 elapsed seconds
+Timing for main: time 2017-08-30_02:15:00 on domain   1:    6.24886 elapsed seconds
+Timing for main: time 2017-08-30_02:16:30 on domain   1:    7.25500 elapsed seconds
+Timing for main: time 2017-08-30_02:18:00 on domain   1:    6.23839 elapsed seconds
+Timing for main: time 2017-08-30_02:19:30 on domain   1:    6.27180 elapsed seconds
+Timing for main: time 2017-08-30_02:21:00 on domain   1:    6.26256 elapsed seconds
+Timing for main: time 2017-08-30_02:22:30 on domain   1:    6.25328 elapsed seconds
+Timing for main: time 2017-08-30_02:24:00 on domain   1:    6.24794 elapsed seconds
+Timing for main: time 2017-08-30_02:25:30 on domain   1:    6.26560 elapsed seconds
+Timing for main: time 2017-08-30_02:27:00 on domain   1:    6.28138 elapsed seconds
+Timing for main: time 2017-08-30_02:28:30 on domain   1:    6.28287 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          100   2.000000       2.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_02:30:00 on domain   1:   12.48854 elapsed seconds
+Timing for main: time 2017-08-30_02:31:30 on domain   1:    6.31007 elapsed seconds
+Timing for main: time 2017-08-30_02:33:00 on domain   1:    6.28168 elapsed seconds
+Timing for main: time 2017-08-30_02:34:30 on domain   1:    6.28084 elapsed seconds
+Timing for main: time 2017-08-30_02:36:00 on domain   1:    6.26157 elapsed seconds
+Timing for main: time 2017-08-30_02:37:30 on domain   1:    6.26973 elapsed seconds
+Timing for main: time 2017-08-30_02:39:00 on domain   1:    6.26881 elapsed seconds
+Timing for main: time 2017-08-30_02:40:30 on domain   1:    6.26551 elapsed seconds
+Timing for main: time 2017-08-30_02:42:00 on domain   1:    6.25038 elapsed seconds
+Timing for main: time 2017-08-30_02:43:30 on domain   1:    7.26721 elapsed seconds
+Timing for main: time 2017-08-30_02:45:00 on domain   1:    6.33225 elapsed seconds
+Timing for main: time 2017-08-30_02:46:30 on domain   1:    6.28270 elapsed seconds
+Timing for main: time 2017-08-30_02:48:00 on domain   1:    6.34305 elapsed seconds
+Timing for main: time 2017-08-30_02:49:30 on domain   1:    6.32370 elapsed seconds
+Timing for main: time 2017-08-30_02:51:00 on domain   1:    6.32901 elapsed seconds
+Timing for main: time 2017-08-30_02:52:30 on domain   1:    6.35591 elapsed seconds
+Timing for main: time 2017-08-30_02:54:00 on domain   1:    6.31401 elapsed seconds
+Timing for main: time 2017-08-30_02:55:30 on domain   1:    6.35821 elapsed seconds
+Timing for main: time 2017-08-30_02:57:00 on domain   1:    6.35881 elapsed seconds
+Timing for main: time 2017-08-30_02:58:30 on domain   1:    6.34514 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          120   2.000000       2.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_03:00:00 on domain   1:   12.56974 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_03:00:00 for domain        1:   11.75788 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    10800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_03:00:00
+d01 2017-08-30_03:00:00  Error trying to read metadata
+d01 2017-08-30_03:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_03:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_03:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_03:01:30 on domain   1:   17.82438 elapsed seconds
+Timing for main: time 2017-08-30_03:03:00 on domain   1:    6.31923 elapsed seconds
+Timing for main: time 2017-08-30_03:04:30 on domain   1:    6.31166 elapsed seconds
+Timing for main: time 2017-08-30_03:06:00 on domain   1:    6.31334 elapsed seconds
+Timing for main: time 2017-08-30_03:07:30 on domain   1:    6.31571 elapsed seconds
+Timing for main: time 2017-08-30_03:09:00 on domain   1:    6.31511 elapsed seconds
+Timing for main: time 2017-08-30_03:10:30 on domain   1:    7.41569 elapsed seconds
+Timing for main: time 2017-08-30_03:12:00 on domain   1:    6.36742 elapsed seconds
+Timing for main: time 2017-08-30_03:13:30 on domain   1:    6.30586 elapsed seconds
+Timing for main: time 2017-08-30_03:15:00 on domain   1:    6.32261 elapsed seconds
+Timing for main: time 2017-08-30_03:16:30 on domain   1:    6.32641 elapsed seconds
+Timing for main: time 2017-08-30_03:18:00 on domain   1:    6.33522 elapsed seconds
+Timing for main: time 2017-08-30_03:19:30 on domain   1:    6.33029 elapsed seconds
+Timing for main: time 2017-08-30_03:21:00 on domain   1:    6.33516 elapsed seconds
+Timing for main: time 2017-08-30_03:22:30 on domain   1:    6.34216 elapsed seconds
+Timing for main: time 2017-08-30_03:24:00 on domain   1:    6.31399 elapsed seconds
+Timing for main: time 2017-08-30_03:25:30 on domain   1:    6.35202 elapsed seconds
+Timing for main: time 2017-08-30_03:27:00 on domain   1:    6.32956 elapsed seconds
+Timing for main: time 2017-08-30_03:28:30 on domain   1:    6.34512 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          140   3.000000       3.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_03:30:00 on domain   1:   12.59180 elapsed seconds
+Timing for main: time 2017-08-30_03:31:30 on domain   1:    6.37435 elapsed seconds
+Timing for main: time 2017-08-30_03:33:00 on domain   1:    6.35391 elapsed seconds
+Timing for main: time 2017-08-30_03:34:30 on domain   1:    6.34785 elapsed seconds
+Timing for main: time 2017-08-30_03:36:00 on domain   1:    6.34681 elapsed seconds
+Timing for main: time 2017-08-30_03:37:30 on domain   1:    7.34274 elapsed seconds
+Timing for main: time 2017-08-30_03:39:00 on domain   1:    6.32725 elapsed seconds
+Timing for main: time 2017-08-30_03:40:30 on domain   1:    6.32633 elapsed seconds
+Timing for main: time 2017-08-30_03:42:00 on domain   1:    6.31071 elapsed seconds
+Timing for main: time 2017-08-30_03:43:30 on domain   1:    6.32913 elapsed seconds
+Timing for main: time 2017-08-30_03:45:00 on domain   1:    6.33517 elapsed seconds
+Timing for main: time 2017-08-30_03:46:30 on domain   1:    6.33314 elapsed seconds
+Timing for main: time 2017-08-30_03:48:00 on domain   1:    6.33051 elapsed seconds
+Timing for main: time 2017-08-30_03:49:30 on domain   1:    6.34735 elapsed seconds
+Timing for main: time 2017-08-30_03:51:00 on domain   1:    6.35061 elapsed seconds
+Timing for main: time 2017-08-30_03:52:30 on domain   1:    6.33637 elapsed seconds
+Timing for main: time 2017-08-30_03:54:00 on domain   1:    6.33862 elapsed seconds
+Timing for main: time 2017-08-30_03:55:30 on domain   1:    6.34251 elapsed seconds
+Timing for main: time 2017-08-30_03:57:00 on domain   1:    6.33704 elapsed seconds
+Timing for main: time 2017-08-30_03:58:30 on domain   1:    6.36401 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          160   3.000000       3.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_04:00:00 on domain   1:   12.65774 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_04:00:00 for domain        1:   11.94050 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    14400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_04:00:00
+d01 2017-08-30_04:00:00  Error trying to read metadata
+d01 2017-08-30_04:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_04:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_04:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_04:01:30 on domain   1:   18.02094 elapsed seconds
+Timing for main: time 2017-08-30_04:03:00 on domain   1:    6.42955 elapsed seconds
+Timing for main: time 2017-08-30_04:04:30 on domain   1:    7.39969 elapsed seconds
+Timing for main: time 2017-08-30_04:06:00 on domain   1:    6.38475 elapsed seconds
+Timing for main: time 2017-08-30_04:07:30 on domain   1:    6.41114 elapsed seconds
+Timing for main: time 2017-08-30_04:09:00 on domain   1:    6.38917 elapsed seconds
+Timing for main: time 2017-08-30_04:10:30 on domain   1:    6.36946 elapsed seconds
+Timing for main: time 2017-08-30_04:12:00 on domain   1:    6.40103 elapsed seconds
+Timing for main: time 2017-08-30_04:13:30 on domain   1:    6.37690 elapsed seconds
+Timing for main: time 2017-08-30_04:15:00 on domain   1:    6.42331 elapsed seconds
+Timing for main: time 2017-08-30_04:16:30 on domain   1:    6.39580 elapsed seconds
+Timing for main: time 2017-08-30_04:18:00 on domain   1:    6.40433 elapsed seconds
+Timing for main: time 2017-08-30_04:19:30 on domain   1:    6.40072 elapsed seconds
+Timing for main: time 2017-08-30_04:21:00 on domain   1:    6.40065 elapsed seconds
+Timing for main: time 2017-08-30_04:22:30 on domain   1:    6.42100 elapsed seconds
+Timing for main: time 2017-08-30_04:24:00 on domain   1:    6.37844 elapsed seconds
+Timing for main: time 2017-08-30_04:25:30 on domain   1:    6.37965 elapsed seconds
+Timing for main: time 2017-08-30_04:27:00 on domain   1:    6.39480 elapsed seconds
+Timing for main: time 2017-08-30_04:28:30 on domain   1:    6.44602 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          180   4.000000       4.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_04:30:00 on domain   1:   12.67944 elapsed seconds
+Timing for main: time 2017-08-30_04:31:30 on domain   1:    7.37778 elapsed seconds
+Timing for main: time 2017-08-30_04:33:00 on domain   1:    6.40921 elapsed seconds
+Timing for main: time 2017-08-30_04:34:30 on domain   1:    6.40740 elapsed seconds
+Timing for main: time 2017-08-30_04:36:00 on domain   1:    6.41902 elapsed seconds
+Timing for main: time 2017-08-30_04:37:30 on domain   1:    6.40424 elapsed seconds
+Timing for main: time 2017-08-30_04:39:00 on domain   1:    6.40870 elapsed seconds
+Timing for main: time 2017-08-30_04:40:30 on domain   1:    6.41670 elapsed seconds
+Timing for main: time 2017-08-30_04:42:00 on domain   1:    6.42124 elapsed seconds
+Timing for main: time 2017-08-30_04:43:30 on domain   1:    6.41746 elapsed seconds
+Timing for main: time 2017-08-30_04:45:00 on domain   1:    6.42195 elapsed seconds
+Timing for main: time 2017-08-30_04:46:30 on domain   1:    6.44943 elapsed seconds
+Timing for main: time 2017-08-30_04:48:00 on domain   1:    6.46117 elapsed seconds
+Timing for main: time 2017-08-30_04:49:30 on domain   1:    6.44398 elapsed seconds
+Timing for main: time 2017-08-30_04:51:00 on domain   1:    6.46920 elapsed seconds
+Timing for main: time 2017-08-30_04:52:30 on domain   1:    6.47734 elapsed seconds
+Timing for main: time 2017-08-30_04:54:00 on domain   1:    6.41124 elapsed seconds
+Timing for main: time 2017-08-30_04:55:30 on domain   1:    6.41009 elapsed seconds
+Timing for main: time 2017-08-30_04:57:00 on domain   1:    6.40574 elapsed seconds
+Timing for main: time 2017-08-30_04:58:30 on domain   1:    7.44343 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          200   4.000000       4.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_05:00:00 on domain   1:   12.67910 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_05:00:00 for domain        1:   12.35085 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    18000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_05:00:00
+d01 2017-08-30_05:00:00  Error trying to read metadata
+d01 2017-08-30_05:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_05:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_05:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_05:01:30 on domain   1:   18.42705 elapsed seconds
+Timing for main: time 2017-08-30_05:03:00 on domain   1:    6.41373 elapsed seconds
+Timing for main: time 2017-08-30_05:04:30 on domain   1:    6.41906 elapsed seconds
+Timing for main: time 2017-08-30_05:06:00 on domain   1:    6.41442 elapsed seconds
+Timing for main: time 2017-08-30_05:07:30 on domain   1:    6.41286 elapsed seconds
+Timing for main: time 2017-08-30_05:09:00 on domain   1:    6.42890 elapsed seconds
+Timing for main: time 2017-08-30_05:10:30 on domain   1:    6.41909 elapsed seconds
+Timing for main: time 2017-08-30_05:12:00 on domain   1:    6.42182 elapsed seconds
+Timing for main: time 2017-08-30_05:13:30 on domain   1:    6.42416 elapsed seconds
+Timing for main: time 2017-08-30_05:15:00 on domain   1:    6.42155 elapsed seconds
+Timing for main: time 2017-08-30_05:16:30 on domain   1:    6.41458 elapsed seconds
+Timing for main: time 2017-08-30_05:18:00 on domain   1:    6.45939 elapsed seconds
+Timing for main: time 2017-08-30_05:19:30 on domain   1:    6.50782 elapsed seconds
+Timing for main: time 2017-08-30_05:21:00 on domain   1:    6.46991 elapsed seconds
+Timing for main: time 2017-08-30_05:22:30 on domain   1:    6.43535 elapsed seconds
+Timing for main: time 2017-08-30_05:24:00 on domain   1:    6.48524 elapsed seconds
+Timing for main: time 2017-08-30_05:25:30 on domain   1:    7.49704 elapsed seconds
+Timing for main: time 2017-08-30_05:27:00 on domain   1:    6.43214 elapsed seconds
+Timing for main: time 2017-08-30_05:28:30 on domain   1:    6.43762 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          220   5.000000       5.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_05:30:00 on domain   1:   12.65773 elapsed seconds
+Timing for main: time 2017-08-30_05:31:30 on domain   1:    6.50828 elapsed seconds
+Timing for main: time 2017-08-30_05:33:00 on domain   1:    6.42680 elapsed seconds
+Timing for main: time 2017-08-30_05:34:30 on domain   1:    6.42925 elapsed seconds
+Timing for main: time 2017-08-30_05:36:00 on domain   1:    6.43221 elapsed seconds
+Timing for main: time 2017-08-30_05:37:30 on domain   1:    6.43525 elapsed seconds
+Timing for main: time 2017-08-30_05:39:00 on domain   1:    6.43569 elapsed seconds
+Timing for main: time 2017-08-30_05:40:30 on domain   1:    6.43784 elapsed seconds
+Timing for main: time 2017-08-30_05:42:00 on domain   1:    6.43069 elapsed seconds
+Timing for main: time 2017-08-30_05:43:30 on domain   1:    6.43666 elapsed seconds
+Timing for main: time 2017-08-30_05:45:00 on domain   1:    6.43977 elapsed seconds
+Timing for main: time 2017-08-30_05:46:30 on domain   1:    6.43153 elapsed seconds
+Timing for main: time 2017-08-30_05:48:00 on domain   1:    6.43921 elapsed seconds
+Timing for main: time 2017-08-30_05:49:30 on domain   1:    6.43460 elapsed seconds
+Timing for main: time 2017-08-30_05:51:00 on domain   1:    6.42460 elapsed seconds
+Timing for main: time 2017-08-30_05:52:30 on domain   1:    7.47800 elapsed seconds
+Timing for main: time 2017-08-30_05:54:00 on domain   1:    6.42930 elapsed seconds
+Timing for main: time 2017-08-30_05:55:30 on domain   1:    6.42920 elapsed seconds
+Timing for main: time 2017-08-30_05:57:00 on domain   1:    6.43645 elapsed seconds
+Timing for main: time 2017-08-30_05:58:30 on domain   1:    6.42358 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          240   5.000000       5.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_06:00:00 on domain   1:   12.67804 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_06:00:00 for domain        1:   12.70983 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    21600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_06:00:00
+d01 2017-08-30_06:00:00  Error trying to read metadata
+d01 2017-08-30_06:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_06:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_06:00:00
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_06:00:00  Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    1.61997 elapsed seconds
+Timing for main: time 2017-08-30_06:01:30 on domain   1:   20.42982 elapsed seconds
+Timing for main: time 2017-08-30_06:03:00 on domain   1:    6.43188 elapsed seconds
+Timing for main: time 2017-08-30_06:04:30 on domain   1:    6.43442 elapsed seconds
+Timing for main: time 2017-08-30_06:06:00 on domain   1:    6.42854 elapsed seconds
+Timing for main: time 2017-08-30_06:07:30 on domain   1:    6.43325 elapsed seconds
+Timing for main: time 2017-08-30_06:09:00 on domain   1:    6.44158 elapsed seconds
+Timing for main: time 2017-08-30_06:10:30 on domain   1:    6.43332 elapsed seconds
+Timing for main: time 2017-08-30_06:12:00 on domain   1:    6.44687 elapsed seconds
+Timing for main: time 2017-08-30_06:13:30 on domain   1:    6.43468 elapsed seconds
+Timing for main: time 2017-08-30_06:15:00 on domain   1:    6.44242 elapsed seconds
+Timing for main: time 2017-08-30_06:16:30 on domain   1:    6.43788 elapsed seconds
+Timing for main: time 2017-08-30_06:18:00 on domain   1:    6.43048 elapsed seconds
+Timing for main: time 2017-08-30_06:19:30 on domain   1:    7.43099 elapsed seconds
+Timing for main: time 2017-08-30_06:21:00 on domain   1:    6.45192 elapsed seconds
+Timing for main: time 2017-08-30_06:22:30 on domain   1:    6.45149 elapsed seconds
+Timing for main: time 2017-08-30_06:24:00 on domain   1:    6.43261 elapsed seconds
+Timing for main: time 2017-08-30_06:25:30 on domain   1:    6.44343 elapsed seconds
+Timing for main: time 2017-08-30_06:27:00 on domain   1:    6.46307 elapsed seconds
+Timing for main: time 2017-08-30_06:28:30 on domain   1:    6.45208 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          260   6.000000       6.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_06:30:00 on domain   1:   12.61942 elapsed seconds
+Timing for main: time 2017-08-30_06:31:30 on domain   1:    7.30331 elapsed seconds
+Timing for main: time 2017-08-30_06:33:00 on domain   1:    6.42938 elapsed seconds
+Timing for main: time 2017-08-30_06:34:30 on domain   1:    6.45205 elapsed seconds
+Timing for main: time 2017-08-30_06:36:00 on domain   1:    6.43512 elapsed seconds
+Timing for main: time 2017-08-30_06:37:30 on domain   1:    6.45930 elapsed seconds
+Timing for main: time 2017-08-30_06:39:00 on domain   1:    6.45489 elapsed seconds
+Timing for main: time 2017-08-30_06:40:30 on domain   1:    6.45604 elapsed seconds
+Timing for main: time 2017-08-30_06:42:00 on domain   1:    6.46025 elapsed seconds
+Timing for main: time 2017-08-30_06:43:30 on domain   1:    6.45866 elapsed seconds
+Timing for main: time 2017-08-30_06:45:00 on domain   1:    6.46431 elapsed seconds
+Timing for main: time 2017-08-30_06:46:30 on domain   1:    7.97707 elapsed seconds
+Timing for main: time 2017-08-30_06:48:00 on domain   1:    6.44971 elapsed seconds
+Timing for main: time 2017-08-30_06:49:30 on domain   1:    6.46037 elapsed seconds
+Timing for main: time 2017-08-30_06:51:00 on domain   1:    6.47953 elapsed seconds
+Timing for main: time 2017-08-30_06:52:30 on domain   1:    6.44184 elapsed seconds
+Timing for main: time 2017-08-30_06:54:00 on domain   1:    6.48279 elapsed seconds
+Timing for main: time 2017-08-30_06:55:30 on domain   1:    6.46243 elapsed seconds
+Timing for main: time 2017-08-30_06:57:00 on domain   1:    6.45871 elapsed seconds
+Timing for main: time 2017-08-30_06:58:30 on domain   1:    6.47651 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          280   6.000000       6.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_07:00:00 on domain   1:   12.67581 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_07:00:00 for domain        1:   19.99431 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    25200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_07:00:00
+d01 2017-08-30_07:00:00  Error trying to read metadata
+d01 2017-08-30_07:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_07:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_07:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_07:01:30 on domain   1:   26.05309 elapsed seconds
+Timing for main: time 2017-08-30_07:03:00 on domain   1:    7.04794 elapsed seconds
+Timing for main: time 2017-08-30_07:04:30 on domain   1:    6.70298 elapsed seconds
+Timing for main: time 2017-08-30_07:06:00 on domain   1:    6.63483 elapsed seconds
+Timing for main: time 2017-08-30_07:07:30 on domain   1:    6.62246 elapsed seconds
+Timing for main: time 2017-08-30_07:09:00 on domain   1:    6.61923 elapsed seconds
+Timing for main: time 2017-08-30_07:10:30 on domain   1:    6.60394 elapsed seconds
+Timing for main: time 2017-08-30_07:12:00 on domain   1:    6.61620 elapsed seconds
+Timing for main: time 2017-08-30_07:13:30 on domain   1:    8.77609 elapsed seconds
+Timing for main: time 2017-08-30_07:15:00 on domain   1:    6.62095 elapsed seconds
+Timing for main: time 2017-08-30_07:16:30 on domain   1:    6.56216 elapsed seconds
+Timing for main: time 2017-08-30_07:18:00 on domain   1:    6.59690 elapsed seconds
+Timing for main: time 2017-08-30_07:19:30 on domain   1:    6.59124 elapsed seconds
+Timing for main: time 2017-08-30_07:21:00 on domain   1:    6.59597 elapsed seconds
+Timing for main: time 2017-08-30_07:22:30 on domain   1:    6.58124 elapsed seconds
+Timing for main: time 2017-08-30_07:24:00 on domain   1:    6.60334 elapsed seconds
+Timing for main: time 2017-08-30_07:25:30 on domain   1:    6.59724 elapsed seconds
+Timing for main: time 2017-08-30_07:27:00 on domain   1:    6.57689 elapsed seconds
+Timing for main: time 2017-08-30_07:28:30 on domain   1:    6.58415 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          300   7.000000       7.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_07:30:00 on domain   1:   12.80299 elapsed seconds
+Timing for main: time 2017-08-30_07:31:30 on domain   1:   17.11596 elapsed seconds
+Timing for main: time 2017-08-30_07:33:00 on domain   1:    6.83503 elapsed seconds
+Timing for main: time 2017-08-30_07:34:30 on domain   1:    6.51970 elapsed seconds
+Timing for main: time 2017-08-30_07:36:00 on domain   1:    6.47396 elapsed seconds
+Timing for main: time 2017-08-30_07:37:30 on domain   1:    6.50133 elapsed seconds
+Timing for main: time 2017-08-30_07:39:00 on domain   1:    6.47359 elapsed seconds
+Timing for main: time 2017-08-30_07:40:30 on domain   1:    8.59516 elapsed seconds
+Timing for main: time 2017-08-30_07:42:00 on domain   1:    6.47808 elapsed seconds
+Timing for main: time 2017-08-30_07:43:30 on domain   1:    6.47382 elapsed seconds
+Timing for main: time 2017-08-30_07:45:00 on domain   1:    6.48090 elapsed seconds
+Timing for main: time 2017-08-30_07:46:30 on domain   1:    6.48950 elapsed seconds
+Timing for main: time 2017-08-30_07:48:00 on domain   1:    6.53208 elapsed seconds
+Timing for main: time 2017-08-30_07:49:30 on domain   1:    6.47213 elapsed seconds
+Timing for main: time 2017-08-30_07:51:00 on domain   1:    6.48046 elapsed seconds
+Timing for main: time 2017-08-30_07:52:30 on domain   1:    6.50015 elapsed seconds
+Timing for main: time 2017-08-30_07:54:00 on domain   1:    6.48570 elapsed seconds
+Timing for main: time 2017-08-30_07:55:30 on domain   1:    6.50088 elapsed seconds
+Timing for main: time 2017-08-30_07:57:00 on domain   1:    6.48291 elapsed seconds
+Timing for main: time 2017-08-30_07:58:30 on domain   1:    6.50249 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          320   7.000000       7.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_08:00:00 on domain   1:   12.68998 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_08:00:00 for domain        1:   23.55262 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    28800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_08:00:00
+d01 2017-08-30_08:00:00  Error trying to read metadata
+d01 2017-08-30_08:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_08:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_08:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_08:01:30 on domain   1:   29.63482 elapsed seconds
+Timing for main: time 2017-08-30_08:03:00 on domain   1:    7.21007 elapsed seconds
+Timing for main: time 2017-08-30_08:04:30 on domain   1:    6.94347 elapsed seconds
+Timing for main: time 2017-08-30_08:06:00 on domain   1:    6.88599 elapsed seconds
+Timing for main: time 2017-08-30_08:07:30 on domain   1:    9.18871 elapsed seconds
+Timing for main: time 2017-08-30_08:09:00 on domain   1:    6.87697 elapsed seconds
+Timing for main: time 2017-08-30_08:10:30 on domain   1:    6.83150 elapsed seconds
+Timing for main: time 2017-08-30_08:12:00 on domain   1:    6.85395 elapsed seconds
+Timing for main: time 2017-08-30_08:13:30 on domain   1:    6.83038 elapsed seconds
+Timing for main: time 2017-08-30_08:15:00 on domain   1:    6.83569 elapsed seconds
+Timing for main: time 2017-08-30_08:16:30 on domain   1:    6.85873 elapsed seconds
+Timing for main: time 2017-08-30_08:18:00 on domain   1:    6.81109 elapsed seconds
+Timing for main: time 2017-08-30_08:19:30 on domain   1:    6.84145 elapsed seconds
+Timing for main: time 2017-08-30_08:21:00 on domain   1:    6.82614 elapsed seconds
+Timing for main: time 2017-08-30_08:22:30 on domain   1:    6.85569 elapsed seconds
+Timing for main: time 2017-08-30_08:24:00 on domain   1:    6.82804 elapsed seconds
+Timing for main: time 2017-08-30_08:25:30 on domain   1:    6.83031 elapsed seconds
+Timing for main: time 2017-08-30_08:27:00 on domain   1:    6.81148 elapsed seconds
+Timing for main: time 2017-08-30_08:28:30 on domain   1:    6.82783 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          340   8.000000       8.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_08:30:00 on domain   1:   13.07533 elapsed seconds
+Timing for main: time 2017-08-30_08:31:30 on domain   1:   19.14172 elapsed seconds
+Timing for main: time 2017-08-30_08:33:00 on domain   1:    7.34020 elapsed seconds
+Timing for main: time 2017-08-30_08:34:30 on domain   1:    9.19769 elapsed seconds
+Timing for main: time 2017-08-30_08:36:00 on domain   1:    6.66327 elapsed seconds
+Timing for main: time 2017-08-30_08:37:30 on domain   1:    6.70948 elapsed seconds
+Timing for main: time 2017-08-30_08:39:00 on domain   1:    6.72352 elapsed seconds
+Timing for main: time 2017-08-30_08:40:30 on domain   1:    6.68283 elapsed seconds
+Timing for main: time 2017-08-30_08:42:00 on domain   1:    6.68329 elapsed seconds
+Timing for main: time 2017-08-30_08:43:30 on domain   1:    6.69502 elapsed seconds
+Timing for main: time 2017-08-30_08:45:00 on domain   1:    6.67096 elapsed seconds
+Timing for main: time 2017-08-30_08:46:30 on domain   1:    6.69900 elapsed seconds
+Timing for main: time 2017-08-30_08:48:00 on domain   1:    6.68055 elapsed seconds
+Timing for main: time 2017-08-30_08:49:30 on domain   1:    6.69299 elapsed seconds
+Timing for main: time 2017-08-30_08:51:00 on domain   1:    6.69824 elapsed seconds
+Timing for main: time 2017-08-30_08:52:30 on domain   1:    6.69045 elapsed seconds
+Timing for main: time 2017-08-30_08:54:00 on domain   1:    6.71386 elapsed seconds
+Timing for main: time 2017-08-30_08:55:30 on domain   1:    6.69827 elapsed seconds
+Timing for main: time 2017-08-30_08:57:00 on domain   1:    6.69803 elapsed seconds
+Timing for main: time 2017-08-30_08:58:30 on domain   1:    6.70543 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          360   8.000000       8.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_09:00:00 on domain   1:   12.94781 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_09:00:00 for domain        1:   25.77951 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    32400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_09:00:00
+d01 2017-08-30_09:00:00  Error trying to read metadata
+d01 2017-08-30_09:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_09:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_09:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_09:01:30 on domain   1:   34.37895 elapsed seconds
+Timing for main: time 2017-08-30_09:03:00 on domain   1:    7.19946 elapsed seconds
+Timing for main: time 2017-08-30_09:04:30 on domain   1:    6.87109 elapsed seconds
+Timing for main: time 2017-08-30_09:06:00 on domain   1:    6.80581 elapsed seconds
+Timing for main: time 2017-08-30_09:07:30 on domain   1:    6.78607 elapsed seconds
+Timing for main: time 2017-08-30_09:09:00 on domain   1:    6.77148 elapsed seconds
+Timing for main: time 2017-08-30_09:10:30 on domain   1:    6.75672 elapsed seconds
+Timing for main: time 2017-08-30_09:12:00 on domain   1:    6.77456 elapsed seconds
+Timing for main: time 2017-08-30_09:13:30 on domain   1:    6.76300 elapsed seconds
+Timing for main: time 2017-08-30_09:15:00 on domain   1:    6.75038 elapsed seconds
+Timing for main: time 2017-08-30_09:16:30 on domain   1:    6.74952 elapsed seconds
+Timing for main: time 2017-08-30_09:18:00 on domain   1:    6.75987 elapsed seconds
+Timing for main: time 2017-08-30_09:19:30 on domain   1:    6.75781 elapsed seconds
+Timing for main: time 2017-08-30_09:21:00 on domain   1:    6.76868 elapsed seconds
+Timing for main: time 2017-08-30_09:22:30 on domain   1:    6.76806 elapsed seconds
+Timing for main: time 2017-08-30_09:24:00 on domain   1:    6.75646 elapsed seconds
+Timing for main: time 2017-08-30_09:25:30 on domain   1:    6.75099 elapsed seconds
+Timing for main: time 2017-08-30_09:27:00 on domain   1:    6.75440 elapsed seconds
+Timing for main: time 2017-08-30_09:28:30 on domain   1:    9.32217 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          380   9.000000       9.487500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_09:30:00 on domain   1:   13.02274 elapsed seconds
+Timing for main: time 2017-08-30_09:31:30 on domain   1:   20.57201 elapsed seconds
+Timing for main: time 2017-08-30_09:33:00 on domain   1:    7.21886 elapsed seconds
+Timing for main: time 2017-08-30_09:34:30 on domain   1:    6.83116 elapsed seconds
+Timing for main: time 2017-08-30_09:36:00 on domain   1:    6.78346 elapsed seconds
+Timing for main: time 2017-08-30_09:37:30 on domain   1:    6.76467 elapsed seconds
+Timing for main: time 2017-08-30_09:39:00 on domain   1:    6.76062 elapsed seconds
+Timing for main: time 2017-08-30_09:40:30 on domain   1:    6.76471 elapsed seconds
+Timing for main: time 2017-08-30_09:42:00 on domain   1:    6.75204 elapsed seconds
+Timing for main: time 2017-08-30_09:43:30 on domain   1:    6.73893 elapsed seconds
+Timing for main: time 2017-08-30_09:45:00 on domain   1:    6.73352 elapsed seconds
+Timing for main: time 2017-08-30_09:46:30 on domain   1:    6.73517 elapsed seconds
+Timing for main: time 2017-08-30_09:48:00 on domain   1:    6.73633 elapsed seconds
+Timing for main: time 2017-08-30_09:49:30 on domain   1:    6.76564 elapsed seconds
+Timing for main: time 2017-08-30_09:51:00 on domain   1:    6.72853 elapsed seconds
+Timing for main: time 2017-08-30_09:52:30 on domain   1:    6.72752 elapsed seconds
+Timing for main: time 2017-08-30_09:54:00 on domain   1:    6.75200 elapsed seconds
+Timing for main: time 2017-08-30_09:55:30 on domain   1:    9.30345 elapsed seconds
+Timing for main: time 2017-08-30_09:57:00 on domain   1:    6.73978 elapsed seconds
+Timing for main: time 2017-08-30_09:58:30 on domain   1:    6.71319 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          400   9.000000       9.987500
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_10:00:00 on domain   1:   13.02847 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_10:00:00 for domain        1:   24.89820 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    36000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_10:00:00
+d01 2017-08-30_10:00:00  Error trying to read metadata
+d01 2017-08-30_10:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_10:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_10:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_10:01:30 on domain   1:   31.07628 elapsed seconds
+Timing for main: time 2017-08-30_10:03:00 on domain   1:    7.34016 elapsed seconds
+Timing for main: time 2017-08-30_10:04:30 on domain   1:    7.02415 elapsed seconds
+Timing for main: time 2017-08-30_10:06:00 on domain   1:    6.94893 elapsed seconds
+Timing for main: time 2017-08-30_10:07:30 on domain   1:    6.94002 elapsed seconds
+Timing for main: time 2017-08-30_10:09:00 on domain   1:    6.92510 elapsed seconds
+Timing for main: time 2017-08-30_10:10:30 on domain   1:    6.90818 elapsed seconds
+Timing for main: time 2017-08-30_10:12:00 on domain   1:    6.91582 elapsed seconds
+Timing for main: time 2017-08-30_10:13:30 on domain   1:    6.93630 elapsed seconds
+Timing for main: time 2017-08-30_10:15:00 on domain   1:    6.92589 elapsed seconds
+Timing for main: time 2017-08-30_10:16:30 on domain   1:    6.92873 elapsed seconds
+Timing for main: time 2017-08-30_10:18:00 on domain   1:    6.92448 elapsed seconds
+Timing for main: time 2017-08-30_10:19:30 on domain   1:    6.91935 elapsed seconds
+Timing for main: time 2017-08-30_10:21:00 on domain   1:    6.92056 elapsed seconds
+Timing for main: time 2017-08-30_10:22:30 on domain   1:    9.45708 elapsed seconds
+Timing for main: time 2017-08-30_10:24:00 on domain   1:    6.91067 elapsed seconds
+Timing for main: time 2017-08-30_10:25:30 on domain   1:    6.92386 elapsed seconds
+Timing for main: time 2017-08-30_10:27:00 on domain   1:    6.92731 elapsed seconds
+Timing for main: time 2017-08-30_10:28:30 on domain   1:    6.94265 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          420   10.00000       10.48750
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_10:30:00 on domain   1:   13.27354 elapsed seconds
+Timing for main: time 2017-08-30_10:31:30 on domain   1:   19.79283 elapsed seconds
+Timing for main: time 2017-08-30_10:33:00 on domain   1:    7.19815 elapsed seconds
+Timing for main: time 2017-08-30_10:34:30 on domain   1:    6.84863 elapsed seconds
+Timing for main: time 2017-08-30_10:36:00 on domain   1:    6.86621 elapsed seconds
+Timing for main: time 2017-08-30_10:37:30 on domain   1:    6.88473 elapsed seconds
+Timing for main: time 2017-08-30_10:39:00 on domain   1:    6.85106 elapsed seconds
+Timing for main: time 2017-08-30_10:40:30 on domain   1:    6.87984 elapsed seconds
+Timing for main: time 2017-08-30_10:42:00 on domain   1:    6.85969 elapsed seconds
+Timing for main: time 2017-08-30_10:43:30 on domain   1:    6.85101 elapsed seconds
+Timing for main: time 2017-08-30_10:45:00 on domain   1:    6.87357 elapsed seconds
+Timing for main: time 2017-08-30_10:46:30 on domain   1:    6.86699 elapsed seconds
+Timing for main: time 2017-08-30_10:48:00 on domain   1:    6.89303 elapsed seconds
+Timing for main: time 2017-08-30_10:49:30 on domain   1:    9.38606 elapsed seconds
+Timing for main: time 2017-08-30_10:51:00 on domain   1:    6.88521 elapsed seconds
+Timing for main: time 2017-08-30_10:52:30 on domain   1:    6.85569 elapsed seconds
+Timing for main: time 2017-08-30_10:54:00 on domain   1:    6.85463 elapsed seconds
+Timing for main: time 2017-08-30_10:55:30 on domain   1:    6.89468 elapsed seconds
+Timing for main: time 2017-08-30_10:57:00 on domain   1:    6.84735 elapsed seconds
+Timing for main: time 2017-08-30_10:58:30 on domain   1:    6.84870 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          440   10.00000       10.98750
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_11:00:00 on domain   1:   13.22015 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_11:00:00 for domain        1:   25.87622 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    39600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_11:00:00
+d01 2017-08-30_11:00:00  Error trying to read metadata
+d01 2017-08-30_11:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_11:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_11:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2017-08-30_11:01:30 on domain   1:   32.08200 elapsed seconds
+Timing for main: time 2017-08-30_11:03:00 on domain   1:    7.55343 elapsed seconds
+Timing for main: time 2017-08-30_11:04:30 on domain   1:    7.01180 elapsed seconds
+Timing for main: time 2017-08-30_11:06:00 on domain   1:    6.91201 elapsed seconds
+Timing for main: time 2017-08-30_11:07:30 on domain   1:    6.89196 elapsed seconds
+Timing for main: time 2017-08-30_11:09:00 on domain   1:    6.93279 elapsed seconds
+Timing for main: time 2017-08-30_11:10:30 on domain   1:    6.91242 elapsed seconds
+Timing for main: time 2017-08-30_11:12:00 on domain   1:    6.90870 elapsed seconds
+Timing for main: time 2017-08-30_11:13:30 on domain   1:    6.91176 elapsed seconds
+Timing for main: time 2017-08-30_11:15:00 on domain   1:    6.92097 elapsed seconds
+Timing for main: time 2017-08-30_11:16:30 on domain   1:    9.47363 elapsed seconds
+Timing for main: time 2017-08-30_11:18:00 on domain   1:    6.91350 elapsed seconds
+Timing for main: time 2017-08-30_11:19:30 on domain   1:    6.92984 elapsed seconds
+Timing for main: time 2017-08-30_11:21:00 on domain   1:    6.91449 elapsed seconds
+Timing for main: time 2017-08-30_11:22:30 on domain   1:    6.86501 elapsed seconds
+Timing for main: time 2017-08-30_11:24:00 on domain   1:    6.91650 elapsed seconds
+Timing for main: time 2017-08-30_11:25:30 on domain   1:    6.92219 elapsed seconds
+Timing for main: time 2017-08-30_11:27:00 on domain   1:    6.90461 elapsed seconds
+Timing for main: time 2017-08-30_11:28:30 on domain   1:    6.91570 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          460   11.00000       11.48750
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_11:30:00 on domain   1:   13.34676 elapsed seconds
+Timing for main: time 2017-08-30_11:31:30 on domain   1:   20.12007 elapsed seconds
+Timing for main: time 2017-08-30_11:33:00 on domain   1:    7.52011 elapsed seconds
+Timing for main: time 2017-08-30_11:34:30 on domain   1:    6.94615 elapsed seconds
+Timing for main: time 2017-08-30_11:36:00 on domain   1:    6.93534 elapsed seconds
+Timing for main: time 2017-08-30_11:37:30 on domain   1:    6.92045 elapsed seconds
+Timing for main: time 2017-08-30_11:39:00 on domain   1:    6.93537 elapsed seconds
+Timing for main: time 2017-08-30_11:40:30 on domain   1:    6.90687 elapsed seconds
+Timing for main: time 2017-08-30_11:42:00 on domain   1:    6.92133 elapsed seconds
+Timing for main: time 2017-08-30_11:43:30 on domain   1:    9.52126 elapsed seconds
+Timing for main: time 2017-08-30_11:45:00 on domain   1:    6.90280 elapsed seconds
+Timing for main: time 2017-08-30_11:46:30 on domain   1:    6.92442 elapsed seconds
+Timing for main: time 2017-08-30_11:48:00 on domain   1:    6.89094 elapsed seconds
+Timing for main: time 2017-08-30_11:49:30 on domain   1:    6.94193 elapsed seconds
+Timing for main: time 2017-08-30_11:51:00 on domain   1:    6.91930 elapsed seconds
+Timing for main: time 2017-08-30_11:52:30 on domain   1:    6.92677 elapsed seconds
+Timing for main: time 2017-08-30_11:54:00 on domain   1:    6.91824 elapsed seconds
+Timing for main: time 2017-08-30_11:55:30 on domain   1:    6.92275 elapsed seconds
+Timing for main: time 2017-08-30_11:57:00 on domain   1:    6.93185 elapsed seconds
+Timing for main: time 2017-08-30_11:58:30 on domain   1:    6.90191 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          480   11.00000       11.98750
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_12:00:00 on domain   1:   13.40994 elapsed seconds
+Timing for Writing wrfout_d01_2017-08-30_12:00:00 for domain        1:   25.36892 elapsed seconds
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_12z_d01
+ HOURLY EMISSIONS UPDATE TIME    43200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2017-08-30_12:00:00
+d01 2017-08-30_12:00:00  Error trying to read metadata
+d01 2017-08-30_12:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_12:00:00  Input data is acceptable to use: wrffirechemi_d01_2017-08-30_12:00:00
+**WARNING** Time in input file not being checked **WARNING**
+d01 2017-08-30_12:00:00  Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    1.55611 elapsed seconds
+Timing for main: time 2017-08-30_12:01:30 on domain   1:   33.14658 elapsed seconds
+Timing for main: time 2017-08-30_12:03:00 on domain   1:    7.32891 elapsed seconds
+Timing for main: time 2017-08-30_12:04:30 on domain   1:    6.87206 elapsed seconds
+Timing for main: time 2017-08-30_12:06:00 on domain   1:    6.82722 elapsed seconds
+Timing for main: time 2017-08-30_12:07:30 on domain   1:    6.84950 elapsed seconds
+Timing for main: time 2017-08-30_12:09:00 on domain   1:    6.85427 elapsed seconds
+Timing for main: time 2017-08-30_12:10:30 on domain   1:    9.42662 elapsed seconds
+Timing for main: time 2017-08-30_12:12:00 on domain   1:    6.85142 elapsed seconds
+Timing for main: time 2017-08-30_12:13:30 on domain   1:    6.84594 elapsed seconds
+Timing for main: time 2017-08-30_12:15:00 on domain   1:    6.85203 elapsed seconds
+Timing for main: time 2017-08-30_12:16:30 on domain   1:    6.88160 elapsed seconds
+Timing for main: time 2017-08-30_12:18:00 on domain   1:    6.82923 elapsed seconds
+Timing for main: time 2017-08-30_12:19:30 on domain   1:    6.85382 elapsed seconds
+Timing for main: time 2017-08-30_12:21:00 on domain   1:    6.83894 elapsed seconds
+Timing for main: time 2017-08-30_12:22:30 on domain   1:    6.84371 elapsed seconds
+Timing for main: time 2017-08-30_12:24:00 on domain   1:    6.83803 elapsed seconds
+Timing for main: time 2017-08-30_12:25:30 on domain   1:    6.84635 elapsed seconds
+Timing for main: time 2017-08-30_12:27:00 on domain   1:    6.87309 elapsed seconds
+Timing for main: time 2017-08-30_12:28:30 on domain   1:    6.82266 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          500   12.00000       12.48750
+ photolysis_driver: called for domain            1
+no aerosols initialization yet
+Timing for main: time 2017-08-30_12:30:00 on domain   1:   13.31435 elapsed seconds
+Timing for main: time 2017-08-30_12:31:30 on domain   1:   19.99124 elapsed seconds
+Timing for main: time 2017-08-30_12:33:00 on domain   1:    7.19532 elapsed seconds
+Timing for main: time 2017-08-30_12:34:30 on domain   1:    6.82916 elapsed seconds
+Timing for main: time 2017-08-30_12:36:00 on domain   1:    6.84618 elapsed seconds
+Timing for main: time 2017-08-30_12:37:30 on domain   1:    9.47278 elapsed seconds
+Timing for main: time 2017-08-30_12:39:00 on domain   1:    6.85808 elapsed seconds
+Timing for main: time 2017-08-30_12:40:30 on domain   1:    6.84106 elapsed seconds
+Timing for main: time 2017-08-30_12:42:00 on domain   1:    6.87340 elapsed seconds
+Timing for main: time 2017-08-30_12:43:30 on domain   1:    6.81674 elapsed seconds
+Timing for main: time 2017-08-30_12:45:00 on domain   1:    6.83610 elapsed seconds
+Timing for main: time 2017-08-30_12:46:30 on domain   1:    6.84372 elapsed seconds
+Timing for main: time 2017-08-30_12:48:00 on domain   1:    6.82258 elapsed seconds
+Timing for main: time 2017-08-30_12:49:30 on domain   1:    6.84697 elapsed seconds
+Timing for main: time 2017-08-30_12:51:00 on domain   1:    6.84560 elapsed seconds
+Timing for main: time 2017-08-30_12:52:30 on domain   1:    6.81449 elapsed seconds
+Timing for main: time 2017-08-30_12:54:00 on domain   1:    6.85037 elapsed seconds
+Timing for main: time 2017-08-30_12:55:30 on domain   1:    6.82387 elapsed seconds
+Timing for main: time 2017-08-30_12:57:00 on domain   1:    6.84356 elapsed seconds
+Timing for main: time 2017-08-30_12:58:30 on domain   1:    6.80525 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          520   12.00000       12.98750
+ photolysis_driver: called for domain            1
+no aerosols initialization yet

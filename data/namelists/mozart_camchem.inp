@@ -4,7 +4,7 @@ do_ic   = .true.
 domain  = 1
 dir_wrf = '/home/alejandro/WRF-4.2.1/test/em_real/'
 dir_moz = '/home/alejandro/data/cbc/camchem/'
-fn_moz  = 'camchem-20220808151436463722.nc'
+fn_moz  = 'camchem-20221022080238333648.nc'
 moz_var_suffix = ''
 !def_missing_var = .true.
 

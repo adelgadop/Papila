@@ -50,7 +50,7 @@ debug_level                         = 0
 /
 
 &domains
-time_step                           = 80,                 !  6*DX or 3*DX; DX in km
+time_step                           = 90,                 !  6*DX or 3*DX; DX in km
 time_step_fract_num                 = 0,
 time_step_fract_den                 = 1,
 max_dom                             = 1,
@@ -78,12 +78,12 @@ progn                               = 1,     1,     1,
 naer                                = 1e9
 ra_lw_physics                       = 4,    4,     4,   1,
 ra_sw_physics                       = 4,    4,     4,   1,
-radt                                = 30,   9,     3,   5,
+radt                                = 27,   9,     3,   5,
 sf_sfclay_physics                   = 1,    1,     1,   1,     ! 1=Monin-Obukhov
 sf_surface_physics                  = 2,    2,     2,   2,     ! 2=Noah
 bl_pbl_physics                      = 1,    1,     1,   1,     ! 1=YSU scheme
 bldt                                = 0,    0,     0,   0,
-cu_physics                          = 5,    5,     0,   1,     ! 5=Grell3D; 6=Tiedtke
+cu_physics                          = 6,    5,     0,   1,     ! 5=Grell3D; 6=Tiedtke
 cudt                                = 0,    0,     0,   0,
 cu_diag                             = 0,    0,     0,
 isfflx                              = 1,
@@ -139,7 +139,7 @@ kemit                               = 1,
 chem_opt                            = 112,  112,   112,  112,          ! MOZCART=112, CBMZ=6, MOZART-MOSAIC=201
 bioemdt                             = 30,    30,    30,    5,
 photdt                              = 30,    30,    30,    5,
-chemdt                              = 2.0,  1.5,    0.,  1.5,          ! before = 2 for CBMZ
+chemdt                              = 0.,  1.5,    0.,  1.5,          ! before = 2 for CBMZ
 io_style_emissions                  = 1,                               ! 1 =  si usamos 00z y 12z wrfchemi
 emiss_inpt_opt                      = 111,  111,   111,  111,          ! MOZART=111, CBMZ=102
 emiss_opt                           = 8,    8,     8,    8,          ! CBMZ/MOSAIC=4, MOZART=7, GOCART=8, MOZART+Aerosols=10 
