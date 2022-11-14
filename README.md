@@ -29,6 +29,63 @@ Prediction of Air Pollution in Latin America and the Caribbean (PAPILA) is a res
 8. MOZBC using CAM-Chem as chemical initial and boundary conditions for wrfbdy_d01, wrfinput_d01, wrfinput_d02. It is necessary to link "met_em" files before to run MOZBC: `./mozbc < mozart_camchem.inp` which domain 01 is `do_bc = .true.` and `do_ic = .true.`, domain 02 is `do_bc = .false.` and `do_ic = .true.`.
 9. Run WRF-Chem: `mpirun -np 64 -machinefile host_jano ./wrf.exe &`
 
+## Adding variable into `wrfout`
+
+To write a variable into the `wrfout`file, we need to modify the file **`registry.chem`** and then recompile WRF-Chem.
+In this example, we'll modify the **`registry.chem`** to add  the photolysis rate.
+More information (or at least, the guide we followed) is located [here](http://fengjm.ac.cn/climatemodels/wrf-registry.pdf).
+
+1. The `registry.chem` is located in the `Registry` folder, which at the same time is located in your `WRF` folder.
+
+```
+.
+├── arch
+├── chem
+├── clean
+├── compile
+├── configure
+├── configure.wrf
+├── configure.wrf.backup
+├── doc
+├── dyn_em
+├── dyn_nmm
+├── external
+├── frame
+├── hydro
+├── inc
+├── LICENSE.txt
+├── main
+├── Makefile
+├── phys
+├── README
+├── README.md
+├── Registry    <- Look here!
+├── run
+├── share
+├── test
+├── tools
+├── var
+└── wrftladj
+```
+
+2. By using your preferred editor, go to the variable you want to save. On this example let's try with **`PHOTR2`** (O31D Photolysis Rate) and **`PHOTR3`**  (O33P Photolysis Rate).
+3. In the left column of the variable name, just add the **`h`** close to the **r**, so it results in **`rh`**. Sometimes, you'll fine that there is a **`-`**, replace it with **`rh`** to write it in the wrfout.
+
+From this:
+```
+# photolysis rates
+state    real  ph_o31d         ikj     misc        1         -      r        "PHOTR2"                "O31D Photolysis Rate" "min{-1}"
+state    real  ph_o33p         ikj     misc        1         -      r        "PHOTR3"                "O33P Photolysis Rate" "min{-1}"
+```
+To this:
+```
+# photolysis rates
+state    real  ph_o31d         ikj     misc        1         -      rh        "PHOTR2"                "O31D Photolysis Rate" "min{-1}"
+state    real  ph_o33p         ikj     misc        1         -      rh        "PHOTR3"                "O33P Photolysis Rate" "min{-1}"
+```
+4. Finally, you need to recompile WRF-Chem and run the model.
+
+
 ## Git
 - create .gitignore and exclude heavy data (input emissions, met, chemical IC/BC and WRF-Chem output)
 - `git status` to see changes
