@@ -1,9 +1,9 @@
 &control
 
 domains = 1,
-start_lai_mnth = 7,
-end_lai_mnth   = 10,
-wrf_dir   = '/home/alejandro/WRF-4.2.1/test/em_real',
+start_lai_mnth = 6,
+end_lai_mnth   = 8,
+wrf_dir   = '/home/alejandro/WRFV4.4.1/test/em_real',
 megan_dir = '/home/alejandro/data/megan'
 
 /

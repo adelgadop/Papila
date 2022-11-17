@@ -3,15 +3,15 @@ run_days                            = 0,
 run_hours                           = 0,
 run_minutes                         = 0,
 run_seconds                         = 0,
-start_year                          = 2017, 2017, 2017, 2017,
-start_month                         = 08,     08,   08,   08,
-start_day                           = 30,     30,   30,   30,
+start_year                          = 2019, 2019, 2017, 2017,
+start_month                         = 06,     06,   08,   08,
+start_day                           = 25,     25,   30,   30,
 start_hour                          = 00,     00,   00,   00,
 start_minute                        = 00,     00,   00,   00,
 start_second                        = 00,     00,   00,   00,
-end_year                            = 2017, 2017, 2017, 2017,
-end_month                           = 09,     09,  09,  09,
-end_day                             = 01,     01,   10,    10,
+end_year                            = 2019, 2019, 2017, 2017,
+end_month                           = 06,     06,  09,  09,
+end_day                             = 27,     27,   10,    10,
 end_hour                            = 00,     00,   00,   00,
 end_minute                          = 00,     00,   00,    00,
 end_second                          = 00,     00,   00,  00,
@@ -56,11 +56,17 @@ time_step_fract_den                 = 1,
 max_dom                             = 1,
 e_we                                = 350,    151,   151,    151,
 e_sn                                = 350,    100,   211,    151,
-e_vert                              = 35,      35,    35,     35,
+e_vert                              = 41,      41,    35,     35,
 dx                                  = 27000,  9000,  3000,    1000,
 dy                                  = 27000,  9000,  3000,    1000,
 p_top_requested                     = 5000,
-num_metgrid_levels                  = 32,
+eta_levels                          = 1.00, 0.99, 0.985, 0.974, 0.961, 0.945, 0.925,
+                                      0.90, 0.87, 0.838, 0.801, 0.758, 0.713, 0.671,
+                                      0.63, 0.59, 0.556, 0.522, 0.489, 0.458, 0.429,
+                                      0.40, 0.37, 0.351, 0.326, 0.304, 0.283, 0.263,
+                                      0.24, 0.22, 0.200, 0.180, 0.150, 0.120, 0.100,
+                                      0.09, 0.05, 0.020, 0.012, 0.006, 0.000,
+num_metgrid_levels                  = 34,
 num_metgrid_soil_levels             = 4,
 grid_id                             = 1,     2,     3,    4,
 parent_id                           = 1,     1,     2,    2,
@@ -69,6 +75,7 @@ j_parent_start                      = 1,   113,    65,   70,
 parent_grid_ratio                   = 1,     3,     5,    5,
 parent_time_step_ratio              = 1,     3,     5,    5,
 feedback                            = 1,                        ! 1=one-way               
+smooth_cg_topo                      = .true.,
 smooth_option                       = 0
 /
 
@@ -83,7 +90,7 @@ sf_sfclay_physics                   = 1,    1,     1,   1,     ! 1=Monin-Obukhov
 sf_surface_physics                  = 2,    2,     2,   2,     ! 2=Noah
 bl_pbl_physics                      = 1,    1,     1,   1,     ! 1=YSU scheme
 bldt                                = 0,    0,     0,   0,
-cu_physics                          = 6,    5,     0,   1,     ! 5=Grell3D; 6=Tiedtke
+cu_physics                          = 5,    5,     0,   1,     ! 5=Grell3D; 6=Tiedtke
 cudt                                = 0,    0,     0,   0,
 cu_diag                             = 0,    0,     0,
 isfflx                              = 1,
@@ -117,6 +124,7 @@ dampcoef                            = 0.2,    0.2,    0.2,    0.2
 khdif                               = 0,      0,      0,      0,
 kvdif                               = 0,      0,      0,      0,
 non_hydrostatic                     = .true., .true., .true.,  .true.,
+epssm                               = .3,
 moist_adv_opt                       = 2,      2,      2,      2,
 scalar_adv_opt                      = 2,      2,      2,      2,
 chem_adv_opt                        = 2,      2,      2,      2,
@@ -137,14 +145,14 @@ nested                              = .false., .true., .true.,  .true.,
 &chem
 kemit                               = 1,
 chem_opt                            = 112,  112,   112,  112,          ! MOZCART=112, CBMZ=6, MOZART-MOSAIC=201
-bioemdt                             = 30,    30,    30,    5,
-photdt                              = 30,    30,    30,    5,
-chemdt                              = 0.,  1.5,    0.,  1.5,          ! before = 2 for CBMZ
+bioemdt                             = 60,    30,    30,    5,         ! 1.5 min = 90 seconds
+photdt                              = 60,    30,    30,    5,         ! 1.5 min = 90 seconds
+chemdt                              = 0.,  1.5,    0.,  1.5,          ! 1.5 min = 90 seconds
 io_style_emissions                  = 1,                               ! 1 =  si usamos 00z y 12z wrfchemi
 emiss_inpt_opt                      = 111,  111,   111,  111,          ! MOZART=111, CBMZ=102
 emiss_opt                           = 8,    8,     8,    8,          ! CBMZ/MOSAIC=4, MOZART=7, GOCART=8, MOZART+Aerosols=10 
 chem_in_opt                         = 1,      0,     0,    0,        ! set to 1 if running CBC
-phot_opt                            = 3,      3,     3,    3,      
+phot_opt                            = 4,      4,     3,    3,        ! TUV=4      
 gas_drydep_opt                      = 1,      1,     1,    1,
 aer_drydep_opt                      = 1,      1,     1,    1,
 bio_emiss_opt                       = 3,                               ! MEGAN 2  = 3 
@@ -162,7 +170,7 @@ cldchem_onoff                       = 0,      0,     0,    0,
 vertmix_onoff                       = 1,      1,     1,    1,
 chem_conv_tr                        = 0,      0,     0,    0,
 biomass_burn_opt                    = 0,      0,     0,    0,       
-plumerisefire_frq                   = 180,  180,    30,  180,
+plumerisefire_frq                   = 60,    60,    30,  180,
 aer_ra_feedback                     = 0,     0,     0,    0,
 ne_area                             = 158,                             ! MEGAN 2 No chemical species
 scale_fire_emiss                    = .true.,                          ! true only for MOZCART

@@ -1,0 +1,409 @@
+taskid: 44 hostname: node5
+Quilting with   1 groups of   0 I/O tasks.
+ Ntasks in X            8 , ntasks in Y            8
+  Domain # 1: dx = 27000.000 m
+WRF V4.4.1 MODEL
+No git found or not a git repository, git commit version not available.
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1         350           1         350
+ ims,ime,jms,jme          169         225         212         269
+ ips,ipe,jps,jpe          176         218         219         262
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+   alloc_space_field: domain            1 ,              532730864  bytes allocated
+  med_initialdata_input: calling input_input
+   Input data is acceptable to use:
+ CURRENT DATE          = 2019-06-25_00:00:00
+ SIMULATION START DATE = 2019-06-25_00:00:00
+Max map factor in domain 1 =  1.81. Scale the dt in the model accordingly.
+ D01: Time step                              =    90.00000      (s)
+ D01: Grid Distance                          =    27.00000      (km)
+ D01: Grid Distance Ratio dt/dx              =    3.333333      (s/km)
+ D01: Ratio Including Maximum Map Factor     =    6.043557      (s/km)
+ D01: NML defined reasonable_time_step_ratio =    6.000000
+ Normal ending of CAMtr_volume_mixing_ratio file
+ GHG annual values from CAM trace gas file
+ Year =         2019 , Julian day =          176
+ CO2   =   4.115926834571827E-004  volume mixing ratio
+ N2O   =   3.313250180419103E-007  volume mixing ratio
+ CH4   =   1.899758409815804E-006  volume mixing ratio
+ CFC11 =   2.208663443492611E-010  volume mixing ratio
+ CFC12 =   4.995175227698904E-010  volume mixing ratio
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          41  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+*********************************************************************
+*             PROGRAM:WRF-Chem V4.4.1 MODEL
+No git found or not a git repository, git commit version not available.
+*                                                                   *
+*    PLEASE REPORT ANY BUGS TO WRF-Chem HELP at                     *
+*                                                                   *
+*              wrfchemhelp.gsd@noaa.gov                             *
+*                                                                   *
+*********************************************************************
+ chem_init: calling mozcart_lbc_init for domain            1
+ lbc_init: initializing            1  domains
+ chem_init: calling init_HLawConst for domain            1
+  Read  160 Henrys Law entries
+  There are    6 Henrys Law null entries
+
+  HLaw table
+  (001)          ALKNIT   133.1410          1.010000       5790.000       0.000000       0.000000       0.000000       0.000000
+  (002)          ALKOOH   104.1430          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (003)            APIN   136.2280         2.9400000E-02   1800.000       0.000000       0.000000       0.000000       0.000000
+  (004)           BCARY   204.3430         5.5700000E-03   2800.000       0.000000       0.000000       0.000000       0.000000
+  (005)         BENZENE   78.11040         0.1800000       3800.000       0.000000       0.000000       0.000000       0.000000
+  (006)         BENZOOH   160.1220          2300.000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (007)         BEPOMUC   126.1090         3.0000000E+07   0.000000       0.000000       0.000000       0.000000       0.000000
+  (008)            OPEN   98.09820          9.600000       6220.000       0.000000       0.000000       0.000000       0.000000
+  (009)         BIGALD1   84.07240          100000.0       5890.000       0.000000       0.000000       0.000000       0.000000
+  (010)         BIGALD2   98.09820          29000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (011)         BIGALD3   98.09820          22000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (012)         BIGALD4   112.1240          22000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (013)          BIGALK   72.14380         1.2400000E-03   3010.000       0.000000       0.000000       0.000000       0.000000
+  (014)          BIGENE   56.10320         5.9600002E-03   2365.000       0.000000       0.000000       0.000000       0.000000
+  (015)            BPIN   136.2280         1.5200000E-02   4500.000       0.000000       0.000000       0.000000       0.000000
+  (016)           BZALD   106.1210          32.40000       6300.000       0.000000       0.000000       0.000000       0.000000
+  (017)           BZOOH   124.1350          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (018)            C2H2   26.03680         4.1400000E-02   1890.000       0.000000       0.000000       0.000000       0.000000
+  (019)            C2H4   28.05160         5.9600002E-03   2200.000       0.000000       0.000000       0.000000       0.000000
+  (020)          C2H5OH   46.06580          190.0000       6500.000       0.000000       0.000000       0.000000       0.000000
+  (021)           ETOOH   62.06520          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (022)            C2H6   30.06640         1.8800000E-03   2750.000       0.000000       0.000000       0.000000       0.000000
+  (023)            C3H6   42.07740         5.5700000E-03   2800.000       0.000000       0.000000       0.000000       0.000000
+  (024)           PROOH   76.09100          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (025)            C3H8   44.09220         1.5100000E-03   3120.000       0.000000       0.000000       0.000000       0.000000
+  (026)         C6H5OOH   110.1090          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (027)            HCHO   30.02520          3230.000       7100.000       0.000000       0.000000       0.000000       0.000000
+  (028)             ALD   44.05100          12.90000       5890.000       0.000000       0.000000       0.000000       0.000000
+  (029)           CH3CN   41.05090          52.80000       3970.000       0.000000       0.000000       0.000000       0.000000
+  (030)            ACET   58.07680          27.80000       5530.000       0.000000       0.000000       0.000000       0.000000
+  (031)            MGLY   72.06140          3500.000       7545.000       0.000000       0.000000       0.000000       0.000000
+  (032)         CH3COOH   60.05040          4100.000       6200.000       0.000000       0.000000       0.000000       0.000000
+  (033)             PAA   76.04980          837.0000       5310.000      1.8000000E-04  -20.00000       0.000000       0.000000
+  (034)           CH3OH   32.04000          203.0000       5645.000       0.000000       0.000000       0.000000       0.000000
+  (035)          CH3OOH   48.03940          300.0000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (036)             CH4   16.04060         1.4100000E-03   1820.000       0.000000       0.000000       0.000000       0.000000
+  (037)              CO   28.01040         9.8100002E-04   1650.000       0.000000       0.000000       0.000000       0.000000
+  (038)             CO2   44.00980         3.4400001E-02   2715.000      4.3000000E-07  -1000.000      4.6800001E-11  -1760.000
+  (039)            CRES   108.1360          567.0000       5800.000       0.000000       0.000000       0.000000       0.000000
+  (040)             DMS   62.13240         0.5400000       3460.000       0.000000       0.000000       0.000000       0.000000
+  (041)            EOOH   78.06460          1900000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (042)          GLYALD   60.05040          40000.00       4630.000       0.000000       0.000000       0.000000       0.000000
+  (043)             GLY   58.03560          419000.0       7480.000       0.000000       0.000000       0.000000       0.000000
+  (044)              H2   2.014800         7.9000002E-04   530.0000       0.000000       0.000000       0.000000       0.000000
+  (045)            H2O2   34.01360          87000.00       7320.000      2.1999999E-12  -3730.000       0.000000       0.000000
+  (046)             HCN   27.02510          9.020000       8258.000       0.000000       0.000000       0.000000       0.000000
+  (047)           HCOOH   46.02460          8900.000       6100.000      1.8000000E-04  -20.00000       0.000000       0.000000
+  (048)          HMPROP   88.10200         0.6000000       4500.000       0.000000       0.000000       0.000000       0.000000
+  (049)        HMPROPO2   119.0930          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (050)            HNO3   63.01230          210000.0       8700.000       22.00000       0.000000       0.000000       0.000000
+  (051)            HNO4   79.01170          40.00000       8400.000      1.3000000E-06   0.000000       0.000000       0.000000
+  (052)          HONITR   133.1000          2640.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (053)           HPALD   116.1120          230000.0       0.000000       0.000000       0.000000       0.000000       0.000000
+  (054)          ACETOL   74.07620          1600.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (055)         HYDRALD   100.1130          110000.0       6000.000       0.000000       0.000000       0.000000       0.000000
+  (056)           IEPOX   118.1270         3.0000000E+07   0.000000       0.000000       0.000000       0.000000       0.000000
+  (057)           ISOPR   68.11420         3.4499999E-02   4400.000       0.000000       0.000000       0.000000       0.000000
+  (058)        ISOPNITA   147.1260          8340.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (059)        ISOPNITB   147.1260          48200.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (060)           ISOPN   162.1180          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (061)        ISOPNOOH   163.1250          87500.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (062)           ISOOH   118.1270          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (063)           LIMON   136.2280         4.8599999E-02   4600.000       0.000000       0.000000       0.000000       0.000000
+  (064)            MACR   70.08780          6.500000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (065)          MVKOOH   120.1010          4400000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (066)           MALO2   115.0640          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (067)             MBO   86.12840          65.00000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (068)        MBONO3O2   180.1320          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (069)           MBOO2   135.1340          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (070)          MBOOOH   136.1410         1.7000000E+09   5995.000       0.000000       0.000000       0.000000       0.000000
+  (071)             MEK   72.10260          18.00000       5740.000       0.000000       0.000000       0.000000       0.000000
+  (072)          MEKOOH   104.1010          64000.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (073)            MPAN   147.0850          1.720000       5700.000       0.000000       0.000000       0.000000       0.000000
+  (074)             MVK   70.08780          41.00000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (075)            MYRC   136.2280         7.2999999E-02   2800.000       0.000000       0.000000       0.000000       0.000000
+  (076)             N2O   44.01290         2.4200000E-02   2710.000       0.000000       0.000000       0.000000       0.000000
+  (077)            N2O5   108.0100          2.140000       3362.000       0.000000       0.000000       0.000000       0.000000
+  (078)        NC4CH2OH   147.1260          40200.00       9500.000       0.000000       0.000000       0.000000       0.000000
+  (079)          NC4CHO   145.1110          1460.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (080)             NH3   17.02890          60.20000       4160.000      1.7000000E-05  -4325.000      9.9999998E-15  -6716.000
+  (081)              NO   30.00610         1.9200000E-03   1762.000       0.000000       0.000000       0.000000       0.000000
+  (082)             NO2   46.00550         1.2000001E-03   2440.000       0.000000       0.000000       0.000000       0.000000
+  (083)             NO3   62.00490         3.7999999E-02   0.000000       0.000000       0.000000       0.000000       0.000000
+  (084)             NOA   119.0740          1000.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (085)        NTERPOOH   231.2400          66700.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (086)              O3   47.99820         1.0300000E-02   2830.000       0.000000       0.000000       0.000000       0.000000
+  (087)           ONITR   147.1260          1440.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (088)             PAN   121.0480          2.800000       5730.000       0.000000       0.000000       0.000000       0.000000
+  (089)          PBZNIT   183.1180          2.800000       5730.000       0.000000       0.000000       0.000000       0.000000
+  (090)          PHENOL   94.10980          2840.000       2700.000       0.000000       0.000000       0.000000       0.000000
+  (091)         PHENOOH   176.1220          1500000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (092)         C3H6OOH   92.09040          1500000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (093)           ACETP   90.07560          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (094)             SO2   64.06480          1.360000       3100.000      1.3000000E-02   1960.000      6.5999998E-08   1500.000
+  (095)            SULF   96.05760         9.9999998E+10   0.000000       0.000000       0.000000       0.000000       0.000000
+  (096)         TEPOMUC   140.1340          2500.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (097)        TERP2OOH   200.2260          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (098)         TERPNIT   215.2400          8410.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (099)         TERPOOH   186.2410          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (100)        TERPROD1   168.2270          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (101)        TERPROD2   154.2010          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (102)          TOLOOH   174.1480          23000.00       5995.000       0.000000       0.000000       0.000000       0.000000
+  (103)             TOL   92.13620         0.1500000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (104)            XOOH   150.1260         9.9999998E+10   5995.000       0.000000       0.000000       0.000000       0.000000
+  (105)         XYLENES   106.1620         0.2000000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (106)        XYLENOOH   188.1740          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (107)           XYLOL   122.1610          1013.000       6800.000       0.000000       0.000000       0.000000       0.000000
+  (108)        XYLOLOOH   204.1730          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (109)          ACBZO2   137.1120          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (110)           ALKO2   103.1350          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (111)          BENZO2   159.1150          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (112)            BZOO   123.1280          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (113)            ETO2   61.05780          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (114)            PRO2   75.08360          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (115)          C6H5O2   109.1020          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (116)            ACO3   75.04240         0.1000000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (117)           CH3O2   47.03200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (118)        DICARBO2   129.0900          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (119)           ENEO2   105.1090          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (120)              EO   61.05780          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (121)             EO2   77.05720          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (122)             HO2   33.00620          690.0000       5900.000       0.000000       0.000000       0.000000       0.000000
+  (123)         HOCH2OO   63.03140          80000.00       8200.000       0.000000       0.000000       0.000000       0.000000
+  (124)         ISOPAO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (125)         ISOPBO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (126)           MVKO2   119.0930          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (127)            MCO3   101.0790          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (128)         MDIALO2   117.0790          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (129)           MEKO2   103.0940          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (130)         NTERPO2   230.2320          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (131)              HO   17.00680          39.00000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (132)          PHENO2   175.1140          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (133)             PO2   91.08300          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (134)          ACETO2   89.06820          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (135)         TERP2O2   199.2190          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (136)          TERPO2   185.2340          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (137)             TO2   173.1410          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (138)             XO2   149.1190         9.9999998E+10   0.000000       0.000000       0.000000       0.000000       0.000000
+  (139)         XYLENO2   187.1660          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (140)         XYLOLO2   203.1660          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (141)            HONO   47.01300         0.4800000       4900.000      5.9000001E-04  -1760.000       0.000000       0.000000
+  (142)            ISO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (143)            ONIT   119.0740          1000.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (144)            PHEN   94.10980          2840.000       2700.000       0.000000       0.000000       0.000000       0.000000
+  (145)             XYL   106.1620         0.2000000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (146)            BALD   106.1210          32.40000       6300.000       0.000000       0.000000       0.000000       0.000000
+  (147)         cvasoa1   180.0000         1.0600000E+08   6014.000       0.000000       0.000000       0.000000       0.000000
+  (148)         cvasoa2   180.0000         1.8400000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  (149)         cvasoa3   180.0000          3180000.       6014.000       0.000000       0.000000       0.000000       0.000000
+  (150)         cvasoa4   180.0000          550000.0       6014.000       0.000000       0.000000       0.000000       0.000000
+  (151)         cvbsoa1   150.0000         5.2499999E+09   6014.000       0.000000       0.000000       0.000000       0.000000
+  (152)         cvbsoa2   150.0000         7.0000000E+08   6014.000       0.000000       0.000000       0.000000       0.000000
+  (153)         cvbsoa3   150.0000         9.3300000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  (154)         cvbsoa4   150.0000         1.2400000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  chemics_init(01): call tuv phot initialization
+ dep_init: initializing for            1  domains
+ start_domain_em: numgas =   82
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_00z_d01
+ HOURLY EMISSIONS UPDATE TIME        0.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_00:00:00
+d01 2019-06-25_00:00:00  Error trying to read metadata
+d01 2019-06-25_00:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_00:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_00:00:00  Input data is acceptable to use:
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS    176 IE    218 JS    219 JE    262
+WRF NUMBER OF TILES =   1
+d01 2019-06-25_00:00:00  ----------------------------------------
+d01 2019-06-25_00:00:00  W-DAMPING  BEGINS AT W-COURANT NUMBER =    1.000000
+d01 2019-06-25_00:00:00  ----------------------------------------
+ calculate MEGAN emissions at ktau, gmtp, tmidh =            1  0.0000000E+00  1.2500000E-02
+ photolysis_driver: called for domain            1
+ calculate MEGAN emissions at ktau, gmtp, tmidh =           40  0.0000000E+00  0.9875000
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME     3600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_01:00:00
+d01 2019-06-25_01:00:00  Error trying to read metadata
+d01 2019-06-25_01:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_01:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =           80   1.000000       1.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME     7200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_02:00:00
+d01 2019-06-25_02:00:00  Error trying to read metadata
+d01 2019-06-25_02:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_02:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          120   2.000000       2.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    10800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_03:00:00
+d01 2019-06-25_03:00:00  Error trying to read metadata
+d01 2019-06-25_03:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_03:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          160   3.000000       3.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    14400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_04:00:00
+d01 2019-06-25_04:00:00  Error trying to read metadata
+d01 2019-06-25_04:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_04:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          200   4.000000       4.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    18000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_05:00:00
+d01 2019-06-25_05:00:00  Error trying to read metadata
+d01 2019-06-25_05:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_05:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          240   5.000000       5.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    21600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_06:00:00
+d01 2019-06-25_06:00:00  Error trying to read metadata
+d01 2019-06-25_06:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_06:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_06:00:00  Input data is acceptable to use:
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          280   6.000000       6.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    25200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_07:00:00
+d01 2019-06-25_07:00:00  Error trying to read metadata
+d01 2019-06-25_07:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_07:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          320   7.000000       7.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    28800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_08:00:00
+d01 2019-06-25_08:00:00  Error trying to read metadata
+d01 2019-06-25_08:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_08:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          360   8.000000       8.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    32400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_09:00:00
+d01 2019-06-25_09:00:00  Error trying to read metadata
+d01 2019-06-25_09:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_09:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          400   9.000000       9.987500
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    36000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_10:00:00
+d01 2019-06-25_10:00:00  Error trying to read metadata
+d01 2019-06-25_10:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_10:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          440   10.00000       10.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    39600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_11:00:00
+d01 2019-06-25_11:00:00  Error trying to read metadata
+d01 2019-06-25_11:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_11:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          480   11.00000       11.98750
+ photolysis_driver: called for domain            1
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_12z_d01
+ HOURLY EMISSIONS UPDATE TIME    43200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_12:00:00
+d01 2019-06-25_12:00:00  Error trying to read metadata
+d01 2019-06-25_12:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_12:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_12:00:00  Input data is acceptable to use:
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          520   12.00000       12.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    46800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_13:00:00
+d01 2019-06-25_13:00:00  Error trying to read metadata
+d01 2019-06-25_13:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_13:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          560   13.00000       13.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    50400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_14:00:00
+d01 2019-06-25_14:00:00  Error trying to read metadata
+d01 2019-06-25_14:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_14:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          600   14.00000       14.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    54000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_15:00:00
+d01 2019-06-25_15:00:00  Error trying to read metadata
+d01 2019-06-25_15:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_15:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          640   15.00000       15.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    57600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_16:00:00
+d01 2019-06-25_16:00:00  Error trying to read metadata
+d01 2019-06-25_16:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_16:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          680   16.00000       16.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    61200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_17:00:00
+d01 2019-06-25_17:00:00  Error trying to read metadata
+d01 2019-06-25_17:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_17:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          720   17.00000       17.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    64800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_18:00:00
+d01 2019-06-25_18:00:00  Error trying to read metadata
+d01 2019-06-25_18:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_18:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_18:00:00  Input data is acceptable to use:
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          760   18.00000       18.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    68400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_19:00:00
+d01 2019-06-25_19:00:00  Error trying to read metadata
+d01 2019-06-25_19:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_19:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          800   19.00000       19.98750
+ photolysis_driver: called for domain            1
+ HOURLY EMISSIONS UPDATE TIME    72000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_20:00:00
+d01 2019-06-25_20:00:00  Error trying to read metadata
+d01 2019-06-25_20:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_20:00:00  Input data is acceptable to use:
+**WARNING** Time in input file not being checked **WARNING**

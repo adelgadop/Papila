@@ -2,9 +2,9 @@
 do_bc   = .true.
 do_ic   = .true.
 domain  = 1
-dir_wrf = '/home/alejandro/WRF-4.2.1/test/em_real/'
+dir_wrf = '/home/alejandro/WRFV4.4.1/test/em_real/'
 dir_moz = '/home/alejandro/data/cbc/camchem/'
-fn_moz  = 'camchem-20221022080238333648.nc'
+fn_moz  = 'camchem_24_28_jun2019.nc'
 moz_var_suffix = ''
 !def_missing_var = .true.
 
@@ -39,7 +39,7 @@ spc_map = 'o3 -> O3',
           'tol -> TOLUENE+BENZENE+XYLENES',
           'cres -> CRESOL',
           'so2 -> SO2',
-!         'sulf-> 0.3*so4_a1+0.3*so4_a2+0.3*so4_a3;1e6',
+          'sulf-> 1.0*so4_a1+1.0*so4_a2+1.0*so4_a3;1.e9',
           'BC1 -> 1.0*bc_a4;1.e9',
           'BC2 -> 1.0*bc_a1;1.e9',
           'OC1 -> 1.0*pom_a4;1.e9',

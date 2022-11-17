@@ -1,0 +1,1318 @@
+taskid: 0 hostname: node5
+ module_io_quilt_old.F        2931 F
+Quilting with   1 groups of   0 I/O tasks.
+ Ntasks in X            8 , ntasks in Y            8
+  Domain # 1: dx = 27000.000 m
+WRF V4.4.1 MODEL
+No git found or not a git repository, git commit version not available.
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1         350           1         350
+ ims,ime,jms,jme           -4          51          -4          51
+ ips,ipe,jps,jpe            1          44           1          44
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+   alloc_space_field: domain            1 ,              506723544  bytes allocated
+  med_initialdata_input: calling input_input
+   Input data is acceptable to use: wrfinput_d01
+ CURRENT DATE          = 2019-06-25_00:00:00
+ SIMULATION START DATE = 2019-06-25_00:00:00
+Timing for processing wrfinput file (stream 0) for domain        1:    8.69280 elapsed seconds
+Max map factor in domain 1 =  1.81. Scale the dt in the model accordingly.
+ D01: Time step                              =    90.00000      (s)
+ D01: Grid Distance                          =    27.00000      (km)
+ D01: Grid Distance Ratio dt/dx              =    3.333333      (s/km)
+ D01: Ratio Including Maximum Map Factor     =    6.043557      (s/km)
+ D01: NML defined reasonable_time_step_ratio =    6.000000
+ Climate GHG input from file from year         1765  to         2499
+ CO2   range =    277.913000000000        579.264000000000       ppm
+ N2O   range =    274.372000000000        359.798000000000       ppb
+ CH4   range =    738.986000000000        997.311000000000       ppb
+ CFC11 range =   0.000000000000000E+000  1.400000000000000E-002  ppt
+ CFC12 range =   0.000000000000000E+000   2.88100000000000       ppt
+ Normal ending of CAMtr_volume_mixing_ratio file
+ GHG annual values from CAM trace gas file
+ Year =         2019 , Julian day =          176
+ CO2   =   4.115926834571827E-004  volume mixing ratio
+ N2O   =   3.313250180419103E-007  volume mixing ratio
+ CH4   =   1.899758409815804E-006  volume mixing ratio
+ CFC11 =   2.208663443492611E-010  volume mixing ratio
+ CFC12 =   4.995175227698904E-010  volume mixing ratio
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          41  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+*********************************************************************
+*             PROGRAM:WRF-Chem V4.4.1 MODEL
+No git found or not a git repository, git commit version not available.
+*                                                                   *
+*    PLEASE REPORT ANY BUGS TO WRF-Chem HELP at                     *
+*                                                                   *
+*              wrfchemhelp.gsd@noaa.gov                             *
+*                                                                   *
+*********************************************************************
+ chem_init: calling mozcart_lbc_init for domain            1
+ lbc_init: initializing            1  domains
+ chem_init: calling init_HLawConst for domain            1
+  Read  160 Henrys Law entries
+  There are    6 Henrys Law null entries
+
+  HLaw table
+  (001)          ALKNIT   133.1410          1.010000       5790.000       0.000000       0.000000       0.000000       0.000000
+  (002)          ALKOOH   104.1430          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (003)            APIN   136.2280         2.9400000E-02   1800.000       0.000000       0.000000       0.000000       0.000000
+  (004)           BCARY   204.3430         5.5700000E-03   2800.000       0.000000       0.000000       0.000000       0.000000
+  (005)         BENZENE   78.11040         0.1800000       3800.000       0.000000       0.000000       0.000000       0.000000
+  (006)         BENZOOH   160.1220          2300.000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (007)         BEPOMUC   126.1090         3.0000000E+07   0.000000       0.000000       0.000000       0.000000       0.000000
+  (008)            OPEN   98.09820          9.600000       6220.000       0.000000       0.000000       0.000000       0.000000
+  (009)         BIGALD1   84.07240          100000.0       5890.000       0.000000       0.000000       0.000000       0.000000
+  (010)         BIGALD2   98.09820          29000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (011)         BIGALD3   98.09820          22000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (012)         BIGALD4   112.1240          22000.00       5890.000       0.000000       0.000000       0.000000       0.000000
+  (013)          BIGALK   72.14380         1.2400000E-03   3010.000       0.000000       0.000000       0.000000       0.000000
+  (014)          BIGENE   56.10320         5.9600002E-03   2365.000       0.000000       0.000000       0.000000       0.000000
+  (015)            BPIN   136.2280         1.5200000E-02   4500.000       0.000000       0.000000       0.000000       0.000000
+  (016)           BZALD   106.1210          32.40000       6300.000       0.000000       0.000000       0.000000       0.000000
+  (017)           BZOOH   124.1350          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (018)            C2H2   26.03680         4.1400000E-02   1890.000       0.000000       0.000000       0.000000       0.000000
+  (019)            C2H4   28.05160         5.9600002E-03   2200.000       0.000000       0.000000       0.000000       0.000000
+  (020)          C2H5OH   46.06580          190.0000       6500.000       0.000000       0.000000       0.000000       0.000000
+  (021)           ETOOH   62.06520          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (022)            C2H6   30.06640         1.8800000E-03   2750.000       0.000000       0.000000       0.000000       0.000000
+  (023)            C3H6   42.07740         5.5700000E-03   2800.000       0.000000       0.000000       0.000000       0.000000
+  (024)           PROOH   76.09100          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (025)            C3H8   44.09220         1.5100000E-03   3120.000       0.000000       0.000000       0.000000       0.000000
+  (026)         C6H5OOH   110.1090          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (027)            HCHO   30.02520          3230.000       7100.000       0.000000       0.000000       0.000000       0.000000
+  (028)             ALD   44.05100          12.90000       5890.000       0.000000       0.000000       0.000000       0.000000
+  (029)           CH3CN   41.05090          52.80000       3970.000       0.000000       0.000000       0.000000       0.000000
+  (030)            ACET   58.07680          27.80000       5530.000       0.000000       0.000000       0.000000       0.000000
+  (031)            MGLY   72.06140          3500.000       7545.000       0.000000       0.000000       0.000000       0.000000
+  (032)         CH3COOH   60.05040          4100.000       6200.000       0.000000       0.000000       0.000000       0.000000
+  (033)             PAA   76.04980          837.0000       5310.000      1.8000000E-04  -20.00000       0.000000       0.000000
+  (034)           CH3OH   32.04000          203.0000       5645.000       0.000000       0.000000       0.000000       0.000000
+  (035)          CH3OOH   48.03940          300.0000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (036)             CH4   16.04060         1.4100000E-03   1820.000       0.000000       0.000000       0.000000       0.000000
+  (037)              CO   28.01040         9.8100002E-04   1650.000       0.000000       0.000000       0.000000       0.000000
+  (038)             CO2   44.00980         3.4400001E-02   2715.000      4.3000000E-07  -1000.000      4.6800001E-11  -1760.000
+  (039)            CRES   108.1360          567.0000       5800.000       0.000000       0.000000       0.000000       0.000000
+  (040)             DMS   62.13240         0.5400000       3460.000       0.000000       0.000000       0.000000       0.000000
+  (041)            EOOH   78.06460          1900000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (042)          GLYALD   60.05040          40000.00       4630.000       0.000000       0.000000       0.000000       0.000000
+  (043)             GLY   58.03560          419000.0       7480.000       0.000000       0.000000       0.000000       0.000000
+  (044)              H2   2.014800         7.9000002E-04   530.0000       0.000000       0.000000       0.000000       0.000000
+  (045)            H2O2   34.01360          87000.00       7320.000      2.1999999E-12  -3730.000       0.000000       0.000000
+  (046)             HCN   27.02510          9.020000       8258.000       0.000000       0.000000       0.000000       0.000000
+  (047)           HCOOH   46.02460          8900.000       6100.000      1.8000000E-04  -20.00000       0.000000       0.000000
+  (048)          HMPROP   88.10200         0.6000000       4500.000       0.000000       0.000000       0.000000       0.000000
+  (049)        HMPROPO2   119.0930          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (050)            HNO3   63.01230          210000.0       8700.000       22.00000       0.000000       0.000000       0.000000
+  (051)            HNO4   79.01170          40.00000       8400.000      1.3000000E-06   0.000000       0.000000       0.000000
+  (052)          HONITR   133.1000          2640.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (053)           HPALD   116.1120          230000.0       0.000000       0.000000       0.000000       0.000000       0.000000
+  (054)          ACETOL   74.07620          1600.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (055)         HYDRALD   100.1130          110000.0       6000.000       0.000000       0.000000       0.000000       0.000000
+  (056)           IEPOX   118.1270         3.0000000E+07   0.000000       0.000000       0.000000       0.000000       0.000000
+  (057)           ISOPR   68.11420         3.4499999E-02   4400.000       0.000000       0.000000       0.000000       0.000000
+  (058)        ISOPNITA   147.1260          8340.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (059)        ISOPNITB   147.1260          48200.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (060)           ISOPN   162.1180          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (061)        ISOPNOOH   163.1250          87500.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (062)           ISOOH   118.1270          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (063)           LIMON   136.2280         4.8599999E-02   4600.000       0.000000       0.000000       0.000000       0.000000
+  (064)            MACR   70.08780          6.500000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (065)          MVKOOH   120.1010          4400000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (066)           MALO2   115.0640          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (067)             MBO   86.12840          65.00000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (068)        MBONO3O2   180.1320          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (069)           MBOO2   135.1340          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (070)          MBOOOH   136.1410         1.7000000E+09   5995.000       0.000000       0.000000       0.000000       0.000000
+  (071)             MEK   72.10260          18.00000       5740.000       0.000000       0.000000       0.000000       0.000000
+  (072)          MEKOOH   104.1010          64000.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (073)            MPAN   147.0850          1.720000       5700.000       0.000000       0.000000       0.000000       0.000000
+  (074)             MVK   70.08780          41.00000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (075)            MYRC   136.2280         7.2999999E-02   2800.000       0.000000       0.000000       0.000000       0.000000
+  (076)             N2O   44.01290         2.4200000E-02   2710.000       0.000000       0.000000       0.000000       0.000000
+  (077)            N2O5   108.0100          2.140000       3362.000       0.000000       0.000000       0.000000       0.000000
+  (078)        NC4CH2OH   147.1260          40200.00       9500.000       0.000000       0.000000       0.000000       0.000000
+  (079)          NC4CHO   145.1110          1460.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (080)             NH3   17.02890          60.20000       4160.000      1.7000000E-05  -4325.000      9.9999998E-15  -6716.000
+  (081)              NO   30.00610         1.9200000E-03   1762.000       0.000000       0.000000       0.000000       0.000000
+  (082)             NO2   46.00550         1.2000001E-03   2440.000       0.000000       0.000000       0.000000       0.000000
+  (083)             NO3   62.00490         3.7999999E-02   0.000000       0.000000       0.000000       0.000000       0.000000
+  (084)             NOA   119.0740          1000.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (085)        NTERPOOH   231.2400          66700.00       0.000000       0.000000       0.000000       0.000000       0.000000
+  (086)              O3   47.99820         1.0300000E-02   2830.000       0.000000       0.000000       0.000000       0.000000
+  (087)           ONITR   147.1260          1440.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (088)             PAN   121.0480          2.800000       5730.000       0.000000       0.000000       0.000000       0.000000
+  (089)          PBZNIT   183.1180          2.800000       5730.000       0.000000       0.000000       0.000000       0.000000
+  (090)          PHENOL   94.10980          2840.000       2700.000       0.000000       0.000000       0.000000       0.000000
+  (091)         PHENOOH   176.1220          1500000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (092)         C3H6OOH   92.09040          1500000.       0.000000       0.000000       0.000000       0.000000       0.000000
+  (093)           ACETP   90.07560          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (094)             SO2   64.06480          1.360000       3100.000      1.3000000E-02   1960.000      6.5999998E-08   1500.000
+  (095)            SULF   96.05760         9.9999998E+10   0.000000       0.000000       0.000000       0.000000       0.000000
+  (096)         TEPOMUC   140.1340          2500.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (097)        TERP2OOH   200.2260          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (098)         TERPNIT   215.2400          8410.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (099)         TERPOOH   186.2410          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (100)        TERPROD1   168.2270          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (101)        TERPROD2   154.2010          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (102)          TOLOOH   174.1480          23000.00       5995.000       0.000000       0.000000       0.000000       0.000000
+  (103)             TOL   92.13620         0.1500000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (104)            XOOH   150.1260         9.9999998E+10   5995.000       0.000000       0.000000       0.000000       0.000000
+  (105)         XYLENES   106.1620         0.2000000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (106)        XYLENOOH   188.1740          336.0000       5995.000       0.000000       0.000000       0.000000       0.000000
+  (107)           XYLOL   122.1610          1013.000       6800.000       0.000000       0.000000       0.000000       0.000000
+  (108)        XYLOLOOH   204.1730          1904000.       5995.000       0.000000       0.000000       0.000000       0.000000
+  (109)          ACBZO2   137.1120          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (110)           ALKO2   103.1350          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (111)          BENZO2   159.1150          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (112)            BZOO   123.1280          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (113)            ETO2   61.05780          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (114)            PRO2   75.08360          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (115)          C6H5O2   109.1020          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (116)            ACO3   75.04240         0.1000000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (117)           CH3O2   47.03200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (118)        DICARBO2   129.0900          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (119)           ENEO2   105.1090          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (120)              EO   61.05780          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (121)             EO2   77.05720          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (122)             HO2   33.00620          690.0000       5900.000       0.000000       0.000000       0.000000       0.000000
+  (123)         HOCH2OO   63.03140          80000.00       8200.000       0.000000       0.000000       0.000000       0.000000
+  (124)         ISOPAO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (125)         ISOPBO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (126)           MVKO2   119.0930          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (127)            MCO3   101.0790          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (128)         MDIALO2   117.0790          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (129)           MEKO2   103.0940          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (130)         NTERPO2   230.2320          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (131)              HO   17.00680          39.00000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (132)          PHENO2   175.1140          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (133)             PO2   91.08300          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (134)          ACETO2   89.06820          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (135)         TERP2O2   199.2190          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (136)          TERPO2   185.2340          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (137)             TO2   173.1410          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (138)             XO2   149.1190         9.9999998E+10   0.000000       0.000000       0.000000       0.000000       0.000000
+  (139)         XYLENO2   187.1660          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (140)         XYLOLO2   203.1660          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (141)            HONO   47.01300         0.4800000       4900.000      5.9000001E-04  -1760.000       0.000000       0.000000
+  (142)            ISO2   117.1200          2.380000       5280.000       0.000000       0.000000       0.000000       0.000000
+  (143)            ONIT   119.0740          1000.000       0.000000       0.000000       0.000000       0.000000       0.000000
+  (144)            PHEN   94.10980          2840.000       2700.000       0.000000       0.000000       0.000000       0.000000
+  (145)             XYL   106.1620         0.2000000       4300.000       0.000000       0.000000       0.000000       0.000000
+  (146)            BALD   106.1210          32.40000       6300.000       0.000000       0.000000       0.000000       0.000000
+  (147)         cvasoa1   180.0000         1.0600000E+08   6014.000       0.000000       0.000000       0.000000       0.000000
+  (148)         cvasoa2   180.0000         1.8400000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  (149)         cvasoa3   180.0000          3180000.       6014.000       0.000000       0.000000       0.000000       0.000000
+  (150)         cvasoa4   180.0000          550000.0       6014.000       0.000000       0.000000       0.000000       0.000000
+  (151)         cvbsoa1   150.0000         5.2499999E+09   6014.000       0.000000       0.000000       0.000000       0.000000
+  (152)         cvbsoa2   150.0000         7.0000000E+08   6014.000       0.000000       0.000000       0.000000       0.000000
+  (153)         cvbsoa3   150.0000         9.3300000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  (154)         cvbsoa4   150.0000         1.2400000E+07   6014.000       0.000000       0.000000       0.000000       0.000000
+  chemics_init(01): call tuv phot initialization
+ dep_init: initializing for            1  domains
+dep_init: initializing domain 01
+ start_domain_em: numgas =   82
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            1
+Timing for Writing wrfout_d01_2019-06-25_00:00:00 for domain        1:    9.13555 elapsed seconds
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_00z_d01
+ HOURLY EMISSIONS UPDATE TIME        0.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_00:00:00
+d01 2019-06-25_00:00:00  Error trying to read metadata
+d01 2019-06-25_00:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_00:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_00:00:00
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_00:00:00  Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    1.59380 elapsed seconds
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     44 JS      1 JE     44
+WRF NUMBER OF TILES =   1
+d01 2019-06-25_00:00:00  ----------------------------------------
+d01 2019-06-25_00:00:00  W-DAMPING  BEGINS AT W-COURANT NUMBER =    1.000000
+d01 2019-06-25_00:00:00  ----------------------------------------
+ calculate MEGAN emissions at ktau, gmtp, tmidh =            1  0.0000000E+00  1.2500000E-02
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_00:01:30 on domain   1:   43.23167 elapsed seconds
+Timing for main: time 2019-06-25_00:03:00 on domain   1:   14.88044 elapsed seconds
+Timing for main: time 2019-06-25_00:04:30 on domain   1:    9.17157 elapsed seconds
+Timing for main: time 2019-06-25_00:06:00 on domain   1:    9.03561 elapsed seconds
+Timing for main: time 2019-06-25_00:07:30 on domain   1:    8.91763 elapsed seconds
+Timing for main: time 2019-06-25_00:09:00 on domain   1:    8.91326 elapsed seconds
+Timing for main: time 2019-06-25_00:10:30 on domain   1:    8.89510 elapsed seconds
+Timing for main: time 2019-06-25_00:12:00 on domain   1:    8.89173 elapsed seconds
+Timing for main: time 2019-06-25_00:13:30 on domain   1:    8.85220 elapsed seconds
+Timing for main: time 2019-06-25_00:15:00 on domain   1:    8.91633 elapsed seconds
+Timing for main: time 2019-06-25_00:16:30 on domain   1:    8.88905 elapsed seconds
+Timing for main: time 2019-06-25_00:18:00 on domain   1:    8.86778 elapsed seconds
+Timing for main: time 2019-06-25_00:19:30 on domain   1:    8.89932 elapsed seconds
+Timing for main: time 2019-06-25_00:21:00 on domain   1:    8.87825 elapsed seconds
+Timing for main: time 2019-06-25_00:22:30 on domain   1:    8.87730 elapsed seconds
+Timing for main: time 2019-06-25_00:24:00 on domain   1:    8.86528 elapsed seconds
+Timing for main: time 2019-06-25_00:25:30 on domain   1:    8.92736 elapsed seconds
+Timing for main: time 2019-06-25_00:27:00 on domain   1:    8.84980 elapsed seconds
+Timing for main: time 2019-06-25_00:28:30 on domain   1:    9.96556 elapsed seconds
+Timing for main: time 2019-06-25_00:30:00 on domain   1:    8.89508 elapsed seconds
+Timing for main: time 2019-06-25_00:31:30 on domain   1:    8.87924 elapsed seconds
+Timing for main: time 2019-06-25_00:33:00 on domain   1:    8.88276 elapsed seconds
+Timing for main: time 2019-06-25_00:34:30 on domain   1:    8.88692 elapsed seconds
+Timing for main: time 2019-06-25_00:36:00 on domain   1:    8.87436 elapsed seconds
+Timing for main: time 2019-06-25_00:37:30 on domain   1:    8.90035 elapsed seconds
+Timing for main: time 2019-06-25_00:39:00 on domain   1:    8.88840 elapsed seconds
+Timing for main: time 2019-06-25_00:40:30 on domain   1:    8.88395 elapsed seconds
+Timing for main: time 2019-06-25_00:42:00 on domain   1:    8.89669 elapsed seconds
+Timing for main: time 2019-06-25_00:43:30 on domain   1:    8.88605 elapsed seconds
+Timing for main: time 2019-06-25_00:45:00 on domain   1:    8.89397 elapsed seconds
+Timing for main: time 2019-06-25_00:46:30 on domain   1:    8.89425 elapsed seconds
+Timing for main: time 2019-06-25_00:48:00 on domain   1:    8.90713 elapsed seconds
+Timing for main: time 2019-06-25_00:49:30 on domain   1:    8.89142 elapsed seconds
+Timing for main: time 2019-06-25_00:51:00 on domain   1:    8.90859 elapsed seconds
+Timing for main: time 2019-06-25_00:52:30 on domain   1:    8.90366 elapsed seconds
+Timing for main: time 2019-06-25_00:54:00 on domain   1:    9.01882 elapsed seconds
+Timing for main: time 2019-06-25_00:55:30 on domain   1:   10.15796 elapsed seconds
+Timing for main: time 2019-06-25_00:57:00 on domain   1:    8.90537 elapsed seconds
+Timing for main: time 2019-06-25_00:58:30 on domain   1:    8.91172 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =           40  0.0000000E+00  0.9875000
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_01:00:00 on domain   1:   20.89628 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_01:00:00 for domain        1:   18.89198 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME     3600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_01:00:00
+d01 2019-06-25_01:00:00  Error trying to read metadata
+d01 2019-06-25_01:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_01:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_01:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_01:01:30 on domain   1:   27.40966 elapsed seconds
+Timing for main: time 2019-06-25_01:03:00 on domain   1:    8.48071 elapsed seconds
+Timing for main: time 2019-06-25_01:04:30 on domain   1:    8.49568 elapsed seconds
+Timing for main: time 2019-06-25_01:06:00 on domain   1:    8.46700 elapsed seconds
+Timing for main: time 2019-06-25_01:07:30 on domain   1:    8.45808 elapsed seconds
+Timing for main: time 2019-06-25_01:09:00 on domain   1:    8.42080 elapsed seconds
+Timing for main: time 2019-06-25_01:10:30 on domain   1:    8.37206 elapsed seconds
+Timing for main: time 2019-06-25_01:12:00 on domain   1:    8.42343 elapsed seconds
+Timing for main: time 2019-06-25_01:13:30 on domain   1:    8.43734 elapsed seconds
+Timing for main: time 2019-06-25_01:15:00 on domain   1:    8.43871 elapsed seconds
+Timing for main: time 2019-06-25_01:16:30 on domain   1:    8.45706 elapsed seconds
+Timing for main: time 2019-06-25_01:18:00 on domain   1:    8.44037 elapsed seconds
+Timing for main: time 2019-06-25_01:19:30 on domain   1:    8.45207 elapsed seconds
+Timing for main: time 2019-06-25_01:21:00 on domain   1:    8.45758 elapsed seconds
+Timing for main: time 2019-06-25_01:22:30 on domain   1:    9.82908 elapsed seconds
+Timing for main: time 2019-06-25_01:24:00 on domain   1:    8.46640 elapsed seconds
+Timing for main: time 2019-06-25_01:25:30 on domain   1:    8.46183 elapsed seconds
+Timing for main: time 2019-06-25_01:27:00 on domain   1:    8.46218 elapsed seconds
+Timing for main: time 2019-06-25_01:28:30 on domain   1:    8.47292 elapsed seconds
+Timing for main: time 2019-06-25_01:30:00 on domain   1:    8.47664 elapsed seconds
+Timing for main: time 2019-06-25_01:31:30 on domain   1:    8.47277 elapsed seconds
+Timing for main: time 2019-06-25_01:33:00 on domain   1:    8.48311 elapsed seconds
+Timing for main: time 2019-06-25_01:34:30 on domain   1:    8.48645 elapsed seconds
+Timing for main: time 2019-06-25_01:36:00 on domain   1:    8.47236 elapsed seconds
+Timing for main: time 2019-06-25_01:37:30 on domain   1:    8.48923 elapsed seconds
+Timing for main: time 2019-06-25_01:39:00 on domain   1:    8.48916 elapsed seconds
+Timing for main: time 2019-06-25_01:40:30 on domain   1:    8.48182 elapsed seconds
+Timing for main: time 2019-06-25_01:42:00 on domain   1:    8.48948 elapsed seconds
+Timing for main: time 2019-06-25_01:43:30 on domain   1:    8.48694 elapsed seconds
+Timing for main: time 2019-06-25_01:45:00 on domain   1:    8.50451 elapsed seconds
+Timing for main: time 2019-06-25_01:46:30 on domain   1:    8.49234 elapsed seconds
+Timing for main: time 2019-06-25_01:48:00 on domain   1:    8.50759 elapsed seconds
+Timing for main: time 2019-06-25_01:49:30 on domain   1:    9.87208 elapsed seconds
+Timing for main: time 2019-06-25_01:51:00 on domain   1:    8.49615 elapsed seconds
+Timing for main: time 2019-06-25_01:52:30 on domain   1:    8.50555 elapsed seconds
+Timing for main: time 2019-06-25_01:54:00 on domain   1:    8.50859 elapsed seconds
+Timing for main: time 2019-06-25_01:55:30 on domain   1:    8.50712 elapsed seconds
+Timing for main: time 2019-06-25_01:57:00 on domain   1:    8.50529 elapsed seconds
+Timing for main: time 2019-06-25_01:58:30 on domain   1:    8.51529 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =           80   1.000000       1.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_02:00:00 on domain   1:   17.43730 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_02:00:00 for domain        1:   12.79880 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME     7200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_02:00:00
+d01 2019-06-25_02:00:00  Error trying to read metadata
+d01 2019-06-25_02:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_02:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_02:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_02:01:30 on domain   1:   21.11873 elapsed seconds
+Timing for main: time 2019-06-25_02:03:00 on domain   1:    8.52489 elapsed seconds
+Timing for main: time 2019-06-25_02:04:30 on domain   1:    8.52414 elapsed seconds
+Timing for main: time 2019-06-25_02:06:00 on domain   1:    8.53433 elapsed seconds
+Timing for main: time 2019-06-25_02:07:30 on domain   1:    8.52989 elapsed seconds
+Timing for main: time 2019-06-25_02:09:00 on domain   1:    8.53716 elapsed seconds
+Timing for main: time 2019-06-25_02:10:30 on domain   1:    8.53786 elapsed seconds
+Timing for main: time 2019-06-25_02:12:00 on domain   1:    8.53793 elapsed seconds
+Timing for main: time 2019-06-25_02:13:30 on domain   1:    8.53813 elapsed seconds
+Timing for main: time 2019-06-25_02:15:00 on domain   1:    8.53980 elapsed seconds
+Timing for main: time 2019-06-25_02:16:30 on domain   1:    9.92616 elapsed seconds
+Timing for main: time 2019-06-25_02:18:00 on domain   1:    8.54692 elapsed seconds
+Timing for main: time 2019-06-25_02:19:30 on domain   1:    8.54840 elapsed seconds
+Timing for main: time 2019-06-25_02:21:00 on domain   1:    8.55631 elapsed seconds
+Timing for main: time 2019-06-25_02:22:30 on domain   1:    8.55272 elapsed seconds
+Timing for main: time 2019-06-25_02:24:00 on domain   1:    8.55012 elapsed seconds
+Timing for main: time 2019-06-25_02:25:30 on domain   1:    8.55879 elapsed seconds
+Timing for main: time 2019-06-25_02:27:00 on domain   1:    8.56153 elapsed seconds
+Timing for main: time 2019-06-25_02:28:30 on domain   1:    8.55851 elapsed seconds
+Timing for main: time 2019-06-25_02:30:00 on domain   1:    8.56791 elapsed seconds
+Timing for main: time 2019-06-25_02:31:30 on domain   1:    8.56202 elapsed seconds
+Timing for main: time 2019-06-25_02:33:00 on domain   1:    8.56633 elapsed seconds
+Timing for main: time 2019-06-25_02:34:30 on domain   1:    8.56584 elapsed seconds
+Timing for main: time 2019-06-25_02:36:00 on domain   1:    8.56760 elapsed seconds
+Timing for main: time 2019-06-25_02:37:30 on domain   1:    8.57068 elapsed seconds
+Timing for main: time 2019-06-25_02:39:00 on domain   1:    8.57351 elapsed seconds
+Timing for main: time 2019-06-25_02:40:30 on domain   1:    8.57164 elapsed seconds
+Timing for main: time 2019-06-25_02:42:00 on domain   1:    8.57561 elapsed seconds
+Timing for main: time 2019-06-25_02:43:30 on domain   1:    9.96434 elapsed seconds
+Timing for main: time 2019-06-25_02:45:00 on domain   1:    8.57590 elapsed seconds
+Timing for main: time 2019-06-25_02:46:30 on domain   1:    8.57636 elapsed seconds
+Timing for main: time 2019-06-25_02:48:00 on domain   1:    8.58097 elapsed seconds
+Timing for main: time 2019-06-25_02:49:30 on domain   1:    8.58201 elapsed seconds
+Timing for main: time 2019-06-25_02:51:00 on domain   1:    8.58456 elapsed seconds
+Timing for main: time 2019-06-25_02:52:30 on domain   1:    8.58529 elapsed seconds
+Timing for main: time 2019-06-25_02:54:00 on domain   1:    8.58939 elapsed seconds
+Timing for main: time 2019-06-25_02:55:30 on domain   1:    8.58416 elapsed seconds
+Timing for main: time 2019-06-25_02:57:00 on domain   1:    8.59069 elapsed seconds
+Timing for main: time 2019-06-25_02:58:30 on domain   1:    8.59104 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          120   2.000000       2.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_03:00:00 on domain   1:   17.39683 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_03:00:00 for domain        1:   12.85316 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    10800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_03:00:00
+d01 2019-06-25_03:00:00  Error trying to read metadata
+d01 2019-06-25_03:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_03:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_03:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_03:01:30 on domain   1:   21.17389 elapsed seconds
+Timing for main: time 2019-06-25_03:03:00 on domain   1:    8.59683 elapsed seconds
+Timing for main: time 2019-06-25_03:04:30 on domain   1:    8.57773 elapsed seconds
+Timing for main: time 2019-06-25_03:06:00 on domain   1:    8.59614 elapsed seconds
+Timing for main: time 2019-06-25_03:07:30 on domain   1:    8.59777 elapsed seconds
+Timing for main: time 2019-06-25_03:09:00 on domain   1:    8.59956 elapsed seconds
+Timing for main: time 2019-06-25_03:10:30 on domain   1:    9.99026 elapsed seconds
+Timing for main: time 2019-06-25_03:12:00 on domain   1:    8.60153 elapsed seconds
+Timing for main: time 2019-06-25_03:13:30 on domain   1:    8.60666 elapsed seconds
+Timing for main: time 2019-06-25_03:15:00 on domain   1:    8.60016 elapsed seconds
+Timing for main: time 2019-06-25_03:16:30 on domain   1:    8.60491 elapsed seconds
+Timing for main: time 2019-06-25_03:18:00 on domain   1:    8.60526 elapsed seconds
+Timing for main: time 2019-06-25_03:19:30 on domain   1:    8.60669 elapsed seconds
+Timing for main: time 2019-06-25_03:21:00 on domain   1:    8.60711 elapsed seconds
+Timing for main: time 2019-06-25_03:22:30 on domain   1:    8.60933 elapsed seconds
+Timing for main: time 2019-06-25_03:24:00 on domain   1:    8.61063 elapsed seconds
+Timing for main: time 2019-06-25_03:25:30 on domain   1:    8.61094 elapsed seconds
+Timing for main: time 2019-06-25_03:27:00 on domain   1:    8.61458 elapsed seconds
+Timing for main: time 2019-06-25_03:28:30 on domain   1:    8.61465 elapsed seconds
+Timing for main: time 2019-06-25_03:30:00 on domain   1:    8.62460 elapsed seconds
+Timing for main: time 2019-06-25_03:31:30 on domain   1:    8.62202 elapsed seconds
+Timing for main: time 2019-06-25_03:33:00 on domain   1:    8.61883 elapsed seconds
+Timing for main: time 2019-06-25_03:34:30 on domain   1:    8.63522 elapsed seconds
+Timing for main: time 2019-06-25_03:36:00 on domain   1:    8.62547 elapsed seconds
+Timing for main: time 2019-06-25_03:37:30 on domain   1:   10.00496 elapsed seconds
+Timing for main: time 2019-06-25_03:39:00 on domain   1:    8.62812 elapsed seconds
+Timing for main: time 2019-06-25_03:40:30 on domain   1:    8.63328 elapsed seconds
+Timing for main: time 2019-06-25_03:42:00 on domain   1:    8.63098 elapsed seconds
+Timing for main: time 2019-06-25_03:43:30 on domain   1:    8.63506 elapsed seconds
+Timing for main: time 2019-06-25_03:45:00 on domain   1:    8.63807 elapsed seconds
+Timing for main: time 2019-06-25_03:46:30 on domain   1:    8.63715 elapsed seconds
+Timing for main: time 2019-06-25_03:48:00 on domain   1:    8.64031 elapsed seconds
+Timing for main: time 2019-06-25_03:49:30 on domain   1:    8.64175 elapsed seconds
+Timing for main: time 2019-06-25_03:51:00 on domain   1:    8.64473 elapsed seconds
+Timing for main: time 2019-06-25_03:52:30 on domain   1:    8.64555 elapsed seconds
+Timing for main: time 2019-06-25_03:54:00 on domain   1:    8.64282 elapsed seconds
+Timing for main: time 2019-06-25_03:55:30 on domain   1:    8.64812 elapsed seconds
+Timing for main: time 2019-06-25_03:57:00 on domain   1:    8.64809 elapsed seconds
+Timing for main: time 2019-06-25_03:58:30 on domain   1:    8.64773 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          160   3.000000       3.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_04:00:00 on domain   1:   17.49153 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_04:00:00 for domain        1:   13.32095 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    14400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_04:00:00
+d01 2019-06-25_04:00:00  Error trying to read metadata
+d01 2019-06-25_04:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_04:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_04:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_04:01:30 on domain   1:   21.64935 elapsed seconds
+Timing for main: time 2019-06-25_04:03:00 on domain   1:    8.66575 elapsed seconds
+Timing for main: time 2019-06-25_04:04:30 on domain   1:   10.02577 elapsed seconds
+Timing for main: time 2019-06-25_04:06:00 on domain   1:    8.65421 elapsed seconds
+Timing for main: time 2019-06-25_04:07:30 on domain   1:    8.64968 elapsed seconds
+Timing for main: time 2019-06-25_04:09:00 on domain   1:    8.65690 elapsed seconds
+Timing for main: time 2019-06-25_04:10:30 on domain   1:    8.65743 elapsed seconds
+Timing for main: time 2019-06-25_04:12:00 on domain   1:    8.66065 elapsed seconds
+Timing for main: time 2019-06-25_04:13:30 on domain   1:    8.66550 elapsed seconds
+Timing for main: time 2019-06-25_04:15:00 on domain   1:    8.66094 elapsed seconds
+Timing for main: time 2019-06-25_04:16:30 on domain   1:    8.66324 elapsed seconds
+Timing for main: time 2019-06-25_04:18:00 on domain   1:    8.66227 elapsed seconds
+Timing for main: time 2019-06-25_04:19:30 on domain   1:    8.66576 elapsed seconds
+Timing for main: time 2019-06-25_04:21:00 on domain   1:    8.66511 elapsed seconds
+Timing for main: time 2019-06-25_04:22:30 on domain   1:    8.66626 elapsed seconds
+Timing for main: time 2019-06-25_04:24:00 on domain   1:    8.67196 elapsed seconds
+Timing for main: time 2019-06-25_04:25:30 on domain   1:    8.67530 elapsed seconds
+Timing for main: time 2019-06-25_04:27:00 on domain   1:    8.67247 elapsed seconds
+Timing for main: time 2019-06-25_04:28:30 on domain   1:    8.67126 elapsed seconds
+Timing for main: time 2019-06-25_04:30:00 on domain   1:    8.68165 elapsed seconds
+Timing for main: time 2019-06-25_04:31:30 on domain   1:   10.04518 elapsed seconds
+Timing for main: time 2019-06-25_04:33:00 on domain   1:    8.67895 elapsed seconds
+Timing for main: time 2019-06-25_04:34:30 on domain   1:    8.67861 elapsed seconds
+Timing for main: time 2019-06-25_04:36:00 on domain   1:    8.68286 elapsed seconds
+Timing for main: time 2019-06-25_04:37:30 on domain   1:    8.68019 elapsed seconds
+Timing for main: time 2019-06-25_04:39:00 on domain   1:    8.68450 elapsed seconds
+Timing for main: time 2019-06-25_04:40:30 on domain   1:    8.68846 elapsed seconds
+Timing for main: time 2019-06-25_04:42:00 on domain   1:    8.69000 elapsed seconds
+Timing for main: time 2019-06-25_04:43:30 on domain   1:    8.69135 elapsed seconds
+Timing for main: time 2019-06-25_04:45:00 on domain   1:    8.69194 elapsed seconds
+Timing for main: time 2019-06-25_04:46:30 on domain   1:    8.69345 elapsed seconds
+Timing for main: time 2019-06-25_04:48:00 on domain   1:    8.69348 elapsed seconds
+Timing for main: time 2019-06-25_04:49:30 on domain   1:    8.69627 elapsed seconds
+Timing for main: time 2019-06-25_04:51:00 on domain   1:    8.69919 elapsed seconds
+Timing for main: time 2019-06-25_04:52:30 on domain   1:    8.69796 elapsed seconds
+Timing for main: time 2019-06-25_04:54:00 on domain   1:    8.70147 elapsed seconds
+Timing for main: time 2019-06-25_04:55:30 on domain   1:    8.69364 elapsed seconds
+Timing for main: time 2019-06-25_04:57:00 on domain   1:    8.70686 elapsed seconds
+Timing for main: time 2019-06-25_04:58:30 on domain   1:   10.06010 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          200   4.000000       4.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_05:00:00 on domain   1:   17.51778 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_05:00:00 for domain        1:   13.43259 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    18000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_05:00:00
+d01 2019-06-25_05:00:00  Error trying to read metadata
+d01 2019-06-25_05:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_05:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_05:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_05:01:30 on domain   1:   21.76636 elapsed seconds
+Timing for main: time 2019-06-25_05:03:00 on domain   1:    8.70829 elapsed seconds
+Timing for main: time 2019-06-25_05:04:30 on domain   1:    8.70781 elapsed seconds
+Timing for main: time 2019-06-25_05:06:00 on domain   1:    8.71272 elapsed seconds
+Timing for main: time 2019-06-25_05:07:30 on domain   1:    8.71468 elapsed seconds
+Timing for main: time 2019-06-25_05:09:00 on domain   1:    8.71504 elapsed seconds
+Timing for main: time 2019-06-25_05:10:30 on domain   1:    8.71688 elapsed seconds
+Timing for main: time 2019-06-25_05:12:00 on domain   1:    8.71451 elapsed seconds
+Timing for main: time 2019-06-25_05:13:30 on domain   1:    8.71873 elapsed seconds
+Timing for main: time 2019-06-25_05:15:00 on domain   1:    8.71593 elapsed seconds
+Timing for main: time 2019-06-25_05:16:30 on domain   1:    8.71986 elapsed seconds
+Timing for main: time 2019-06-25_05:18:00 on domain   1:    8.71865 elapsed seconds
+Timing for main: time 2019-06-25_05:19:30 on domain   1:    8.72650 elapsed seconds
+Timing for main: time 2019-06-25_05:21:00 on domain   1:    8.71959 elapsed seconds
+Timing for main: time 2019-06-25_05:22:30 on domain   1:    8.72565 elapsed seconds
+Timing for main: time 2019-06-25_05:24:00 on domain   1:    8.72311 elapsed seconds
+Timing for main: time 2019-06-25_05:25:30 on domain   1:   10.08712 elapsed seconds
+Timing for main: time 2019-06-25_05:27:00 on domain   1:    8.72395 elapsed seconds
+Timing for main: time 2019-06-25_05:28:30 on domain   1:    8.73161 elapsed seconds
+Timing for main: time 2019-06-25_05:30:00 on domain   1:    8.74189 elapsed seconds
+Timing for main: time 2019-06-25_05:31:30 on domain   1:    8.73341 elapsed seconds
+Timing for main: time 2019-06-25_05:33:00 on domain   1:    8.72845 elapsed seconds
+Timing for main: time 2019-06-25_05:34:30 on domain   1:    8.73457 elapsed seconds
+Timing for main: time 2019-06-25_05:36:00 on domain   1:    8.73760 elapsed seconds
+Timing for main: time 2019-06-25_05:37:30 on domain   1:    8.73701 elapsed seconds
+Timing for main: time 2019-06-25_05:39:00 on domain   1:    8.73540 elapsed seconds
+Timing for main: time 2019-06-25_05:40:30 on domain   1:    8.73489 elapsed seconds
+Timing for main: time 2019-06-25_05:42:00 on domain   1:    8.73382 elapsed seconds
+Timing for main: time 2019-06-25_05:43:30 on domain   1:    8.73886 elapsed seconds
+Timing for main: time 2019-06-25_05:45:00 on domain   1:    8.74341 elapsed seconds
+Timing for main: time 2019-06-25_05:46:30 on domain   1:    8.73992 elapsed seconds
+Timing for main: time 2019-06-25_05:48:00 on domain   1:    8.74305 elapsed seconds
+Timing for main: time 2019-06-25_05:49:30 on domain   1:    8.74560 elapsed seconds
+Timing for main: time 2019-06-25_05:51:00 on domain   1:    8.74686 elapsed seconds
+Timing for main: time 2019-06-25_05:52:30 on domain   1:   10.09659 elapsed seconds
+Timing for main: time 2019-06-25_05:54:00 on domain   1:    8.74785 elapsed seconds
+Timing for main: time 2019-06-25_05:55:30 on domain   1:    8.75002 elapsed seconds
+Timing for main: time 2019-06-25_05:57:00 on domain   1:    8.75230 elapsed seconds
+Timing for main: time 2019-06-25_05:58:30 on domain   1:    8.75396 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          240   5.000000       5.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_06:00:00 on domain   1:   17.58635 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_06:00:00 for domain        1:   13.41324 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    21600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_06:00:00
+d01 2019-06-25_06:00:00  Error trying to read metadata
+d01 2019-06-25_06:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_06:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_06:00:00
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_06:00:00  Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    1.62670 elapsed seconds
+Timing for main: time 2019-06-25_06:01:30 on domain   1:   23.36049 elapsed seconds
+Timing for main: time 2019-06-25_06:03:00 on domain   1:    8.75228 elapsed seconds
+Timing for main: time 2019-06-25_06:04:30 on domain   1:    8.75683 elapsed seconds
+Timing for main: time 2019-06-25_06:06:00 on domain   1:    8.75590 elapsed seconds
+Timing for main: time 2019-06-25_06:07:30 on domain   1:    8.75684 elapsed seconds
+Timing for main: time 2019-06-25_06:09:00 on domain   1:    8.76118 elapsed seconds
+Timing for main: time 2019-06-25_06:10:30 on domain   1:    8.75834 elapsed seconds
+Timing for main: time 2019-06-25_06:12:00 on domain   1:    8.76378 elapsed seconds
+Timing for main: time 2019-06-25_06:13:30 on domain   1:    8.76480 elapsed seconds
+Timing for main: time 2019-06-25_06:15:00 on domain   1:    8.76536 elapsed seconds
+Timing for main: time 2019-06-25_06:16:30 on domain   1:    8.76662 elapsed seconds
+Timing for main: time 2019-06-25_06:18:00 on domain   1:    8.76817 elapsed seconds
+Timing for main: time 2019-06-25_06:19:30 on domain   1:   10.11657 elapsed seconds
+Timing for main: time 2019-06-25_06:21:00 on domain   1:    8.76902 elapsed seconds
+Timing for main: time 2019-06-25_06:22:30 on domain   1:    8.77709 elapsed seconds
+Timing for main: time 2019-06-25_06:24:00 on domain   1:    8.77290 elapsed seconds
+Timing for main: time 2019-06-25_06:25:30 on domain   1:    8.77472 elapsed seconds
+Timing for main: time 2019-06-25_06:27:00 on domain   1:    8.77769 elapsed seconds
+Timing for main: time 2019-06-25_06:28:30 on domain   1:    8.77913 elapsed seconds
+Timing for main: time 2019-06-25_06:30:00 on domain   1:    8.78932 elapsed seconds
+Timing for main: time 2019-06-25_06:31:30 on domain   1:    8.78035 elapsed seconds
+Timing for main: time 2019-06-25_06:33:00 on domain   1:    8.78143 elapsed seconds
+Timing for main: time 2019-06-25_06:34:30 on domain   1:    8.78568 elapsed seconds
+Timing for main: time 2019-06-25_06:36:00 on domain   1:    8.78928 elapsed seconds
+Timing for main: time 2019-06-25_06:37:30 on domain   1:    8.78571 elapsed seconds
+Timing for main: time 2019-06-25_06:39:00 on domain   1:    8.79118 elapsed seconds
+Timing for main: time 2019-06-25_06:40:30 on domain   1:    8.79247 elapsed seconds
+Timing for main: time 2019-06-25_06:42:00 on domain   1:    8.79152 elapsed seconds
+Timing for main: time 2019-06-25_06:43:30 on domain   1:    8.79284 elapsed seconds
+Timing for main: time 2019-06-25_06:45:00 on domain   1:    8.79519 elapsed seconds
+Timing for main: time 2019-06-25_06:46:30 on domain   1:   10.13498 elapsed seconds
+Timing for main: time 2019-06-25_06:48:00 on domain   1:    8.79976 elapsed seconds
+Timing for main: time 2019-06-25_06:49:30 on domain   1:    8.79932 elapsed seconds
+Timing for main: time 2019-06-25_06:51:00 on domain   1:    8.80605 elapsed seconds
+Timing for main: time 2019-06-25_06:52:30 on domain   1:    8.80777 elapsed seconds
+Timing for main: time 2019-06-25_06:54:00 on domain   1:    8.80785 elapsed seconds
+Timing for main: time 2019-06-25_06:55:30 on domain   1:    8.80664 elapsed seconds
+Timing for main: time 2019-06-25_06:57:00 on domain   1:    8.80382 elapsed seconds
+Timing for main: time 2019-06-25_06:58:30 on domain   1:    8.81230 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          280   6.000000       6.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_07:00:00 on domain   1:   17.64068 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_07:00:00 for domain        1:   12.19360 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    25200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_07:00:00
+d01 2019-06-25_07:00:00  Error trying to read metadata
+d01 2019-06-25_07:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_07:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_07:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_07:01:30 on domain   1:   20.51871 elapsed seconds
+Timing for main: time 2019-06-25_07:03:00 on domain   1:    8.81443 elapsed seconds
+Timing for main: time 2019-06-25_07:04:30 on domain   1:    8.81223 elapsed seconds
+Timing for main: time 2019-06-25_07:06:00 on domain   1:    8.81737 elapsed seconds
+Timing for main: time 2019-06-25_07:07:30 on domain   1:    8.81891 elapsed seconds
+Timing for main: time 2019-06-25_07:09:00 on domain   1:    8.82146 elapsed seconds
+Timing for main: time 2019-06-25_07:10:30 on domain   1:    8.82369 elapsed seconds
+Timing for main: time 2019-06-25_07:12:00 on domain   1:    8.82932 elapsed seconds
+Timing for main: time 2019-06-25_07:13:30 on domain   1:   10.15730 elapsed seconds
+Timing for main: time 2019-06-25_07:15:00 on domain   1:    8.82625 elapsed seconds
+Timing for main: time 2019-06-25_07:16:30 on domain   1:    8.83389 elapsed seconds
+Timing for main: time 2019-06-25_07:18:00 on domain   1:    8.83286 elapsed seconds
+Timing for main: time 2019-06-25_07:19:30 on domain   1:    8.83571 elapsed seconds
+Timing for main: time 2019-06-25_07:21:00 on domain   1:    8.83232 elapsed seconds
+Timing for main: time 2019-06-25_07:22:30 on domain   1:    8.83785 elapsed seconds
+Timing for main: time 2019-06-25_07:24:00 on domain   1:    8.82993 elapsed seconds
+Timing for main: time 2019-06-25_07:25:30 on domain   1:    8.83137 elapsed seconds
+Timing for main: time 2019-06-25_07:27:00 on domain   1:    8.83559 elapsed seconds
+Timing for main: time 2019-06-25_07:28:30 on domain   1:    8.83427 elapsed seconds
+Timing for main: time 2019-06-25_07:30:00 on domain   1:    8.84021 elapsed seconds
+Timing for main: time 2019-06-25_07:31:30 on domain   1:    8.84002 elapsed seconds
+Timing for main: time 2019-06-25_07:33:00 on domain   1:    8.84398 elapsed seconds
+Timing for main: time 2019-06-25_07:34:30 on domain   1:    8.84251 elapsed seconds
+Timing for main: time 2019-06-25_07:36:00 on domain   1:    8.83857 elapsed seconds
+Timing for main: time 2019-06-25_07:37:30 on domain   1:    8.84490 elapsed seconds
+Timing for main: time 2019-06-25_07:39:00 on domain   1:    8.84918 elapsed seconds
+Timing for main: time 2019-06-25_07:40:30 on domain   1:   11.09870 elapsed seconds
+Timing for main: time 2019-06-25_07:42:00 on domain   1:    8.84819 elapsed seconds
+Timing for main: time 2019-06-25_07:43:30 on domain   1:    8.85275 elapsed seconds
+Timing for main: time 2019-06-25_07:45:00 on domain   1:    8.85145 elapsed seconds
+Timing for main: time 2019-06-25_07:46:30 on domain   1:    8.85010 elapsed seconds
+Timing for main: time 2019-06-25_07:48:00 on domain   1:    8.86608 elapsed seconds
+Timing for main: time 2019-06-25_07:49:30 on domain   1:    8.85744 elapsed seconds
+Timing for main: time 2019-06-25_07:51:00 on domain   1:    8.85258 elapsed seconds
+Timing for main: time 2019-06-25_07:52:30 on domain   1:    8.85812 elapsed seconds
+Timing for main: time 2019-06-25_07:54:00 on domain   1:    8.85997 elapsed seconds
+Timing for main: time 2019-06-25_07:55:30 on domain   1:    8.85794 elapsed seconds
+Timing for main: time 2019-06-25_07:57:00 on domain   1:    8.85394 elapsed seconds
+Timing for main: time 2019-06-25_07:58:30 on domain   1:    8.86204 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          320   7.000000       7.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_08:00:00 on domain   1:   17.58401 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_08:00:00 for domain        1:   24.12196 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    28800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_08:00:00
+d01 2019-06-25_08:00:00  Error trying to read metadata
+d01 2019-06-25_08:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_08:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_08:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_08:01:30 on domain   1:   32.47247 elapsed seconds
+Timing for main: time 2019-06-25_08:03:00 on domain   1:    9.38966 elapsed seconds
+Timing for main: time 2019-06-25_08:04:30 on domain   1:    9.07550 elapsed seconds
+Timing for main: time 2019-06-25_08:06:00 on domain   1:    9.02308 elapsed seconds
+Timing for main: time 2019-06-25_08:07:30 on domain   1:   12.33408 elapsed seconds
+Timing for main: time 2019-06-25_08:09:00 on domain   1:    8.98775 elapsed seconds
+Timing for main: time 2019-06-25_08:10:30 on domain   1:    8.98253 elapsed seconds
+Timing for main: time 2019-06-25_08:12:00 on domain   1:    8.98388 elapsed seconds
+Timing for main: time 2019-06-25_08:13:30 on domain   1:    8.98153 elapsed seconds
+Timing for main: time 2019-06-25_08:15:00 on domain   1:    8.98090 elapsed seconds
+Timing for main: time 2019-06-25_08:16:30 on domain   1:    8.98069 elapsed seconds
+Timing for main: time 2019-06-25_08:18:00 on domain   1:    8.97999 elapsed seconds
+Timing for main: time 2019-06-25_08:19:30 on domain   1:    8.99393 elapsed seconds
+Timing for main: time 2019-06-25_08:21:00 on domain   1:    8.97795 elapsed seconds
+Timing for main: time 2019-06-25_08:22:30 on domain   1:    8.98298 elapsed seconds
+Timing for main: time 2019-06-25_08:24:00 on domain   1:    8.97677 elapsed seconds
+Timing for main: time 2019-06-25_08:25:30 on domain   1:    8.98563 elapsed seconds
+Timing for main: time 2019-06-25_08:27:00 on domain   1:    8.97422 elapsed seconds
+Timing for main: time 2019-06-25_08:28:30 on domain   1:    8.98206 elapsed seconds
+Timing for main: time 2019-06-25_08:30:00 on domain   1:    8.98488 elapsed seconds
+Timing for main: time 2019-06-25_08:31:30 on domain   1:    8.98134 elapsed seconds
+Timing for main: time 2019-06-25_08:33:00 on domain   1:    8.97760 elapsed seconds
+Timing for main: time 2019-06-25_08:34:30 on domain   1:   12.52805 elapsed seconds
+Timing for main: time 2019-06-25_08:36:00 on domain   1:    8.98882 elapsed seconds
+Timing for main: time 2019-06-25_08:37:30 on domain   1:    8.99243 elapsed seconds
+Timing for main: time 2019-06-25_08:39:00 on domain   1:    8.99194 elapsed seconds
+Timing for main: time 2019-06-25_08:40:30 on domain   1:    8.99418 elapsed seconds
+Timing for main: time 2019-06-25_08:42:00 on domain   1:    8.99623 elapsed seconds
+Timing for main: time 2019-06-25_08:43:30 on domain   1:    8.99730 elapsed seconds
+Timing for main: time 2019-06-25_08:45:00 on domain   1:    8.99474 elapsed seconds
+Timing for main: time 2019-06-25_08:46:30 on domain   1:    9.00000 elapsed seconds
+Timing for main: time 2019-06-25_08:48:00 on domain   1:    9.00481 elapsed seconds
+Timing for main: time 2019-06-25_08:49:30 on domain   1:    8.99594 elapsed seconds
+Timing for main: time 2019-06-25_08:51:00 on domain   1:    8.99714 elapsed seconds
+Timing for main: time 2019-06-25_08:52:30 on domain   1:    8.99969 elapsed seconds
+Timing for main: time 2019-06-25_08:54:00 on domain   1:    9.00041 elapsed seconds
+Timing for main: time 2019-06-25_08:55:30 on domain   1:    9.00140 elapsed seconds
+Timing for main: time 2019-06-25_08:57:00 on domain   1:    9.00321 elapsed seconds
+Timing for main: time 2019-06-25_08:58:30 on domain   1:    9.01292 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          360   8.000000       8.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_09:00:00 on domain   1:   17.84226 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_09:00:00 for domain        1:   36.88347 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    32400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_09:00:00
+d01 2019-06-25_09:00:00  Error trying to read metadata
+d01 2019-06-25_09:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_09:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_09:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_09:01:30 on domain   1:   48.76360 elapsed seconds
+Timing for main: time 2019-06-25_09:03:00 on domain   1:   10.08459 elapsed seconds
+Timing for main: time 2019-06-25_09:04:30 on domain   1:    9.60715 elapsed seconds
+Timing for main: time 2019-06-25_09:06:00 on domain   1:    9.48926 elapsed seconds
+Timing for main: time 2019-06-25_09:07:30 on domain   1:    9.44174 elapsed seconds
+Timing for main: time 2019-06-25_09:09:00 on domain   1:    9.43069 elapsed seconds
+Timing for main: time 2019-06-25_09:10:30 on domain   1:    9.41699 elapsed seconds
+Timing for main: time 2019-06-25_09:12:00 on domain   1:    9.40720 elapsed seconds
+Timing for main: time 2019-06-25_09:13:30 on domain   1:    9.39702 elapsed seconds
+Timing for main: time 2019-06-25_09:15:00 on domain   1:    9.39477 elapsed seconds
+Timing for main: time 2019-06-25_09:16:30 on domain   1:    9.39740 elapsed seconds
+Timing for main: time 2019-06-25_09:18:00 on domain   1:    9.39431 elapsed seconds
+Timing for main: time 2019-06-25_09:19:30 on domain   1:    9.39146 elapsed seconds
+Timing for main: time 2019-06-25_09:21:00 on domain   1:    9.39588 elapsed seconds
+Timing for main: time 2019-06-25_09:22:30 on domain   1:    9.38809 elapsed seconds
+Timing for main: time 2019-06-25_09:24:00 on domain   1:    9.39250 elapsed seconds
+Timing for main: time 2019-06-25_09:25:30 on domain   1:    9.39155 elapsed seconds
+Timing for main: time 2019-06-25_09:27:00 on domain   1:    9.38967 elapsed seconds
+Timing for main: time 2019-06-25_09:28:30 on domain   1:   12.89515 elapsed seconds
+Timing for main: time 2019-06-25_09:30:00 on domain   1:    9.39471 elapsed seconds
+Timing for main: time 2019-06-25_09:31:30 on domain   1:    9.38391 elapsed seconds
+Timing for main: time 2019-06-25_09:33:00 on domain   1:    9.38408 elapsed seconds
+Timing for main: time 2019-06-25_09:34:30 on domain   1:    9.38723 elapsed seconds
+Timing for main: time 2019-06-25_09:36:00 on domain   1:    9.38536 elapsed seconds
+Timing for main: time 2019-06-25_09:37:30 on domain   1:    9.38143 elapsed seconds
+Timing for main: time 2019-06-25_09:39:00 on domain   1:    9.37952 elapsed seconds
+Timing for main: time 2019-06-25_09:40:30 on domain   1:    9.38077 elapsed seconds
+Timing for main: time 2019-06-25_09:42:00 on domain   1:    9.37610 elapsed seconds
+Timing for main: time 2019-06-25_09:43:30 on domain   1:    9.37659 elapsed seconds
+Timing for main: time 2019-06-25_09:45:00 on domain   1:    9.38062 elapsed seconds
+Timing for main: time 2019-06-25_09:46:30 on domain   1:    9.38012 elapsed seconds
+Timing for main: time 2019-06-25_09:48:00 on domain   1:    9.38190 elapsed seconds
+Timing for main: time 2019-06-25_09:49:30 on domain   1:    9.38203 elapsed seconds
+Timing for main: time 2019-06-25_09:51:00 on domain   1:    9.37934 elapsed seconds
+Timing for main: time 2019-06-25_09:52:30 on domain   1:    9.37775 elapsed seconds
+Timing for main: time 2019-06-25_09:54:00 on domain   1:    9.37611 elapsed seconds
+Timing for main: time 2019-06-25_09:55:30 on domain   1:   12.86846 elapsed seconds
+Timing for main: time 2019-06-25_09:57:00 on domain   1:    9.37814 elapsed seconds
+Timing for main: time 2019-06-25_09:58:30 on domain   1:    9.37374 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          400   9.000000       9.987500
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_10:00:00 on domain   1:   18.20520 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_10:00:00 for domain        1:   39.41552 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    36000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_10:00:00
+d01 2019-06-25_10:00:00  Error trying to read metadata
+d01 2019-06-25_10:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_10:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_10:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_10:01:30 on domain   1:   47.76472 elapsed seconds
+Timing for main: time 2019-06-25_10:03:00 on domain   1:   10.17002 elapsed seconds
+Timing for main: time 2019-06-25_10:04:30 on domain   1:    9.64011 elapsed seconds
+Timing for main: time 2019-06-25_10:06:00 on domain   1:    9.62986 elapsed seconds
+Timing for main: time 2019-06-25_10:07:30 on domain   1:    9.62380 elapsed seconds
+Timing for main: time 2019-06-25_10:09:00 on domain   1:    9.62573 elapsed seconds
+Timing for main: time 2019-06-25_10:10:30 on domain   1:    9.63083 elapsed seconds
+Timing for main: time 2019-06-25_10:12:00 on domain   1:    9.62932 elapsed seconds
+Timing for main: time 2019-06-25_10:13:30 on domain   1:    9.62558 elapsed seconds
+Timing for main: time 2019-06-25_10:15:00 on domain   1:    9.63200 elapsed seconds
+Timing for main: time 2019-06-25_10:16:30 on domain   1:    9.63470 elapsed seconds
+Timing for main: time 2019-06-25_10:18:00 on domain   1:    9.63358 elapsed seconds
+Timing for main: time 2019-06-25_10:19:30 on domain   1:    9.63409 elapsed seconds
+Timing for main: time 2019-06-25_10:21:00 on domain   1:    9.63723 elapsed seconds
+Timing for main: time 2019-06-25_10:22:30 on domain   1:   13.16209 elapsed seconds
+Timing for main: time 2019-06-25_10:24:00 on domain   1:    9.63936 elapsed seconds
+Timing for main: time 2019-06-25_10:25:30 on domain   1:    9.63972 elapsed seconds
+Timing for main: time 2019-06-25_10:27:00 on domain   1:    9.64221 elapsed seconds
+Timing for main: time 2019-06-25_10:28:30 on domain   1:    9.63920 elapsed seconds
+Timing for main: time 2019-06-25_10:30:00 on domain   1:    9.64904 elapsed seconds
+Timing for main: time 2019-06-25_10:31:30 on domain   1:    9.64121 elapsed seconds
+Timing for main: time 2019-06-25_10:33:00 on domain   1:    9.63589 elapsed seconds
+Timing for main: time 2019-06-25_10:34:30 on domain   1:    9.64068 elapsed seconds
+Timing for main: time 2019-06-25_10:36:00 on domain   1:    9.63466 elapsed seconds
+Timing for main: time 2019-06-25_10:37:30 on domain   1:    9.64176 elapsed seconds
+Timing for main: time 2019-06-25_10:39:00 on domain   1:    9.64112 elapsed seconds
+Timing for main: time 2019-06-25_10:40:30 on domain   1:    9.64327 elapsed seconds
+Timing for main: time 2019-06-25_10:42:00 on domain   1:    9.64265 elapsed seconds
+Timing for main: time 2019-06-25_10:43:30 on domain   1:    9.64119 elapsed seconds
+Timing for main: time 2019-06-25_10:45:00 on domain   1:    9.64733 elapsed seconds
+Timing for main: time 2019-06-25_10:46:30 on domain   1:    9.64718 elapsed seconds
+Timing for main: time 2019-06-25_10:48:00 on domain   1:    9.64237 elapsed seconds
+Timing for main: time 2019-06-25_10:49:30 on domain   1:   13.20697 elapsed seconds
+Timing for main: time 2019-06-25_10:51:00 on domain   1:    9.64248 elapsed seconds
+Timing for main: time 2019-06-25_10:52:30 on domain   1:    9.64901 elapsed seconds
+Timing for main: time 2019-06-25_10:54:00 on domain   1:    9.64540 elapsed seconds
+Timing for main: time 2019-06-25_10:55:30 on domain   1:    9.65269 elapsed seconds
+Timing for main: time 2019-06-25_10:57:00 on domain   1:    9.64884 elapsed seconds
+Timing for main: time 2019-06-25_10:58:30 on domain   1:    9.64992 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          440   10.00000       10.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_11:00:00 on domain   1:   18.29620 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_11:00:00 for domain        1:   38.47186 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    39600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_11:00:00
+d01 2019-06-25_11:00:00  Error trying to read metadata
+d01 2019-06-25_11:00:00  Input data is acceptable to use: wrfchemi_00z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_11:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_11:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_11:01:30 on domain   1:   46.81297 elapsed seconds
+Timing for main: time 2019-06-25_11:03:00 on domain   1:   10.65501 elapsed seconds
+Timing for main: time 2019-06-25_11:04:30 on domain   1:    9.95325 elapsed seconds
+Timing for main: time 2019-06-25_11:06:00 on domain   1:    9.71616 elapsed seconds
+Timing for main: time 2019-06-25_11:07:30 on domain   1:    9.69324 elapsed seconds
+Timing for main: time 2019-06-25_11:09:00 on domain   1:    9.69205 elapsed seconds
+Timing for main: time 2019-06-25_11:10:30 on domain   1:    9.68933 elapsed seconds
+Timing for main: time 2019-06-25_11:12:00 on domain   1:    9.69494 elapsed seconds
+Timing for main: time 2019-06-25_11:13:30 on domain   1:    9.68925 elapsed seconds
+Timing for main: time 2019-06-25_11:15:00 on domain   1:    9.69401 elapsed seconds
+Timing for main: time 2019-06-25_11:16:30 on domain   1:   13.31166 elapsed seconds
+Timing for main: time 2019-06-25_11:18:00 on domain   1:    9.69216 elapsed seconds
+Timing for main: time 2019-06-25_11:19:30 on domain   1:    9.69931 elapsed seconds
+Timing for main: time 2019-06-25_11:21:00 on domain   1:    9.69494 elapsed seconds
+Timing for main: time 2019-06-25_11:22:30 on domain   1:    9.69908 elapsed seconds
+Timing for main: time 2019-06-25_11:24:00 on domain   1:    9.70534 elapsed seconds
+Timing for main: time 2019-06-25_11:25:30 on domain   1:    9.70408 elapsed seconds
+Timing for main: time 2019-06-25_11:27:00 on domain   1:    9.70628 elapsed seconds
+Timing for main: time 2019-06-25_11:28:30 on domain   1:    9.70567 elapsed seconds
+Timing for main: time 2019-06-25_11:30:00 on domain   1:    9.71428 elapsed seconds
+Timing for main: time 2019-06-25_11:31:30 on domain   1:    9.70051 elapsed seconds
+Timing for main: time 2019-06-25_11:33:00 on domain   1:    9.70273 elapsed seconds
+Timing for main: time 2019-06-25_11:34:30 on domain   1:    9.70868 elapsed seconds
+Timing for main: time 2019-06-25_11:36:00 on domain   1:    9.70791 elapsed seconds
+Timing for main: time 2019-06-25_11:37:30 on domain   1:    9.71504 elapsed seconds
+Timing for main: time 2019-06-25_11:39:00 on domain   1:    9.70511 elapsed seconds
+Timing for main: time 2019-06-25_11:40:30 on domain   1:    9.71207 elapsed seconds
+Timing for main: time 2019-06-25_11:42:00 on domain   1:    9.71509 elapsed seconds
+Timing for main: time 2019-06-25_11:43:30 on domain   1:   13.41160 elapsed seconds
+Timing for main: time 2019-06-25_11:45:00 on domain   1:    9.70583 elapsed seconds
+Timing for main: time 2019-06-25_11:46:30 on domain   1:    9.70981 elapsed seconds
+Timing for main: time 2019-06-25_11:48:00 on domain   1:    9.70780 elapsed seconds
+Timing for main: time 2019-06-25_11:49:30 on domain   1:    9.70758 elapsed seconds
+Timing for main: time 2019-06-25_11:51:00 on domain   1:    9.70738 elapsed seconds
+Timing for main: time 2019-06-25_11:52:30 on domain   1:    9.70981 elapsed seconds
+Timing for main: time 2019-06-25_11:54:00 on domain   1:    9.71303 elapsed seconds
+Timing for main: time 2019-06-25_11:55:30 on domain   1:    9.70541 elapsed seconds
+Timing for main: time 2019-06-25_11:57:00 on domain   1:    9.71449 elapsed seconds
+Timing for main: time 2019-06-25_11:58:30 on domain   1:    9.71704 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          480   11.00000       11.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_12:00:00 on domain   1:   18.37768 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_12:00:00 for domain        1:   38.99948 elapsed seconds
+ mediation_integrate: med_read_wrf_chem_emissions: Open file wrfchemi_12z_d01
+ HOURLY EMISSIONS UPDATE TIME    43200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_12:00:00
+d01 2019-06-25_12:00:00  Error trying to read metadata
+d01 2019-06-25_12:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_12:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_12:00:00
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_12:00:00  Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    1.64116 elapsed seconds
+Timing for main: time 2019-06-25_12:01:30 on domain   1:   49.50898 elapsed seconds
+Timing for main: time 2019-06-25_12:03:00 on domain   1:   10.54846 elapsed seconds
+Timing for main: time 2019-06-25_12:04:30 on domain   1:    9.95280 elapsed seconds
+Timing for main: time 2019-06-25_12:06:00 on domain   1:    9.77569 elapsed seconds
+Timing for main: time 2019-06-25_12:07:30 on domain   1:    9.73333 elapsed seconds
+Timing for main: time 2019-06-25_12:09:00 on domain   1:    9.73847 elapsed seconds
+Timing for main: time 2019-06-25_12:10:30 on domain   1:   13.43787 elapsed seconds
+Timing for main: time 2019-06-25_12:12:00 on domain   1:    9.73573 elapsed seconds
+Timing for main: time 2019-06-25_12:13:30 on domain   1:    9.73613 elapsed seconds
+Timing for main: time 2019-06-25_12:15:00 on domain   1:    9.73762 elapsed seconds
+Timing for main: time 2019-06-25_12:16:30 on domain   1:    9.73730 elapsed seconds
+Timing for main: time 2019-06-25_12:18:00 on domain   1:    9.74093 elapsed seconds
+Timing for main: time 2019-06-25_12:19:30 on domain   1:    9.74094 elapsed seconds
+Timing for main: time 2019-06-25_12:21:00 on domain   1:    9.75048 elapsed seconds
+Timing for main: time 2019-06-25_12:22:30 on domain   1:    9.74309 elapsed seconds
+Timing for main: time 2019-06-25_12:24:00 on domain   1:    9.74407 elapsed seconds
+Timing for main: time 2019-06-25_12:25:30 on domain   1:    9.74700 elapsed seconds
+Timing for main: time 2019-06-25_12:27:00 on domain   1:    9.74519 elapsed seconds
+Timing for main: time 2019-06-25_12:28:30 on domain   1:    9.74346 elapsed seconds
+Timing for main: time 2019-06-25_12:30:00 on domain   1:    9.75961 elapsed seconds
+Timing for main: time 2019-06-25_12:31:30 on domain   1:    9.75435 elapsed seconds
+Timing for main: time 2019-06-25_12:33:00 on domain   1:    9.74814 elapsed seconds
+Timing for main: time 2019-06-25_12:34:30 on domain   1:    9.74789 elapsed seconds
+Timing for main: time 2019-06-25_12:36:00 on domain   1:    9.74653 elapsed seconds
+Timing for main: time 2019-06-25_12:37:30 on domain   1:   13.42134 elapsed seconds
+Timing for main: time 2019-06-25_12:39:00 on domain   1:    9.75148 elapsed seconds
+Timing for main: time 2019-06-25_12:40:30 on domain   1:    9.75235 elapsed seconds
+Timing for main: time 2019-06-25_12:42:00 on domain   1:    9.75511 elapsed seconds
+Timing for main: time 2019-06-25_12:43:30 on domain   1:    9.75632 elapsed seconds
+Timing for main: time 2019-06-25_12:45:00 on domain   1:    9.75565 elapsed seconds
+Timing for main: time 2019-06-25_12:46:30 on domain   1:    9.75808 elapsed seconds
+Timing for main: time 2019-06-25_12:48:00 on domain   1:    9.76249 elapsed seconds
+Timing for main: time 2019-06-25_12:49:30 on domain   1:    9.74902 elapsed seconds
+Timing for main: time 2019-06-25_12:51:00 on domain   1:    9.76086 elapsed seconds
+Timing for main: time 2019-06-25_12:52:30 on domain   1:    9.76786 elapsed seconds
+Timing for main: time 2019-06-25_12:54:00 on domain   1:    9.76226 elapsed seconds
+Timing for main: time 2019-06-25_12:55:30 on domain   1:    9.76544 elapsed seconds
+Timing for main: time 2019-06-25_12:57:00 on domain   1:    9.75966 elapsed seconds
+Timing for main: time 2019-06-25_12:58:30 on domain   1:    9.76171 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          520   12.00000       12.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_13:00:00 on domain   1:   18.44180 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_13:00:00 for domain        1:   39.91697 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    46800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_13:00:00
+d01 2019-06-25_13:00:00  Error trying to read metadata
+d01 2019-06-25_13:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_13:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_13:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_13:01:30 on domain   1:   48.29754 elapsed seconds
+Timing for main: time 2019-06-25_13:03:00 on domain   1:    9.89021 elapsed seconds
+Timing for main: time 2019-06-25_13:04:30 on domain   1:   13.40252 elapsed seconds
+Timing for main: time 2019-06-25_13:06:00 on domain   1:    9.74017 elapsed seconds
+Timing for main: time 2019-06-25_13:07:30 on domain   1:    9.74637 elapsed seconds
+Timing for main: time 2019-06-25_13:09:00 on domain   1:    9.75013 elapsed seconds
+Timing for main: time 2019-06-25_13:10:30 on domain   1:    9.74873 elapsed seconds
+Timing for main: time 2019-06-25_13:12:00 on domain   1:    9.75098 elapsed seconds
+Timing for main: time 2019-06-25_13:13:30 on domain   1:    9.74977 elapsed seconds
+Timing for main: time 2019-06-25_13:15:00 on domain   1:    9.75263 elapsed seconds
+Timing for main: time 2019-06-25_13:16:30 on domain   1:    9.74997 elapsed seconds
+Timing for main: time 2019-06-25_13:18:00 on domain   1:    9.75869 elapsed seconds
+Timing for main: time 2019-06-25_13:19:30 on domain   1:    9.75467 elapsed seconds
+Timing for main: time 2019-06-25_13:21:00 on domain   1:    9.76402 elapsed seconds
+Timing for main: time 2019-06-25_13:22:30 on domain   1:    9.76497 elapsed seconds
+Timing for main: time 2019-06-25_13:24:00 on domain   1:    9.77031 elapsed seconds
+Timing for main: time 2019-06-25_13:25:30 on domain   1:    9.76896 elapsed seconds
+Timing for main: time 2019-06-25_13:27:00 on domain   1:    9.77387 elapsed seconds
+Timing for main: time 2019-06-25_13:28:30 on domain   1:    9.77238 elapsed seconds
+Timing for main: time 2019-06-25_13:30:00 on domain   1:    9.77888 elapsed seconds
+Timing for main: time 2019-06-25_13:31:30 on domain   1:   13.45770 elapsed seconds
+Timing for main: time 2019-06-25_13:33:00 on domain   1:    9.77550 elapsed seconds
+Timing for main: time 2019-06-25_13:34:30 on domain   1:    9.78434 elapsed seconds
+Timing for main: time 2019-06-25_13:36:00 on domain   1:    9.77935 elapsed seconds
+Timing for main: time 2019-06-25_13:37:30 on domain   1:    9.78016 elapsed seconds
+Timing for main: time 2019-06-25_13:39:00 on domain   1:    9.78650 elapsed seconds
+Timing for main: time 2019-06-25_13:40:30 on domain   1:    9.78562 elapsed seconds
+Timing for main: time 2019-06-25_13:42:00 on domain   1:    9.78983 elapsed seconds
+Timing for main: time 2019-06-25_13:43:30 on domain   1:    9.78642 elapsed seconds
+Timing for main: time 2019-06-25_13:45:00 on domain   1:    9.78720 elapsed seconds
+Timing for main: time 2019-06-25_13:46:30 on domain   1:    9.78825 elapsed seconds
+Timing for main: time 2019-06-25_13:48:00 on domain   1:    9.79209 elapsed seconds
+Timing for main: time 2019-06-25_13:49:30 on domain   1:    9.79403 elapsed seconds
+Timing for main: time 2019-06-25_13:51:00 on domain   1:    9.78921 elapsed seconds
+Timing for main: time 2019-06-25_13:52:30 on domain   1:    9.79231 elapsed seconds
+Timing for main: time 2019-06-25_13:54:00 on domain   1:    9.79276 elapsed seconds
+Timing for main: time 2019-06-25_13:55:30 on domain   1:    9.79689 elapsed seconds
+Timing for main: time 2019-06-25_13:57:00 on domain   1:    9.79290 elapsed seconds
+Timing for main: time 2019-06-25_13:58:30 on domain   1:   13.47541 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          560   13.00000       13.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_14:00:00 on domain   1:   18.48849 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_14:00:00 for domain        1:   38.10698 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    50400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_14:00:00
+d01 2019-06-25_14:00:00  Error trying to read metadata
+d01 2019-06-25_14:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_14:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_14:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_14:01:30 on domain   1:   46.50787 elapsed seconds
+Timing for main: time 2019-06-25_14:03:00 on domain   1:    9.87121 elapsed seconds
+Timing for main: time 2019-06-25_14:04:30 on domain   1:    9.73727 elapsed seconds
+Timing for main: time 2019-06-25_14:06:00 on domain   1:    9.73156 elapsed seconds
+Timing for main: time 2019-06-25_14:07:30 on domain   1:    9.72985 elapsed seconds
+Timing for main: time 2019-06-25_14:09:00 on domain   1:    9.74066 elapsed seconds
+Timing for main: time 2019-06-25_14:10:30 on domain   1:    9.73102 elapsed seconds
+Timing for main: time 2019-06-25_14:12:00 on domain   1:    9.73956 elapsed seconds
+Timing for main: time 2019-06-25_14:13:30 on domain   1:    9.74484 elapsed seconds
+Timing for main: time 2019-06-25_14:15:00 on domain   1:    9.74024 elapsed seconds
+Timing for main: time 2019-06-25_14:16:30 on domain   1:    9.74255 elapsed seconds
+Timing for main: time 2019-06-25_14:18:00 on domain   1:    9.74651 elapsed seconds
+Timing for main: time 2019-06-25_14:19:30 on domain   1:    9.74635 elapsed seconds
+Timing for main: time 2019-06-25_14:21:00 on domain   1:    9.74707 elapsed seconds
+Timing for main: time 2019-06-25_14:22:30 on domain   1:    9.74901 elapsed seconds
+Timing for main: time 2019-06-25_14:24:00 on domain   1:    9.75150 elapsed seconds
+Timing for main: time 2019-06-25_14:25:30 on domain   1:   13.43384 elapsed seconds
+Timing for main: time 2019-06-25_14:27:00 on domain   1:    9.74496 elapsed seconds
+Timing for main: time 2019-06-25_14:28:30 on domain   1:    9.75204 elapsed seconds
+Timing for main: time 2019-06-25_14:30:00 on domain   1:    9.76360 elapsed seconds
+Timing for main: time 2019-06-25_14:31:30 on domain   1:    9.76075 elapsed seconds
+Timing for main: time 2019-06-25_14:33:00 on domain   1:    9.75364 elapsed seconds
+Timing for main: time 2019-06-25_14:34:30 on domain   1:    9.75877 elapsed seconds
+Timing for main: time 2019-06-25_14:36:00 on domain   1:    9.76653 elapsed seconds
+Timing for main: time 2019-06-25_14:37:30 on domain   1:    9.76354 elapsed seconds
+Timing for main: time 2019-06-25_14:39:00 on domain   1:    9.76443 elapsed seconds
+Timing for main: time 2019-06-25_14:40:30 on domain   1:    9.76479 elapsed seconds
+Timing for main: time 2019-06-25_14:42:00 on domain   1:    9.76552 elapsed seconds
+Timing for main: time 2019-06-25_14:43:30 on domain   1:    9.77501 elapsed seconds
+Timing for main: time 2019-06-25_14:45:00 on domain   1:    9.77013 elapsed seconds
+Timing for main: time 2019-06-25_14:46:30 on domain   1:    9.77545 elapsed seconds
+Timing for main: time 2019-06-25_14:48:00 on domain   1:    9.77295 elapsed seconds
+Timing for main: time 2019-06-25_14:49:30 on domain   1:    9.77459 elapsed seconds
+Timing for main: time 2019-06-25_14:51:00 on domain   1:    9.77196 elapsed seconds
+Timing for main: time 2019-06-25_14:52:30 on domain   1:   13.45449 elapsed seconds
+Timing for main: time 2019-06-25_14:54:00 on domain   1:    9.78174 elapsed seconds
+Timing for main: time 2019-06-25_14:55:30 on domain   1:    9.78172 elapsed seconds
+Timing for main: time 2019-06-25_14:57:00 on domain   1:    9.78406 elapsed seconds
+Timing for main: time 2019-06-25_14:58:30 on domain   1:    9.78619 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          600   14.00000       14.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_15:00:00 on domain   1:   35.44554 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_15:00:00 for domain        1:   19.32552 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    54000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_15:00:00
+d01 2019-06-25_15:00:00  Error trying to read metadata
+d01 2019-06-25_15:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_15:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_15:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_15:01:30 on domain   1:   29.38836 elapsed seconds
+Timing for main: time 2019-06-25_15:03:00 on domain   1:    9.76335 elapsed seconds
+Timing for main: time 2019-06-25_15:04:30 on domain   1:    9.83112 elapsed seconds
+Timing for main: time 2019-06-25_15:06:00 on domain   1:    9.88068 elapsed seconds
+Timing for main: time 2019-06-25_15:07:30 on domain   1:    9.90066 elapsed seconds
+Timing for main: time 2019-06-25_15:09:00 on domain   1:    9.90927 elapsed seconds
+Timing for main: time 2019-06-25_15:10:30 on domain   1:    9.91506 elapsed seconds
+Timing for main: time 2019-06-25_15:12:00 on domain   1:    9.91761 elapsed seconds
+Timing for main: time 2019-06-25_15:13:30 on domain   1:    9.92128 elapsed seconds
+Timing for main: time 2019-06-25_15:15:00 on domain   1:    9.92144 elapsed seconds
+Timing for main: time 2019-06-25_15:16:30 on domain   1:    9.91643 elapsed seconds
+Timing for main: time 2019-06-25_15:18:00 on domain   1:    9.92111 elapsed seconds
+Timing for main: time 2019-06-25_15:19:30 on domain   1:   13.41422 elapsed seconds
+Timing for main: time 2019-06-25_15:21:00 on domain   1:    9.91859 elapsed seconds
+Timing for main: time 2019-06-25_15:22:30 on domain   1:    9.91895 elapsed seconds
+Timing for main: time 2019-06-25_15:24:00 on domain   1:    9.92286 elapsed seconds
+Timing for main: time 2019-06-25_15:25:30 on domain   1:    9.92325 elapsed seconds
+Timing for main: time 2019-06-25_15:27:00 on domain   1:    9.92239 elapsed seconds
+Timing for main: time 2019-06-25_15:28:30 on domain   1:    9.92124 elapsed seconds
+Timing for main: time 2019-06-25_15:30:00 on domain   1:    9.93100 elapsed seconds
+Timing for main: time 2019-06-25_15:31:30 on domain   1:    9.91574 elapsed seconds
+Timing for main: time 2019-06-25_15:33:00 on domain   1:    9.92514 elapsed seconds
+Timing for main: time 2019-06-25_15:34:30 on domain   1:    9.92382 elapsed seconds
+Timing for main: time 2019-06-25_15:36:00 on domain   1:    9.92493 elapsed seconds
+Timing for main: time 2019-06-25_15:37:30 on domain   1:    9.92748 elapsed seconds
+Timing for main: time 2019-06-25_15:39:00 on domain   1:    9.92121 elapsed seconds
+Timing for main: time 2019-06-25_15:40:30 on domain   1:    9.92609 elapsed seconds
+Timing for main: time 2019-06-25_15:42:00 on domain   1:    9.92575 elapsed seconds
+Timing for main: time 2019-06-25_15:43:30 on domain   1:    9.92538 elapsed seconds
+Timing for main: time 2019-06-25_15:45:00 on domain   1:    9.92144 elapsed seconds
+Timing for main: time 2019-06-25_15:46:30 on domain   1:   13.43027 elapsed seconds
+Timing for main: time 2019-06-25_15:48:00 on domain   1:    9.91638 elapsed seconds
+Timing for main: time 2019-06-25_15:49:30 on domain   1:    9.92025 elapsed seconds
+Timing for main: time 2019-06-25_15:51:00 on domain   1:    9.92155 elapsed seconds
+Timing for main: time 2019-06-25_15:52:30 on domain   1:    9.91948 elapsed seconds
+Timing for main: time 2019-06-25_15:54:00 on domain   1:    9.92156 elapsed seconds
+Timing for main: time 2019-06-25_15:55:30 on domain   1:    9.91705 elapsed seconds
+Timing for main: time 2019-06-25_15:57:00 on domain   1:    9.92423 elapsed seconds
+Timing for main: time 2019-06-25_15:58:30 on domain   1:    9.92021 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          640   15.00000       15.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_16:00:00 on domain   1:   40.62668 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_16:00:00 for domain        1:   11.41535 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    57600.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_16:00:00
+d01 2019-06-25_16:00:00  Error trying to read metadata
+d01 2019-06-25_16:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_16:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_16:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_16:01:30 on domain   1:   21.70732 elapsed seconds
+Timing for main: time 2019-06-25_16:03:00 on domain   1:    9.84191 elapsed seconds
+Timing for main: time 2019-06-25_16:04:30 on domain   1:    9.82842 elapsed seconds
+Timing for main: time 2019-06-25_16:06:00 on domain   1:    9.86322 elapsed seconds
+Timing for main: time 2019-06-25_16:07:30 on domain   1:    9.87902 elapsed seconds
+Timing for main: time 2019-06-25_16:09:00 on domain   1:    9.88325 elapsed seconds
+Timing for main: time 2019-06-25_16:10:30 on domain   1:    9.86277 elapsed seconds
+Timing for main: time 2019-06-25_16:12:00 on domain   1:    9.86746 elapsed seconds
+Timing for main: time 2019-06-25_16:13:30 on domain   1:   13.48309 elapsed seconds
+Timing for main: time 2019-06-25_16:15:00 on domain   1:    9.86915 elapsed seconds
+Timing for main: time 2019-06-25_16:16:30 on domain   1:    9.86923 elapsed seconds
+Timing for main: time 2019-06-25_16:18:00 on domain   1:    9.88429 elapsed seconds
+Timing for main: time 2019-06-25_16:19:30 on domain   1:    9.88722 elapsed seconds
+Timing for main: time 2019-06-25_16:21:00 on domain   1:    9.87804 elapsed seconds
+Timing for main: time 2019-06-25_16:22:30 on domain   1:    9.87445 elapsed seconds
+Timing for main: time 2019-06-25_16:24:00 on domain   1:    9.88351 elapsed seconds
+Timing for main: time 2019-06-25_16:25:30 on domain   1:    9.89281 elapsed seconds
+Timing for main: time 2019-06-25_16:27:00 on domain   1:    9.87760 elapsed seconds
+Timing for main: time 2019-06-25_16:28:30 on domain   1:    9.88701 elapsed seconds
+Timing for main: time 2019-06-25_16:30:00 on domain   1:    9.89623 elapsed seconds
+Timing for main: time 2019-06-25_16:31:30 on domain   1:    9.88605 elapsed seconds
+Timing for main: time 2019-06-25_16:33:00 on domain   1:    9.88319 elapsed seconds
+Timing for main: time 2019-06-25_16:34:30 on domain   1:    9.87950 elapsed seconds
+Timing for main: time 2019-06-25_16:36:00 on domain   1:    9.88130 elapsed seconds
+Timing for main: time 2019-06-25_16:37:30 on domain   1:    9.87649 elapsed seconds
+Timing for main: time 2019-06-25_16:39:00 on domain   1:    9.89047 elapsed seconds
+Timing for main: time 2019-06-25_16:40:30 on domain   1:   13.53789 elapsed seconds
+Timing for main: time 2019-06-25_16:42:00 on domain   1:    9.88446 elapsed seconds
+Timing for main: time 2019-06-25_16:43:30 on domain   1:    9.88743 elapsed seconds
+Timing for main: time 2019-06-25_16:45:00 on domain   1:    9.86556 elapsed seconds
+Timing for main: time 2019-06-25_16:46:30 on domain   1:    9.87321 elapsed seconds
+Timing for main: time 2019-06-25_16:48:00 on domain   1:    9.88043 elapsed seconds
+Timing for main: time 2019-06-25_16:49:30 on domain   1:    9.88451 elapsed seconds
+Timing for main: time 2019-06-25_16:51:00 on domain   1:    9.88614 elapsed seconds
+Timing for main: time 2019-06-25_16:52:30 on domain   1:    9.88114 elapsed seconds
+Timing for main: time 2019-06-25_16:54:00 on domain   1:    9.89315 elapsed seconds
+Timing for main: time 2019-06-25_16:55:30 on domain   1:    9.88037 elapsed seconds
+Timing for main: time 2019-06-25_16:57:00 on domain   1:    9.87682 elapsed seconds
+Timing for main: time 2019-06-25_16:58:30 on domain   1:    9.88982 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          680   16.00000       16.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_17:00:00 on domain   1:   36.32155 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_17:00:00 for domain        1:   11.63558 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    61200.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_17:00:00
+d01 2019-06-25_17:00:00  Error trying to read metadata
+d01 2019-06-25_17:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_17:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_17:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_17:01:30 on domain   1:   21.52928 elapsed seconds
+Timing for main: time 2019-06-25_17:03:00 on domain   1:    9.81647 elapsed seconds
+Timing for main: time 2019-06-25_17:04:30 on domain   1:    9.85048 elapsed seconds
+Timing for main: time 2019-06-25_17:06:00 on domain   1:    9.85586 elapsed seconds
+Timing for main: time 2019-06-25_17:07:30 on domain   1:   13.52502 elapsed seconds
+Timing for main: time 2019-06-25_17:09:00 on domain   1:    9.84834 elapsed seconds
+Timing for main: time 2019-06-25_17:10:30 on domain   1:    9.85666 elapsed seconds
+Timing for main: time 2019-06-25_17:12:00 on domain   1:    9.86986 elapsed seconds
+Timing for main: time 2019-06-25_17:13:30 on domain   1:    9.86071 elapsed seconds
+Timing for main: time 2019-06-25_17:15:00 on domain   1:    9.86209 elapsed seconds
+Timing for main: time 2019-06-25_17:16:30 on domain   1:    9.85100 elapsed seconds
+Timing for main: time 2019-06-25_17:18:00 on domain   1:    9.88031 elapsed seconds
+Timing for main: time 2019-06-25_17:19:30 on domain   1:    9.87588 elapsed seconds
+Timing for main: time 2019-06-25_17:21:00 on domain   1:    9.88179 elapsed seconds
+Timing for main: time 2019-06-25_17:22:30 on domain   1:    9.87054 elapsed seconds
+Timing for main: time 2019-06-25_17:24:00 on domain   1:    9.87403 elapsed seconds
+Timing for main: time 2019-06-25_17:25:30 on domain   1:    9.88189 elapsed seconds
+Timing for main: time 2019-06-25_17:27:00 on domain   1:    9.89392 elapsed seconds
+Timing for main: time 2019-06-25_17:28:30 on domain   1:    9.88492 elapsed seconds
+Timing for main: time 2019-06-25_17:30:00 on domain   1:    9.89363 elapsed seconds
+Timing for main: time 2019-06-25_17:31:30 on domain   1:    9.88826 elapsed seconds
+Timing for main: time 2019-06-25_17:33:00 on domain   1:    9.88947 elapsed seconds
+Timing for main: time 2019-06-25_17:34:30 on domain   1:   13.56685 elapsed seconds
+Timing for main: time 2019-06-25_17:36:00 on domain   1:    9.88746 elapsed seconds
+Timing for main: time 2019-06-25_17:37:30 on domain   1:    9.88737 elapsed seconds
+Timing for main: time 2019-06-25_17:39:00 on domain   1:    9.88153 elapsed seconds
+Timing for main: time 2019-06-25_17:40:30 on domain   1:    9.89013 elapsed seconds
+Timing for main: time 2019-06-25_17:42:00 on domain   1:    9.89829 elapsed seconds
+Timing for main: time 2019-06-25_17:43:30 on domain   1:    9.88935 elapsed seconds
+Timing for main: time 2019-06-25_17:45:00 on domain   1:    9.89404 elapsed seconds
+Timing for main: time 2019-06-25_17:46:30 on domain   1:    9.90137 elapsed seconds
+Timing for main: time 2019-06-25_17:48:00 on domain   1:    9.90567 elapsed seconds
+Timing for main: time 2019-06-25_17:49:30 on domain   1:    9.90466 elapsed seconds
+Timing for main: time 2019-06-25_17:51:00 on domain   1:    9.89976 elapsed seconds
+Timing for main: time 2019-06-25_17:52:30 on domain   1:    9.89024 elapsed seconds
+Timing for main: time 2019-06-25_17:54:00 on domain   1:    9.89474 elapsed seconds
+Timing for main: time 2019-06-25_17:55:30 on domain   1:    9.90329 elapsed seconds
+Timing for main: time 2019-06-25_17:57:00 on domain   1:    9.90200 elapsed seconds
+Timing for main: time 2019-06-25_17:58:30 on domain   1:    9.90058 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          720   17.00000       17.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_18:00:00 on domain   1:   34.88631 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_18:00:00 for domain        1:   14.52354 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    64800.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_18:00:00
+d01 2019-06-25_18:00:00  Error trying to read metadata
+d01 2019-06-25_18:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_18:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_18:00:00
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_18:00:00  Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    1.73591 elapsed seconds
+Timing for main: time 2019-06-25_18:01:30 on domain   1:   29.75444 elapsed seconds
+Timing for main: time 2019-06-25_18:03:00 on domain   1:    9.85026 elapsed seconds
+Timing for main: time 2019-06-25_18:04:30 on domain   1:    9.84515 elapsed seconds
+Timing for main: time 2019-06-25_18:06:00 on domain   1:    9.83708 elapsed seconds
+Timing for main: time 2019-06-25_18:07:30 on domain   1:    9.84386 elapsed seconds
+Timing for main: time 2019-06-25_18:09:00 on domain   1:    9.84288 elapsed seconds
+Timing for main: time 2019-06-25_18:10:30 on domain   1:    9.84014 elapsed seconds
+Timing for main: time 2019-06-25_18:12:00 on domain   1:    9.84708 elapsed seconds
+Timing for main: time 2019-06-25_18:13:30 on domain   1:    9.84343 elapsed seconds
+Timing for main: time 2019-06-25_18:15:00 on domain   1:    9.85290 elapsed seconds
+Timing for main: time 2019-06-25_18:16:30 on domain   1:    9.85014 elapsed seconds
+Timing for main: time 2019-06-25_18:18:00 on domain   1:    9.85686 elapsed seconds
+Timing for main: time 2019-06-25_18:19:30 on domain   1:    9.85102 elapsed seconds
+Timing for main: time 2019-06-25_18:21:00 on domain   1:    9.84533 elapsed seconds
+Timing for main: time 2019-06-25_18:22:30 on domain   1:    9.85233 elapsed seconds
+Timing for main: time 2019-06-25_18:24:00 on domain   1:    9.85214 elapsed seconds
+Timing for main: time 2019-06-25_18:25:30 on domain   1:    9.85396 elapsed seconds
+Timing for main: time 2019-06-25_18:27:00 on domain   1:   10.00039 elapsed seconds
+Timing for main: time 2019-06-25_18:28:30 on domain   1:   13.48092 elapsed seconds
+Timing for main: time 2019-06-25_18:30:00 on domain   1:    9.88943 elapsed seconds
+Timing for main: time 2019-06-25_18:31:30 on domain   1:    9.90647 elapsed seconds
+Timing for main: time 2019-06-25_18:33:00 on domain   1:    9.89264 elapsed seconds
+Timing for main: time 2019-06-25_18:34:30 on domain   1:    9.90447 elapsed seconds
+Timing for main: time 2019-06-25_18:36:00 on domain   1:    9.89993 elapsed seconds
+Timing for main: time 2019-06-25_18:37:30 on domain   1:    9.88874 elapsed seconds
+Timing for main: time 2019-06-25_18:39:00 on domain   1:    9.90235 elapsed seconds
+Timing for main: time 2019-06-25_18:40:30 on domain   1:    9.90328 elapsed seconds
+Timing for main: time 2019-06-25_18:42:00 on domain   1:    9.90709 elapsed seconds
+Timing for main: time 2019-06-25_18:43:30 on domain   1:    9.91343 elapsed seconds
+Timing for main: time 2019-06-25_18:45:00 on domain   1:    9.89750 elapsed seconds
+Timing for main: time 2019-06-25_18:46:30 on domain   1:    9.88332 elapsed seconds
+Timing for main: time 2019-06-25_18:48:00 on domain   1:    9.90365 elapsed seconds
+Timing for main: time 2019-06-25_18:49:30 on domain   1:    9.88702 elapsed seconds
+Timing for main: time 2019-06-25_18:51:00 on domain   1:    9.89776 elapsed seconds
+Timing for main: time 2019-06-25_18:52:30 on domain   1:    9.90911 elapsed seconds
+Timing for main: time 2019-06-25_18:54:00 on domain   1:    9.90097 elapsed seconds
+Timing for main: time 2019-06-25_18:55:30 on domain   1:   13.47719 elapsed seconds
+Timing for main: time 2019-06-25_18:57:00 on domain   1:    9.89135 elapsed seconds
+Timing for main: time 2019-06-25_18:58:30 on domain   1:    9.88392 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          760   18.00000       18.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_19:00:00 on domain   1:   32.61249 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_19:00:00 for domain        1:   17.11150 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    68400.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_19:00:00
+d01 2019-06-25_19:00:00  Error trying to read metadata
+d01 2019-06-25_19:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_19:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_19:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_19:01:30 on domain   1:   27.09501 elapsed seconds
+Timing for main: time 2019-06-25_19:03:00 on domain   1:    9.91931 elapsed seconds
+Timing for main: time 2019-06-25_19:04:30 on domain   1:    9.89915 elapsed seconds
+Timing for main: time 2019-06-25_19:06:00 on domain   1:    9.88869 elapsed seconds
+Timing for main: time 2019-06-25_19:07:30 on domain   1:    9.89262 elapsed seconds
+Timing for main: time 2019-06-25_19:09:00 on domain   1:    9.89535 elapsed seconds
+Timing for main: time 2019-06-25_19:10:30 on domain   1:    9.88802 elapsed seconds
+Timing for main: time 2019-06-25_19:12:00 on domain   1:    9.90194 elapsed seconds
+Timing for main: time 2019-06-25_19:13:30 on domain   1:    9.89259 elapsed seconds
+Timing for main: time 2019-06-25_19:15:00 on domain   1:    9.89439 elapsed seconds
+Timing for main: time 2019-06-25_19:16:30 on domain   1:    9.88811 elapsed seconds
+Timing for main: time 2019-06-25_19:18:00 on domain   1:    9.89705 elapsed seconds
+Timing for main: time 2019-06-25_19:19:30 on domain   1:    9.88424 elapsed seconds
+Timing for main: time 2019-06-25_19:21:00 on domain   1:    9.89417 elapsed seconds
+Timing for main: time 2019-06-25_19:22:30 on domain   1:   13.56486 elapsed seconds
+Timing for main: time 2019-06-25_19:24:00 on domain   1:    9.88088 elapsed seconds
+Timing for main: time 2019-06-25_19:25:30 on domain   1:    9.87531 elapsed seconds
+Timing for main: time 2019-06-25_19:27:00 on domain   1:    9.89060 elapsed seconds
+Timing for main: time 2019-06-25_19:28:30 on domain   1:    9.88146 elapsed seconds
+Timing for main: time 2019-06-25_19:30:00 on domain   1:    9.88152 elapsed seconds
+Timing for main: time 2019-06-25_19:31:30 on domain   1:    9.89364 elapsed seconds
+Timing for main: time 2019-06-25_19:33:00 on domain   1:    9.87670 elapsed seconds
+Timing for main: time 2019-06-25_19:34:30 on domain   1:    9.88823 elapsed seconds
+Timing for main: time 2019-06-25_19:36:00 on domain   1:    9.87967 elapsed seconds
+Timing for main: time 2019-06-25_19:37:30 on domain   1:    9.89306 elapsed seconds
+Timing for main: time 2019-06-25_19:39:00 on domain   1:    9.88279 elapsed seconds
+Timing for main: time 2019-06-25_19:40:30 on domain   1:    9.88337 elapsed seconds
+Timing for main: time 2019-06-25_19:42:00 on domain   1:    9.87942 elapsed seconds
+Timing for main: time 2019-06-25_19:43:30 on domain   1:    9.88076 elapsed seconds
+Timing for main: time 2019-06-25_19:45:00 on domain   1:    9.89286 elapsed seconds
+Timing for main: time 2019-06-25_19:46:30 on domain   1:    9.88624 elapsed seconds
+Timing for main: time 2019-06-25_19:48:00 on domain   1:    9.89205 elapsed seconds
+Timing for main: time 2019-06-25_19:49:30 on domain   1:   13.56088 elapsed seconds
+Timing for main: time 2019-06-25_19:51:00 on domain   1:    9.89217 elapsed seconds
+Timing for main: time 2019-06-25_19:52:30 on domain   1:    9.87914 elapsed seconds
+Timing for main: time 2019-06-25_19:54:00 on domain   1:    9.87577 elapsed seconds
+Timing for main: time 2019-06-25_19:55:30 on domain   1:    9.87343 elapsed seconds
+Timing for main: time 2019-06-25_19:57:00 on domain   1:    9.88526 elapsed seconds
+Timing for main: time 2019-06-25_19:58:30 on domain   1:    9.87853 elapsed seconds
+ calculate MEGAN emissions at ktau, gmtp, tmidh =          800   19.00000       19.98750
+ photolysis_driver: called for domain            1
+Timing for main: time 2019-06-25_20:00:00 on domain   1:   28.11670 elapsed seconds
+ mediation_integrate.G        1242 DATASET=HISTORY
+ mediation_integrate.G        1243  grid%id            1  grid%oid            3
+Timing for Writing wrfout_d01_2019-06-25_20:00:00 for domain        1:   23.95659 elapsed seconds
+ HOURLY EMISSIONS UPDATE TIME    72000.0       0.0
+mediation_integrate: med_read_wrf_chem_emissions: Read emissions for time 2019-06-25_20:00:00
+d01 2019-06-25_20:00:00  Error trying to read metadata
+d01 2019-06-25_20:00:00  Input data is acceptable to use: wrfchemi_12z_d01
+**WARNING** Time in input file not being checked **WARNING**
+d01 2019-06-25_20:00:00  Input data is acceptable to use: wrffirechemi_d01_2019-06-25_20:00:00
+**WARNING** Time in input file not being checked **WARNING**
+Timing for main: time 2019-06-25_20:01:30 on domain   1:   33.97465 elapsed seconds
+Timing for main: time 2019-06-25_20:03:00 on domain   1:    9.83858 elapsed seconds
+Timing for main: time 2019-06-25_20:04:30 on domain   1:    9.83466 elapsed seconds
+Timing for main: time 2019-06-25_20:06:00 on domain   1:    9.82631 elapsed seconds
+Timing for main: time 2019-06-25_20:07:30 on domain   1:    9.83502 elapsed seconds
+Timing for main: time 2019-06-25_20:09:00 on domain   1:    9.82945 elapsed seconds
+Timing for main: time 2019-06-25_20:10:30 on domain   1:    9.83153 elapsed seconds
+Timing for main: time 2019-06-25_20:12:00 on domain   1:    9.83278 elapsed seconds
+Timing for main: time 2019-06-25_20:13:30 on domain   1:    9.83540 elapsed seconds
+Timing for main: time 2019-06-25_20:15:00 on domain   1:    9.82918 elapsed seconds
+Timing for main: time 2019-06-25_20:16:30 on domain   1:   13.47602 elapsed seconds
+Timing for main: time 2019-06-25_20:18:00 on domain   1:    9.82323 elapsed seconds
+Timing for main: time 2019-06-25_20:19:30 on domain   1:    9.82791 elapsed seconds
+Timing for main: time 2019-06-25_20:21:00 on domain   1:    9.82481 elapsed seconds
+Timing for main: time 2019-06-25_20:22:30 on domain   1:    9.82819 elapsed seconds
+Timing for main: time 2019-06-25_20:24:00 on domain   1:    9.82485 elapsed seconds
+Timing for main: time 2019-06-25_20:25:30 on domain   1:    9.83003 elapsed seconds
+Timing for main: time 2019-06-25_20:27:00 on domain   1:    9.82768 elapsed seconds
+Timing for main: time 2019-06-25_20:28:30 on domain   1:    9.82131 elapsed seconds
+Timing for main: time 2019-06-25_20:30:00 on domain   1:    9.82817 elapsed seconds
+Timing for main: time 2019-06-25_20:31:30 on domain   1:    9.82195 elapsed seconds
+Timing for main: time 2019-06-25_20:33:00 on domain   1:    9.82963 elapsed seconds
+Timing for main: time 2019-06-25_20:34:30 on domain   1:    9.81538 elapsed seconds
+Timing for main: time 2019-06-25_20:36:00 on domain   1:    9.83009 elapsed seconds
+Timing for main: time 2019-06-25_20:37:30 on domain   1:    9.81776 elapsed seconds
+Timing for main: time 2019-06-25_20:39:00 on domain   1:    9.82409 elapsed seconds
+Timing for main: time 2019-06-25_20:40:30 on domain   1:    9.82852 elapsed seconds
+Timing for main: time 2019-06-25_20:42:00 on domain   1:    9.81383 elapsed seconds
+Timing for main: time 2019-06-25_20:43:30 on domain   1:   13.47873 elapsed seconds

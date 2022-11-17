@@ -23,4 +23,4 @@ wrf.exe            00000000004056AE  Unknown               Unknown  Unknown
 
 - Exp. 3 (WRF-Chem v4.2.1 with MOZCART) only run 14 hours. The rsl.error.0011 shows Unknown or SEGSEV processing.
 - Exp. 4 (WRF-Chem v.4.2.1 with MOZCART) cannot run all the period, a SEGSEV ocurred. The WRF-Chem version 3.9.1 ran succesfully all period.
-- We'll test with dt=90 and with the recently WRF-Chem version 4.4.1, and 42 vertical levels. At the same time, we'll test with the version 3.9.1 with dt=90 seconds. 
+- Exp. 5 (WRF-Chem v4.4.1 with MOZCART) is running but frozen ata date `2019-06-25_20:43:30`. The `phot_opt = 4` (TUV) options in namelist.input as seeting up is different compared with previous experiments.

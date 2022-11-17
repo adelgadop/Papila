@@ -1,5 +1,5 @@
 &control
-wrf_dir = '/home/alejandro/WRF-4.2.1/test/em_real'
+wrf_dir = '/home/alejandro/WRFV4.4.1/test/em_real'
 domains = 1,
 
 /

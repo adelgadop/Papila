@@ -1,10 +1,10 @@
 &control
 domains           = 1,
 fire_directory    = '/home/alejandro/data/finn/',
-fire_filename(1)  = 'GLOBAL_FINNv15_2017_MOZART_01022019.txt',   !junio 2017
-wrf_directory     = '/home/alejandro/WRF-4.2.1/test/em_real/',
-start_date        = '2017-08-30',
-end_date          = '2017-09-01',
+fire_filename(1)  = 'GLOBAL_FINNv15_2019_MOZART_06022020.txt',   !junio 2017
+wrf_directory     = '/home/alejandro/WRFV4.4.1/test/em_real/',
+start_date        = '2019-06-25',
+end_date          = '2019-06-27',
 diag_level        = 400,
 
 wrf2fire_map      = 'co -> CO'
