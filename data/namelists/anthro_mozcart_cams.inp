@@ -1,0 +1,37 @@
+&CONTROL
+ anthro_dir        = '/home/alejandro/data/emis/cams/monthly/'
+ wrf_dir           = '/home/alejandro/WRFV3/test/em_real/'
+ src_file_prefix   = 'CAMS-GLOB-ANT_Glb_0.1x0.1_anthro_'
+ domains           = 1
+ src_file_suffix   = '_v5.3_monthly_2019.nc'
+ src_names         = 'co(28)','nox(30)','so2(64)','nh3(17)','bc(12)','oc(12)',
+                     'acids(59)','alcohols(32)','benzene(78)',
+                     'butanes(58)','clhyd(138)','esters(184)','ethane(30)',
+                     'ethene(28)','ethers(81)','acetylene(26)',
+                     'formaldehyde(30)','hexanes(86)','ketones(72)',
+                     'monoterpenes(136)','pentanes(72)','toluene(92)',
+                     'isoprene(68)','aldehydes(44)','aromatics(126)',
+                     'othalkenesalkynes(56)','propane(44)','propene(40)',
+                     'trimethylbenzenes(106)','xylenes(106)'
+ sub_categories    = 'sum'
+ cat_var_prefix    = ''
+ serial_output     = .false.
+ start_output_time  = '2019-06-23_00:00:00'
+ data_yrs_offset   = 0
+ emissions_zdim_stag = 1
+ emis_map          = 'CO->co','NO->0.9*nox','NO2->0.1*nox',
+                     'SO2->so2','NH3->nh3','BC(a)->bc','OC(a)->oc',
+                     'BIGALK->butanes+pentanes+hexanes+esters+ethers',
+                     'C2H4->ethene','C2H5OH->0.85*alcohols','C2H6->ethane',
+                     'CH2O->formaldehyde','CH3CHO->aldehydes',
+                     'CH3OH->0.15*alcohols','C2H2->acetylene',
+                     'TOLUENE->toluene+aromatics',
+                     'BENZENE->benzene+trimethylbenzenes','C3H6->propene',
+                     'C3H8->propane','SULF->0.0*so2','ISOP->isoprenes',
+                     'C10H16->monoterpenes','HCOOH->0.5*acids',
+                     'CH3COOH->0.5*acids','MEK->0.8*ketones',
+                     'BIGENE->othalkenesalkynes','CH3COCH3->0.2*ketones',
+                     'XYLENE->xylenes','ECI(a)->0.2*bc','ECJ(a)->0.8*bc',
+                     'ORGI(a)->0.2*oc','ORGJ(a)->0.8*oc'
+
+/
