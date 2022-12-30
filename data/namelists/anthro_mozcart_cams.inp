@@ -12,7 +12,7 @@
                      'monoterpenes(136)','pentanes(72)','toluene(92)',
                      'isoprene(68)','aldehydes(44)','aromatics(126)',
                      'othalkenesalkynes(56)','propane(44)','propene(40)',
-                     'trimethylbenzenes(106)','xylenes(106)'
+                     'trimethylbenzene(106)','xylene(106)'
  sub_categories    = 'sum'
  cat_var_prefix    = ''
  serial_output     = .false.
@@ -26,12 +26,12 @@
                      'CH2O->formaldehyde','CH3CHO->aldehydes',
                      'CH3OH->0.15*alcohols','C2H2->acetylene',
                      'TOLUENE->toluene+aromatics',
-                     'BENZENE->benzene+trimethylbenzenes','C3H6->propene',
-                     'C3H8->propane','SULF->0.0*so2','ISOP->isoprenes',
+                     'BENZENE->benzene+trimethylbenzene','C3H6->propene',
+                     'C3H8->propane','SULF->0.0*so2','ISOP->isoprene',
                      'C10H16->monoterpenes','HCOOH->0.5*acids',
                      'CH3COOH->0.5*acids','MEK->0.8*ketones',
                      'BIGENE->othalkenesalkynes','CH3COCH3->0.2*ketones',
-                     'XYLENE->xylenes','ECI(a)->0.2*bc','ECJ(a)->0.8*bc',
+                     'XYLENE->xylene','ECI(a)->0.2*bc','ECJ(a)->0.8*bc',
                      'ORGI(a)->0.2*oc','ORGJ(a)->0.8*oc'
 
 /
